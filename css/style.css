@@ -1,0 +1,100 @@
+.welcome {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.ptitle {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.navbar {
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4286f4;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+body {
+  font-family: Sans-serif;
+}
+
+.formstyle {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+}
+
+form {
+  margin: 50px auto;
+  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+  text-align: center;
+}
+
+form .formlabel {
+  text-align: left;
+}
+
+.formline input[type="text"],
+.formline input[type="number"],
+.formline input[type="date"] {
+  outline: none;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"],
+.buttons input[type="submit"] {
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: none;
+}
