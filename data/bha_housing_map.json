@@ -1,0 +1,632 @@
+[
+  {
+    "name": "Archdale",
+    "address": "120 Brookway Road, Roslindale, MA 02131",
+    "description": "Address: 120 Brookway Road, Roslindale, MA 02131<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=94<br>Pin: ltblu_circle",
+    "style_url": "#icon-1603-0288D1",
+    "Address": "120 Brookway Road, Roslindale, MA 02131",
+    "Program": "State Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=94",
+    "Pin": "ltblu_circle"
+  },
+  {
+    "name": "Camden",
+    "address": "136 Lenox Street, Boston, MA 02118",
+    "description": "Address: 136 Lenox Street, Boston, MA 02118<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=101<br>Pin: ltblu_circle",
+    "style_url": "#icon-1603-0288D1",
+    "Address": "136 Lenox Street, Boston, MA 02118",
+    "Program": "State Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=101",
+    "Pin": "ltblu_circle"
+  },
+  {
+    "name": "Fairmount",
+    "address": "43 Bow Street, Hyde Park, MA 02136",
+    "description": "Address: 43 Bow Street, Hyde Park, MA 02136<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=221<br>Pin: ltblu_circle",
+    "style_url": "#icon-1603-0288D1",
+    "Address": "43 Bow Street, Hyde Park, MA 02136",
+    "Program": "State Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=221",
+    "Pin": "ltblu_circle"
+  },
+  {
+    "name": "Faneuil Gardens",
+    "address": "266 North Beacon Street, Brighton, MA 02135",
+    "description": "Address: 266 North Beacon Street, Brighton, MA 02135<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=222<br>Pin: ltblu_circle",
+    "style_url": "#icon-1603-0288D1",
+    "Address": "266 North Beacon Street, Brighton, MA 02135",
+    "Program": "State Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=222",
+    "Pin": "ltblu_circle"
+  },
+  {
+    "name": "Franklin Field Family - State",
+    "address": "91 Ames Street, Dorchester, MA 02124",
+    "description": "Address: 91 Ames Street, Dorchester, MA 02124<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=114<br>Pin: ltblu_circle",
+    "style_url": "#icon-1603-0288D1",
+    "Address": "91 Ames Street, Dorchester, MA 02124",
+    "Program": "State Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=114",
+    "Pin": "ltblu_circle"
+  },
+  {
+    "name": "Gallivan Boulevard",
+    "address": "115 Standard Street, Mattapan, MA 02126",
+    "description": "Address: 115 Standard Street, Mattapan, MA 02126<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=116<br>Pin: ltblu_circle",
+    "style_url": "#icon-1603-0288D1",
+    "Address": "115 Standard Street, Mattapan, MA 02126",
+    "Program": "State Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=116",
+    "Pin": "ltblu_circle"
+  },
+  {
+    "name": "Orient Heights",
+    "address": "38 Vallar Road, East Boston, MA 02128",
+    "description": "Address: 38 Vallar Road, East Boston, MA 02128<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=132<br>Pin: ltblu_circle",
+    "style_url": "#icon-1603-0288D1",
+    "Address": "38 Vallar Road, East Boston, MA 02128",
+    "Program": "State Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=132",
+    "Pin": "ltblu_circle"
+  },
+  {
+    "name": "South Street",
+    "address": "15 St. Rose Street, Jamaica Plain, MA 02130",
+    "description": "Address: 15 St. Rose Street, Jamaica Plain, MA 02130<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=139<br>Pin: ltblu_circle",
+    "style_url": "#icon-1603-0288D1",
+    "Address": "15 St. Rose Street, Jamaica Plain, MA 02130",
+    "Program": "State Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=139",
+    "Pin": "ltblu_circle"
+  },
+  {
+    "name": "West Broadway",
+    "address": "81 Orton Marotta Way, South Boston, MA 02127",
+    "description": "Address: 81 Orton Marotta Way, South Boston, MA 02127<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=146<br>Pin: ltblu_circle",
+    "style_url": "#icon-1603-0288D1",
+    "Address": "81 Orton Marotta Way, South Boston, MA 02127",
+    "Program": "State Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=146",
+    "Pin": "ltblu_circle"
+  },
+  {
+    "name": "Franklin Field Elderly",
+    "address": "91 Ames Street, Dorchester, MA 02124",
+    "description": "Address: 91 Ames Street, Dorchester, MA 02124<br>Program: State Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=113<br>Pin: ylw_circle",
+    "style_url": "#icon-1603-FFEA00",
+    "Address": "91 Ames Street, Dorchester, MA 02124",
+    "Program": "State Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=113",
+    "Pin": "ylw_circle"
+  },
+  {
+    "name": "Msgr Powers",
+    "address": "120 L Street, South Boston, MA 02127",
+    "description": "Address: 120 L Street, South Boston, MA 02127<br>Program: State Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=130<br>Pin: ylw_circle",
+    "style_url": "#icon-1603-FFEA00",
+    "Address": "120 L Street, South Boston, MA 02127",
+    "Program": "State Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=130",
+    "Pin": "ylw_circle"
+  },
+  {
+    "name": "Alice Taylor",
+    "address": "260M Ruggles Street, Roxbury, MA 02120",
+    "description": "Address: 260M Ruggles Street, Roxbury, MA 02120<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=91<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "260M Ruggles Street, Roxbury, MA 02120",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=91",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Basilica, Condos",
+    "address": "160 Thirteenth Street, Charlestown, MA",
+    "description": "Address: 160 Thirteenth Street, Charlestown, MA<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=97<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "160 Thirteenth Street, Charlestown, MA",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=97",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Bromley Park",
+    "address": "30 Bickford Street Jamaica Plain, MA 02130",
+    "description": "Address: 30 Bickford Street Jamaica Plain, MA 02130<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=99<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "30 Bickford Street Jamaica Plain, MA 02130",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=99",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Cathedral",
+    "address": "1472 Washington Street, Boston, MA 02118",
+    "description": "Address: 1472 Washington Street, Boston, MA 02118<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=102<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "1472 Washington Street, Boston, MA 02118",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=102",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Charlestown",
+    "address": "55 Bunker Hill Street, Charlestown, MA 02129",
+    "description": "Address: 55 Bunker Hill Street, Charlestown, MA 02129<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=103<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "55 Bunker Hill Street, Charlestown, MA 02129",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=103",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Commonwealth",
+    "address": "35 Fidelis Way, Brighton, MA 02135",
+    "description": "Address: 35 Fidelis Way, Brighton, MA 02135<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=105<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "35 Fidelis Way, Brighton, MA 02135",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=105",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Franklin Field",
+    "address": "91 Ames Street, Dorchester, MA 02124",
+    "description": "Address: 91 Ames Street, Dorchester, MA 02124<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=112<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "91 Ames Street, Dorchester, MA 02124",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=112",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Heath Street",
+    "address": "30 Bickford Street, Jamaica Plain, MA 02130",
+    "description": "Address: 30 Bickford Street, Jamaica Plain, MA 02130<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=121<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "30 Bickford Street, Jamaica Plain, MA 02130",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=121",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Heritage Family",
+    "address": "209 Sumner Street, East Boston, MA 02128",
+    "description": "Address: 209 Sumner Street, East Boston, MA 02128<br>Program: Federal Family<br>Webpage: <br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "209 Sumner Street, East Boston, MA 02128",
+    "Program": "Federal Family",
+    "Webpage": null,
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Highland Park ",
+    "address": "50-68 Highland Ave, Roxbury, MA 02119",
+    "description": "Address: 50-68 Highland Ave, Roxbury, MA 02119<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=122<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "50-68 Highland Ave, Roxbury, MA 02119",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=122",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Lenox",
+    "address": "136 Lenox Street, Boston, MA 02118",
+    "description": "Address: 136 Lenox Street, Boston, MA 02118<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=126<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "136 Lenox Street, Boston, MA 02118",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=126",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Mary Ellen McCormack",
+    "address": "10 Kemp Street, South Boston, MA 02127",
+    "description": "Address: 10 Kemp Street, South Boston, MA 02127<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=128<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "10 Kemp Street, South Boston, MA 02127",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=128",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Old Colony",
+    "address": "265 East 9th Street, South Boston, MA 02127",
+    "description": "Address: 265 East 9th Street, South Boston, MA 02127<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=131<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "265 East 9th Street, South Boston, MA 02127",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=131",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Rutland/East Springfield",
+    "address": "94 West Newton Street, Boston, MA 02118",
+    "description": "Address: 94 West Newton Street, Boston, MA 02118<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=138<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "94 West Newton Street, Boston, MA 02118",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=138",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Washington Street",
+    "address": "91-95 Washington Street, Brighton, MA 02135",
+    "description": "Address: 91-95 Washington Street, Brighton, MA 02135<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=144<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "91-95 Washington Street, Brighton, MA 02135",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=144",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "West Newton",
+    "address": "94 West Newton Street, Boston, MA 02118",
+    "description": "Address: 94 West Newton Street, Boston, MA 02118<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=147<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "94 West Newton Street, Boston, MA 02118",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=147",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Whittier Street",
+    "address": "1158 Tremont Street, Roxbury, MA 02119",
+    "description": "Address: 1158 Tremont Street, Roxbury, MA 02119<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=148<br>Pin: blu_circle",
+    "style_url": "#icon-1603-01579B",
+    "Address": "1158 Tremont Street, Roxbury, MA 02119",
+    "Program": "Federal Family",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=148",
+    "Pin": "blu_circle"
+  },
+  {
+    "name": "Amory Street",
+    "address": "125 Amory Street, Jamaica Plain, MA 02130",
+    "description": "Address: 125 Amory Street, Jamaica Plain, MA 02130<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=92<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "125 Amory Street, Jamaica Plain, MA 02130",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=92",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Annapolis",
+    "address": "52 Summer Street, Dorchester, MA 02122",
+    "description": "Address: 52 Summer Street, Dorchester, MA 02122<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=93<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "52 Summer Street, Dorchester, MA 02122",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=93",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Ashmont",
+    "address": "374 Ashmont Street, Dorchester, MA 02124",
+    "description": "Address: 374 Ashmont Street, Dorchester, MA 02124<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=95<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "374 Ashmont Street, Dorchester, MA 02124",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=95",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Ausonia",
+    "address": "185 Fulton Street, Boston, MA 02109",
+    "description": "Address: 185 Fulton Street, Boston, MA 02109<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=96<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "185 Fulton Street, Boston, MA 02109",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=96",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Bellflower",
+    "address": "24 Bellflower Street, Dorchester, MA 02125",
+    "description": "Address: 24 Bellflower Street, Dorchester, MA 02125<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=98<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "24 Bellflower Street, Dorchester, MA 02125",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=98",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Bromley Park Elderly",
+    "address": "30 Bickford Street, Jamaica Plain, MA 02130",
+    "description": "Address: 30 Bickford Street, Jamaica Plain, MA 02130<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=100<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "30 Bickford Street, Jamaica Plain, MA 02130",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=100",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Codman",
+    "address": "784 Washington Street, Dorchester, MA 02124",
+    "description": "Address: 784 Washington Street, Dorchester, MA 02124<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=104<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "784 Washington Street, Dorchester, MA 02124",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=104",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Commonwealth Elderly",
+    "address": "35 Fidelis Way, Brighton, MA 02135",
+    "description": "Address: 35 Fidelis Way, Brighton, MA 02135<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=106<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "35 Fidelis Way, Brighton, MA 02135",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=106",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Davison",
+    "address": "101 Davison Street, Hyde Park, MA 02136",
+    "description": "Address: 101 Davison Street, Hyde Park, MA 02136<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=107<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "101 Davison Street, Hyde Park, MA 02136",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=107",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Eva White",
+    "address": "440 Tremont Street, Boston, MA 02116",
+    "description": "Address: 440 Tremont Street, Boston, MA 02116<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=220<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "440 Tremont Street, Boston, MA 02116",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=220",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Foley",
+    "address": "199 H Street South, Boston, MA 02127",
+    "description": "Address: 199 H Street South, Boston, MA 02127<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=111<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "199 H Street South, Boston, MA 02127",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=111",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Frederick Douglass",
+    "address": "755 Tremont Street, Roxbury, MA 02118",
+    "description": "Address: 755 Tremont Street, Roxbury, MA 02118<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=115<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "755 Tremont Street, Roxbury, MA 02118",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=115",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "General Warren",
+    "address": "114 Rutherford Ave, Charlestown, MA 02129",
+    "description": "Address: 114 Rutherford Ave, Charlestown, MA 02129<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=117<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "114 Rutherford Ave, Charlestown, MA 02129",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=117",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Groveland",
+    "address": "15 Mary Moore Beatty Circle, Mattapan, MA 02126",
+    "description": "Address: 15 Mary Moore Beatty Circle, Mattapan, MA 02126<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=118<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "15 Mary Moore Beatty Circle, Mattapan, MA 02126",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=118",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Hampton House",
+    "address": "155 Southampton Street, Roxbury, MA 02118",
+    "description": "Address: 155 Southampton Street, Roxbury, MA 02118<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=119<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "155 Southampton Street, Roxbury, MA 02118",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=119",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Hassan",
+    "address": "705 River Street, Mattapan, MA 02126",
+    "description": "Address: 705 River Street, Mattapan, MA 02126<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=120<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "705 River Street, Mattapan, MA 02126",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=120",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Heritage Elderly",
+    "address": "209 Sumner Street, East Boston, MA 02128",
+    "description": "Address: 209 Sumner Street, East Boston, MA 02128<br>Program: Federal Elderly Disabled<br>Webpage: <br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "209 Sumner Street, East Boston, MA 02128",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": null,
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Holgate",
+    "address": "129 Elm Hill Ave, Roxbury, MA 02119",
+    "description": "Address: 129 Elm Hill Ave, Roxbury, MA 02119<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=123<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "129 Elm Hill Ave, Roxbury, MA 02119",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=123",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "JJ Carroll ",
+    "address": "130 Chestnut Hill Ave, Brighton, MA 02135",
+    "description": "Address: 130 Chestnut Hill Ave, Brighton, MA 02135<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=124<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "130 Chestnut Hill Ave, Brighton, MA 02135",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=124",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "JJ Meade",
+    "address": "5 Melville Ave, Dorchester, MA 02124",
+    "description": "Address: 5 Melville Ave, Dorchester, MA 02124<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=125<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "5 Melville Ave, Dorchester, MA 02124",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=125",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Lower Mills",
+    "address": "2262 Dorchester Ave, Dorchester, MA 02124",
+    "description": "Address: 2262 Dorchester Ave, Dorchester, MA 02124<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=28<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "2262 Dorchester Ave, Dorchester, MA 02124",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=28",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Malone",
+    "address": "11 Gordon Ave, Hyde Park, MA 02136",
+    "description": "Address: 11 Gordon Ave, Hyde Park, MA 02136<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=127<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "11 Gordon Ave, Hyde Park, MA 02136",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=127",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "MLK",
+    "address": "280 MLK Jr. Blvd. Roxbury, MA 02119",
+    "description": "Address: 280 MLK Jr. Blvd. Roxbury, MA 02119<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=129<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "280 MLK Jr. Blvd. Roxbury, MA 02119",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=129",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Pasciucco",
+    "address": "330 Bowdoin Street, Dorchester, MA 02122",
+    "description": "Address: 330 Bowdoin Street, Dorchester, MA 02122<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=133<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "330 Bowdoin Street, Dorchester, MA 02122",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=133",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Patricia White",
+    "address": "20 Washington Street, Brighton, MA 02135",
+    "description": "Address: 20 Washington Street, Brighton, MA 02135<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=134<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "20 Washington Street, Brighton, MA 02135",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=134",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Peabody/Englewood",
+    "address": "1875 Dorchester Ave, Dorchester, MA 02122",
+    "description": "Address: 1875 Dorchester Ave, Dorchester, MA 02122<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=135<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "1875 Dorchester Ave, Dorchester, MA 02122",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=135",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Pond Street",
+    "address": "29 Pond Street, Jamaica Plain, MA 02130",
+    "description": "Address: 29 Pond Street, Jamaica Plain, MA 02130<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=155<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "29 Pond Street, Jamaica Plain, MA 02130",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=155",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Rockland",
+    "address": "5300 Washington Street, West Roxbury, MA 02132",
+    "description": "Address: 5300 Washington Street, West Roxbury, MA 02132<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=136<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "5300 Washington Street, West Roxbury, MA 02132",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=136",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Roslyn",
+    "address": "1 Cliffmont Street, Roslindale, MA 02131",
+    "description": "Address: 1 Cliffmont Street, Roslindale, MA 02131<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=137<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "1 Cliffmont Street, Roslindale, MA 02131",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=137",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Spring Street",
+    "address": "23 Spring Street, West Roxbury, MA 02132",
+    "description": "Address: 23 Spring Street, West Roxbury, MA 02132<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=140<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "23 Spring Street, West Roxbury, MA 02132",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=140",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "St. Botolph",
+    "address": "70 St. Botolph Street, Boston, MA 02116",
+    "description": "Address: 70 St. Botolph Street, Boston, MA 02116<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=141<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "70 St. Botolph Street, Boston, MA 02116",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=141",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Torre Unidad",
+    "address": "80 West Dedham Street, Boston, MA 02118",
+    "description": "Address: 80 West Dedham Street, Boston, MA 02118<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=142<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "80 West Dedham Street, Boston, MA 02118",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=142",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Walnut Park",
+    "address": "1990 Columbus Ave, Roxbury, MA 02119",
+    "description": "Address: 1990 Columbus Ave, Roxbury, MA 02119<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=154<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "1990 Columbus Ave, Roxbury, MA 02119",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=154",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "Washington Manor",
+    "address": "1701 Washington Street, Roxbury, MA 02118",
+    "description": "Address: 1701 Washington Street, Roxbury, MA 02118<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=143<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "1701 Washington Street, Roxbury, MA 02118",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=143",
+    "Pin": "grn_circle"
+  },
+  {
+    "name": "West 9th Street",
+    "address": "195 West 9th Street, South Boston, MA 02127",
+    "description": "Address: 195 West 9th Street, South Boston, MA 02127<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=145<br>Pin: grn_circle",
+    "style_url": "#icon-1603-0F9D58",
+    "Address": "195 West 9th Street, South Boston, MA 02127",
+    "Program": "Federal Elderly Disabled",
+    "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=145",
+    "Pin": "grn_circle"
+  }
+]
