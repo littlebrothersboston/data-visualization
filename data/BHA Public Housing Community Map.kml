@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>BHA Public Housing Community Map</name>
+    <description/>
+    <Style id="icon-1603-01579B-normal">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1603-01579B-highlight">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1603-01579B">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-01579B-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-01579B-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1603-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1603-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-0F9D58-normal">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1603-0F9D58-highlight">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1603-0F9D58">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-0F9D58-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-0F9D58-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-FFEA00-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1603-FFEA00-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1603-FFEA00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-FFEA00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-FFEA00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>BHA Public Housing Fusion.xlsx</name>
+      <Placemark>
+        <name>Archdale</name>
+        <address>120 Brookway Road, Roslindale, MA 02131</address>
+        <description><![CDATA[Address: 120 Brookway Road, Roslindale, MA 02131<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=94<br>Pin: ltblu_circle]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>120 Brookway Road, Roslindale, MA 02131</value>
+          </Data>
+          <Data name="Program">
+            <value>State Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=94</value>
+          </Data>
+          <Data name="Pin">
+            <value>ltblu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Camden</name>
+        <address>136 Lenox Street, Boston, MA 02118</address>
+        <description><![CDATA[Address: 136 Lenox Street, Boston, MA 02118<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=101<br>Pin: ltblu_circle]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>136 Lenox Street, Boston, MA 02118</value>
+          </Data>
+          <Data name="Program">
+            <value>State Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=101</value>
+          </Data>
+          <Data name="Pin">
+            <value>ltblu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Fairmount</name>
+        <address>43 Bow Street, Hyde Park, MA 02136</address>
+        <description><![CDATA[Address: 43 Bow Street, Hyde Park, MA 02136<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=221<br>Pin: ltblu_circle]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>43 Bow Street, Hyde Park, MA 02136</value>
+          </Data>
+          <Data name="Program">
+            <value>State Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=221</value>
+          </Data>
+          <Data name="Pin">
+            <value>ltblu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Faneuil Gardens</name>
+        <address>266 North Beacon Street, Brighton, MA 02135</address>
+        <description><![CDATA[Address: 266 North Beacon Street, Brighton, MA 02135<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=222<br>Pin: ltblu_circle]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>266 North Beacon Street, Brighton, MA 02135</value>
+          </Data>
+          <Data name="Program">
+            <value>State Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=222</value>
+          </Data>
+          <Data name="Pin">
+            <value>ltblu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Franklin Field Family - State</name>
+        <address>91 Ames Street, Dorchester, MA 02124</address>
+        <description><![CDATA[Address: 91 Ames Street, Dorchester, MA 02124<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=114<br>Pin: ltblu_circle]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>91 Ames Street, Dorchester, MA 02124</value>
+          </Data>
+          <Data name="Program">
+            <value>State Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=114</value>
+          </Data>
+          <Data name="Pin">
+            <value>ltblu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Gallivan Boulevard</name>
+        <address>115 Standard Street, Mattapan, MA 02126</address>
+        <description><![CDATA[Address: 115 Standard Street, Mattapan, MA 02126<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=116<br>Pin: ltblu_circle]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>115 Standard Street, Mattapan, MA 02126</value>
+          </Data>
+          <Data name="Program">
+            <value>State Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=116</value>
+          </Data>
+          <Data name="Pin">
+            <value>ltblu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Orient Heights</name>
+        <address>38 Vallar Road, East Boston, MA 02128</address>
+        <description><![CDATA[Address: 38 Vallar Road, East Boston, MA 02128<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=132<br>Pin: ltblu_circle]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>38 Vallar Road, East Boston, MA 02128</value>
+          </Data>
+          <Data name="Program">
+            <value>State Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=132</value>
+          </Data>
+          <Data name="Pin">
+            <value>ltblu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>South Street</name>
+        <address>15 St. Rose Street, Jamaica Plain, MA 02130</address>
+        <description><![CDATA[Address: 15 St. Rose Street, Jamaica Plain, MA 02130<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=139<br>Pin: ltblu_circle]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>15 St. Rose Street, Jamaica Plain, MA 02130</value>
+          </Data>
+          <Data name="Program">
+            <value>State Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=139</value>
+          </Data>
+          <Data name="Pin">
+            <value>ltblu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>West Broadway</name>
+        <address>81 Orton Marotta Way, South Boston, MA 02127</address>
+        <description><![CDATA[Address: 81 Orton Marotta Way, South Boston, MA 02127<br>Program: State Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=146<br>Pin: ltblu_circle]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>81 Orton Marotta Way, South Boston, MA 02127</value>
+          </Data>
+          <Data name="Program">
+            <value>State Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=146</value>
+          </Data>
+          <Data name="Pin">
+            <value>ltblu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Franklin Field Elderly</name>
+        <address>91 Ames Street, Dorchester, MA 02124</address>
+        <description><![CDATA[Address: 91 Ames Street, Dorchester, MA 02124<br>Program: State Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=113<br>Pin: ylw_circle]]></description>
+        <styleUrl>#icon-1603-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>91 Ames Street, Dorchester, MA 02124</value>
+          </Data>
+          <Data name="Program">
+            <value>State Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=113</value>
+          </Data>
+          <Data name="Pin">
+            <value>ylw_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Msgr Powers</name>
+        <address>120 L Street, South Boston, MA 02127</address>
+        <description><![CDATA[Address: 120 L Street, South Boston, MA 02127<br>Program: State Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=130<br>Pin: ylw_circle]]></description>
+        <styleUrl>#icon-1603-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>120 L Street, South Boston, MA 02127</value>
+          </Data>
+          <Data name="Program">
+            <value>State Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=130</value>
+          </Data>
+          <Data name="Pin">
+            <value>ylw_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Alice Taylor</name>
+        <address>260M Ruggles Street, Roxbury, MA 02120</address>
+        <description><![CDATA[Address: 260M Ruggles Street, Roxbury, MA 02120<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=91<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>260M Ruggles Street, Roxbury, MA 02120</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=91</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Basilica, Condos</name>
+        <address>160 Thirteenth Street, Charlestown, MA</address>
+        <description><![CDATA[Address: 160 Thirteenth Street, Charlestown, MA<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=97<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>160 Thirteenth Street, Charlestown, MA</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=97</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Bromley Park</name>
+        <address>30 Bickford Street Jamaica Plain, MA 02130</address>
+        <description><![CDATA[Address: 30 Bickford Street Jamaica Plain, MA 02130<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=99<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>30 Bickford Street Jamaica Plain, MA 02130</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=99</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Cathedral</name>
+        <address>1472 Washington Street, Boston, MA 02118</address>
+        <description><![CDATA[Address: 1472 Washington Street, Boston, MA 02118<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=102<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>1472 Washington Street, Boston, MA 02118</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=102</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Charlestown</name>
+        <address>55 Bunker Hill Street, Charlestown, MA 02129</address>
+        <description><![CDATA[Address: 55 Bunker Hill Street, Charlestown, MA 02129<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=103<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>55 Bunker Hill Street, Charlestown, MA 02129</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=103</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Commonwealth</name>
+        <address>35 Fidelis Way, Brighton, MA 02135</address>
+        <description><![CDATA[Address: 35 Fidelis Way, Brighton, MA 02135<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=105<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>35 Fidelis Way, Brighton, MA 02135</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=105</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Franklin Field</name>
+        <address>91 Ames Street, Dorchester, MA 02124</address>
+        <description><![CDATA[Address: 91 Ames Street, Dorchester, MA 02124<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=112<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>91 Ames Street, Dorchester, MA 02124</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=112</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Heath Street</name>
+        <address>30 Bickford Street, Jamaica Plain, MA 02130</address>
+        <description><![CDATA[Address: 30 Bickford Street, Jamaica Plain, MA 02130<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=121<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>30 Bickford Street, Jamaica Plain, MA 02130</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=121</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Heritage Family</name>
+        <address>209 Sumner Street, East Boston, MA 02128</address>
+        <description><![CDATA[Address: 209 Sumner Street, East Boston, MA 02128<br>Program: Federal Family<br>Webpage: <br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>209 Sumner Street, East Boston, MA 02128</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value/>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Highland Park </name>
+        <address>50-68 Highland Ave, Roxbury, MA 02119</address>
+        <description><![CDATA[Address: 50-68 Highland Ave, Roxbury, MA 02119<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=122<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>50-68 Highland Ave, Roxbury, MA 02119</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=122</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Lenox</name>
+        <address>136 Lenox Street, Boston, MA 02118</address>
+        <description><![CDATA[Address: 136 Lenox Street, Boston, MA 02118<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=126<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>136 Lenox Street, Boston, MA 02118</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=126</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Mary Ellen McCormack</name>
+        <address>10 Kemp Street, South Boston, MA 02127</address>
+        <description><![CDATA[Address: 10 Kemp Street, South Boston, MA 02127<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=128<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>10 Kemp Street, South Boston, MA 02127</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=128</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Old Colony</name>
+        <address>265 East 9th Street, South Boston, MA 02127</address>
+        <description><![CDATA[Address: 265 East 9th Street, South Boston, MA 02127<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=131<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>265 East 9th Street, South Boston, MA 02127</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=131</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Rutland/East Springfield</name>
+        <address>94 West Newton Street, Boston, MA 02118</address>
+        <description><![CDATA[Address: 94 West Newton Street, Boston, MA 02118<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=138<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>94 West Newton Street, Boston, MA 02118</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=138</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Washington Street</name>
+        <address>91-95 Washington Street, Brighton, MA 02135</address>
+        <description><![CDATA[Address: 91-95 Washington Street, Brighton, MA 02135<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=144<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>91-95 Washington Street, Brighton, MA 02135</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=144</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>West Newton</name>
+        <address>94 West Newton Street, Boston, MA 02118</address>
+        <description><![CDATA[Address: 94 West Newton Street, Boston, MA 02118<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=147<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>94 West Newton Street, Boston, MA 02118</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=147</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Whittier Street</name>
+        <address>1158 Tremont Street, Roxbury, MA 02119</address>
+        <description><![CDATA[Address: 1158 Tremont Street, Roxbury, MA 02119<br>Program: Federal Family<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=148<br>Pin: blu_circle]]></description>
+        <styleUrl>#icon-1603-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>1158 Tremont Street, Roxbury, MA 02119</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Family</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=148</value>
+          </Data>
+          <Data name="Pin">
+            <value>blu_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Amory Street</name>
+        <address>125 Amory Street, Jamaica Plain, MA 02130</address>
+        <description><![CDATA[Address: 125 Amory Street, Jamaica Plain, MA 02130<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=92<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>125 Amory Street, Jamaica Plain, MA 02130</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=92</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Annapolis</name>
+        <address>52 Summer Street, Dorchester, MA 02122</address>
+        <description><![CDATA[Address: 52 Summer Street, Dorchester, MA 02122<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=93<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>52 Summer Street, Dorchester, MA 02122</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=93</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Ashmont</name>
+        <address>374 Ashmont Street, Dorchester, MA 02124</address>
+        <description><![CDATA[Address: 374 Ashmont Street, Dorchester, MA 02124<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=95<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>374 Ashmont Street, Dorchester, MA 02124</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=95</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Ausonia</name>
+        <address>185 Fulton Street, Boston, MA 02109</address>
+        <description><![CDATA[Address: 185 Fulton Street, Boston, MA 02109<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=96<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>185 Fulton Street, Boston, MA 02109</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=96</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Bellflower</name>
+        <address>24 Bellflower Street, Dorchester, MA 02125</address>
+        <description><![CDATA[Address: 24 Bellflower Street, Dorchester, MA 02125<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=98<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>24 Bellflower Street, Dorchester, MA 02125</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=98</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Bromley Park Elderly</name>
+        <address>30 Bickford Street, Jamaica Plain, MA 02130</address>
+        <description><![CDATA[Address: 30 Bickford Street, Jamaica Plain, MA 02130<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=100<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>30 Bickford Street, Jamaica Plain, MA 02130</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=100</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Codman</name>
+        <address>784 Washington Street, Dorchester, MA 02124</address>
+        <description><![CDATA[Address: 784 Washington Street, Dorchester, MA 02124<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=104<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>784 Washington Street, Dorchester, MA 02124</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=104</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Commonwealth Elderly</name>
+        <address>35 Fidelis Way, Brighton, MA 02135</address>
+        <description><![CDATA[Address: 35 Fidelis Way, Brighton, MA 02135<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=106<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>35 Fidelis Way, Brighton, MA 02135</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=106</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Davison</name>
+        <address>101 Davison Street, Hyde Park, MA 02136</address>
+        <description><![CDATA[Address: 101 Davison Street, Hyde Park, MA 02136<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=107<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>101 Davison Street, Hyde Park, MA 02136</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=107</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Eva White</name>
+        <address>440 Tremont Street, Boston, MA 02116</address>
+        <description><![CDATA[Address: 440 Tremont Street, Boston, MA 02116<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=220<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>440 Tremont Street, Boston, MA 02116</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=220</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Foley</name>
+        <address>199 H Street South, Boston, MA 02127</address>
+        <description><![CDATA[Address: 199 H Street South, Boston, MA 02127<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=111<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>199 H Street South, Boston, MA 02127</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=111</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Frederick Douglass</name>
+        <address>755 Tremont Street, Roxbury, MA 02118</address>
+        <description><![CDATA[Address: 755 Tremont Street, Roxbury, MA 02118<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=115<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>755 Tremont Street, Roxbury, MA 02118</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=115</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>General Warren</name>
+        <address>114 Rutherford Ave, Charlestown, MA 02129</address>
+        <description><![CDATA[Address: 114 Rutherford Ave, Charlestown, MA 02129<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=117<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>114 Rutherford Ave, Charlestown, MA 02129</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=117</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Groveland</name>
+        <address>15 Mary Moore Beatty Circle, Mattapan, MA 02126</address>
+        <description><![CDATA[Address: 15 Mary Moore Beatty Circle, Mattapan, MA 02126<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=118<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>15 Mary Moore Beatty Circle, Mattapan, MA 02126</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=118</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Hampton House</name>
+        <address>155 Southampton Street, Roxbury, MA 02118</address>
+        <description><![CDATA[Address: 155 Southampton Street, Roxbury, MA 02118<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=119<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>155 Southampton Street, Roxbury, MA 02118</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=119</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Hassan</name>
+        <address>705 River Street, Mattapan, MA 02126</address>
+        <description><![CDATA[Address: 705 River Street, Mattapan, MA 02126<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=120<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>705 River Street, Mattapan, MA 02126</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=120</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Heritage Elderly</name>
+        <address>209 Sumner Street, East Boston, MA 02128</address>
+        <description><![CDATA[Address: 209 Sumner Street, East Boston, MA 02128<br>Program: Federal Elderly Disabled<br>Webpage: <br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>209 Sumner Street, East Boston, MA 02128</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value/>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Holgate</name>
+        <address>129 Elm Hill Ave, Roxbury, MA 02119</address>
+        <description><![CDATA[Address: 129 Elm Hill Ave, Roxbury, MA 02119<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=123<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>129 Elm Hill Ave, Roxbury, MA 02119</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=123</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>JJ Carroll </name>
+        <address>130 Chestnut Hill Ave, Brighton, MA 02135</address>
+        <description><![CDATA[Address: 130 Chestnut Hill Ave, Brighton, MA 02135<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=124<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>130 Chestnut Hill Ave, Brighton, MA 02135</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=124</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>JJ Meade</name>
+        <address>5 Melville Ave, Dorchester, MA 02124</address>
+        <description><![CDATA[Address: 5 Melville Ave, Dorchester, MA 02124<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=125<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>5 Melville Ave, Dorchester, MA 02124</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=125</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Lower Mills</name>
+        <address>2262 Dorchester Ave, Dorchester, MA 02124</address>
+        <description><![CDATA[Address: 2262 Dorchester Ave, Dorchester, MA 02124<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=28<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>2262 Dorchester Ave, Dorchester, MA 02124</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=28</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Malone</name>
+        <address>11 Gordon Ave, Hyde Park, MA 02136</address>
+        <description><![CDATA[Address: 11 Gordon Ave, Hyde Park, MA 02136<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=127<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>11 Gordon Ave, Hyde Park, MA 02136</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=127</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>MLK</name>
+        <address>280 MLK Jr. Blvd. Roxbury, MA 02119</address>
+        <description><![CDATA[Address: 280 MLK Jr. Blvd. Roxbury, MA 02119<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=129<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>280 MLK Jr. Blvd. Roxbury, MA 02119</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=129</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Pasciucco</name>
+        <address>330 Bowdoin Street, Dorchester, MA 02122</address>
+        <description><![CDATA[Address: 330 Bowdoin Street, Dorchester, MA 02122<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=133<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>330 Bowdoin Street, Dorchester, MA 02122</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=133</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Patricia White</name>
+        <address>20 Washington Street, Brighton, MA 02135</address>
+        <description><![CDATA[Address: 20 Washington Street, Brighton, MA 02135<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=134<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>20 Washington Street, Brighton, MA 02135</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=134</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Peabody/Englewood</name>
+        <address>1875 Dorchester Ave, Dorchester, MA 02122</address>
+        <description><![CDATA[Address: 1875 Dorchester Ave, Dorchester, MA 02122<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=135<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>1875 Dorchester Ave, Dorchester, MA 02122</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=135</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Pond Street</name>
+        <address>29 Pond Street, Jamaica Plain, MA 02130</address>
+        <description><![CDATA[Address: 29 Pond Street, Jamaica Plain, MA 02130<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=155<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>29 Pond Street, Jamaica Plain, MA 02130</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=155</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Rockland</name>
+        <address>5300 Washington Street, West Roxbury, MA 02132</address>
+        <description><![CDATA[Address: 5300 Washington Street, West Roxbury, MA 02132<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=136<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>5300 Washington Street, West Roxbury, MA 02132</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=136</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Roslyn</name>
+        <address>1 Cliffmont Street, Roslindale, MA 02131</address>
+        <description><![CDATA[Address: 1 Cliffmont Street, Roslindale, MA 02131<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=137<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>1 Cliffmont Street, Roslindale, MA 02131</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=137</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Spring Street</name>
+        <address>23 Spring Street, West Roxbury, MA 02132</address>
+        <description><![CDATA[Address: 23 Spring Street, West Roxbury, MA 02132<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=140<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>23 Spring Street, West Roxbury, MA 02132</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=140</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>St. Botolph</name>
+        <address>70 St. Botolph Street, Boston, MA 02116</address>
+        <description><![CDATA[Address: 70 St. Botolph Street, Boston, MA 02116<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=141<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>70 St. Botolph Street, Boston, MA 02116</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=141</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Torre Unidad</name>
+        <address>80 West Dedham Street, Boston, MA 02118</address>
+        <description><![CDATA[Address: 80 West Dedham Street, Boston, MA 02118<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=142<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>80 West Dedham Street, Boston, MA 02118</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=142</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Walnut Park</name>
+        <address>1990 Columbus Ave, Roxbury, MA 02119</address>
+        <description><![CDATA[Address: 1990 Columbus Ave, Roxbury, MA 02119<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=154<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>1990 Columbus Ave, Roxbury, MA 02119</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=154</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Washington Manor</name>
+        <address>1701 Washington Street, Roxbury, MA 02118</address>
+        <description><![CDATA[Address: 1701 Washington Street, Roxbury, MA 02118<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=143<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>1701 Washington Street, Roxbury, MA 02118</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=143</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>West 9th Street</name>
+        <address>195 West 9th Street, South Boston, MA 02127</address>
+        <description><![CDATA[Address: 195 West 9th Street, South Boston, MA 02127<br>Program: Federal Elderly Disabled<br>Webpage: www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=145<br>Pin: grn_circle]]></description>
+        <styleUrl>#icon-1603-0F9D58</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>195 West 9th Street, South Boston, MA 02127</value>
+          </Data>
+          <Data name="Program">
+            <value>Federal Elderly Disabled</value>
+          </Data>
+          <Data name="Webpage">
+            <value>www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=145</value>
+          </Data>
+          <Data name="Pin">
+            <value>grn_circle</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

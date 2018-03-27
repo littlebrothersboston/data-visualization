@@ -1,0 +1,90 @@
+"Boston Housing Authority - Dwelling Unit Summary - April 1, 2014",,,,,,,
+,,,,,Initial Occupancy,Dwelling,Total
+,Development Name,Location,Funding,Program,Month/Year,Units,Members
+,Alice Heyward Taylor,Roxbury,Federal,Family,Aug-52,359,854
+,Bromley Park,Jamaica Plain,Federal,Family,Aug-54,497,"1,240"
+,Cathedral,South End,Federal,Family,Mar-51,413,984
+,Charlestown,Charlestown,Federal,Family,Nov-40,"1,093","2,625"
+,Commonwealth,Brighton,Federal,Family,Feb-51,279,746
+,Franklin Field,Dorchester,Federal,Family,Aug-62,345,973
+,Heath Street,Jamaica Plain,Federal,Family,Feb-42,219,672
+,Highland Park,Roxbury,Federal,Family,Mar-83,26,64
+,Lenox Street,South End,Federal,Family,Dec-40,284,524
+,Mary Ellen McCormack,South Boston,Federal,Family,May-38,"1,011","1,992"
+,Old Colony,South Boston,Federal,Family,May-40,455,"1,087"
+,Rutland/East Springfield Stre,South End,Federal,Family,May-82,14,23
+,West Newton Street.,South End,Federal,Family,Dec-73,127,204
+,Whittier Street,Roxbury,Federal,Family,May-53,199,485
+,Amory Street,Jamaica Plain,Federal,Elderly/Disabled,Apr-73,183,217
+,Annapolis Street,Dorchester,Federal,Elderly/Disabled,Aug-62,55,68
+,Ashmont Street,Dorchester,Federal,Elderly/Disabled,Nov-62,53,61
+,Ausonia Homes,North End,Federal,Elderly/Disabled,Jan-77,99,118
+,Bellflower Street,Dorchester,Federal,Elderly/Disabled,Sep-81,113,127
+,Bromley Park Elderly,Jamaica Plain,Federal,Elderly/Disabled,Aug-54,49,65
+,Codman Apartments,Dorchester,Federal,Elderly/Disabled,Aug-72,99,115
+,Commonwealth Elderly,Brighton,Federal,Elderly/Disabled,Feb-51,115,138
+,Davison,Hyde Park,Federal,Elderly/Disabled,Sep-72,46,50
+,Eva White,South End,Federal,Elderly/Disabled,Mar-68,102,132
+,Foley Apartments,South Boston,Federal,Elderly/Disabled,Aug-63,95,106
+,Frederick Douglass,South End,Federal,Elderly/Disabled,Sep-73,76,83
+,General Warren,Charlestown,Federal,Elderly/Disabled,Oct-72,94,102
+,Groveland,Mattapan,Federal,Elderly/Disabled,Nov-72,46,46
+,Hampton House,South End,Federal,Elderly/Disabled,Sep-73,76,92
+,Hassan Apartments,Hyde Park,Federal,Elderly/Disabled,May-74,99,113
+Public Housing Developments,Holgate Apartments,Roxbury,Federal,Elderly/Disabled,May-62,80,90
+,J.J. Carroll Apartments,Brighton,Federal,Elderly/Disabled,Dec-66,63,77
+,Joseph C. Malone Apartment,Hyde park,Federal,Elderly/Disabled,Jun-81,100,113
+,Lower Mills,Dorchester,Federal,Elderly/Disabled,Jan-72,18,19
+,Meade Apartments,Dorchester,Federal,Elderly/Disabled,Mar-69,39,45
+,Pasciucco Apartments,Dorchester,Federal,Elderly/Disabled,May-73,90,100
+,Patricia White,Brighton,Federal,Elderly/Disabled,Jan-78,223,264
+,Peabody Square,Dorchester,Federal,Elderly/Disabled,Jul-82,101,115
+,Pond Street,Jamaica Plain,Federal,Elderly/Disabled,Aug-62,43,48
+,Rev. M.L.K Jr. Towers,Roxbury,Federal,Elderly/Disabled,Jul-69,102,108
+,Rockland Towers,West Roxbury,Federal,Elderly/Disabled,Nov-72,67,73
+,Roslyn Apartments,Roslindale,Federal,Elderly/Disabled,May-77,118,134
+,Spring Street,West Roxbury,Federal,Elderly/Disabled,Jul-77,103,118
+,St. Botolph Apartments,Back Bay,Federal,Elderly/Disabled,Jun-73,130,148
+,Torre Unidad,South End,Federal,Elderly/Disabled,Sep-74,193,218
+,Walnut Park,Roxbury,Federal,Elderly/Disabled,Jul-70,161,174
+,Washington Manor,South End,Federal,Elderly/Disabled,Sep-73,74,85
+,Washington Street,Brighton,Federal,Elderly/Disabled,Feb-63,81,107
+,West Ninth Street,South Boston,Federal,Elderly/Disabled,Nov-68,83,95
+,Heritage Apartments,East Boston,Federal,both,Apr-75,29,35
+,Archdale,Roslindale,State,Family,Feb-51,282,768
+,Basilica,Charlestown,State,Family,Jun-90,5,6
+,Camden Street,South End,State,Family,Oct-49,70,139
+,Condominiums,City-wide,State,Family,Sep-88,139,391
+,Fairmount,Hyde Park,State,Family,May-51,199,529
+,Fanueil,Brighton,State,Family,Jul-50,256,678
+,Franklin Field Family,Dorchester,State,Family,Aug-62,40,74
+,Gallivan Boulevard,Mattapan,State,Family,Nov-53,247,682
+,Orient Heights,East Boston,State,Family,Dec-52,327,929
+,South Street,Jamaica Plain,State,Family,Aug-53,130,314
+,West Broadway,South Boston,State,Family,Aug-49,482,"1,265"
+,Franklin Field Elderly,Dorchester,State,Elderly/Disabled,Aug-62,61,77
+,Monsignor Powers,South Boston,State,Elderly/Disabled,Aug-78,67,75
+,,,,Public Housing Units Sub-Total,,"10,924","22,199"
+,,,,,Original  /  Redeveloped,,
+,Franklin Hill **,Dorchester,Federal,Family,Dec-52  /  2008,157,346
+,Maverick Gardens *,East Boston,Federal,Family,Jul-42  /  Nov-06,305,774
+Mixed Financed Developments,Mission Main *,Roxbury,Federal,Family,Mar-40  /  Dec-00,445,936
+,Old Colony **,South Boston,Federal,Family,May-40 / 2014,150,139
+,Orchard Gardens  *,Roxbury,Federal,Family,Nov-42  /  Jul-00,382,818
+,Washington/Beech,Roslindale,Federal,Family,Dec-52 / 2011,127,273
+,West Broadway Homes **,South Boston,State,Family,Aug-49  /  Aug-05,133,362
+,,,,Mixed Financed Units Sub-Total,,"1,699","3,648"
+,,,,Total Public Housing Dwelling Units,,"12,623","25,847"
+,Housing Choice Vouchers,citywide,Federal,,,"11,469","27,850"
+,Project-Based Vouchers,citywide,Federal,,,"1,401","2,243"
+Leased Housing Programs,ModRehab,citywide,Federal,,,711,"1,131"
+,,,,,Federal Sub-Total,"13,581","31,224"
+,MRVP,citywide,State,,,718,"1,197"
+,,,,,Section 8 Programs Total,"14,299","32,421"
+,,,,Total Boston Housing Authority Units,,"26,922","58,268"
+"* Maverick Gardens, Mission Main, Orchard Gardens and Washington/Beech are Hope VI Sites.  The unit counts above exclude the market rate units at the sites.",,,,,,,
+"Their totals are: Maverick = 91, Mission = 90, Orchard = 86, Washington/Beech = 0",,,,,,,
+The 382 units listed under Orchard Gardens include 61 off-site units at Orchard Commons in Roxbury and 34 off-site units at Long Glen Apartments in Allston.,,,,,,,
+** A section of West Broadway was redeveloped under a public/private partnership that included State Funding.,,,,,,,
+** A section of Old Colony has been redeveloped under a public/private partnership.,,,,,,,
+"** Franklin Hill was redeveloped under a public/private partnership without Hope VI funding, but with some Federal funding.  After redevelopment, Franklin Hill now consists of 157 public housing units, 67 project-based voucher units, and 42 other affordable units.",,,,,,,
