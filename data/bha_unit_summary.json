@@ -1,1 +1,632 @@
-[{"Development Name": "Alice Heyward Taylor", "Location": "Roxbury", "Funding": "Federal", "Program": "Family", "Month/Year": "Aug-52", "Units": "359", "Members": "854"}, {"Development Name": "Bromley Park", "Location": "Jamaica Plain", "Funding": "Federal", "Program": "Family", "Month/Year": "Aug-54", "Units": "497", "Members": "1,240"}, {"Development Name": "Cathedral", "Location": "South End", "Funding": "Federal", "Program": "Family", "Month/Year": "Mar-51", "Units": "413", "Members": "984"}, {"Development Name": "Charlestown", "Location": "Charlestown", "Funding": "Federal", "Program": "Family", "Month/Year": "Nov-40", "Units": "1,093", "Members": "2,625"}, {"Development Name": "Commonwealth", "Location": "Brighton", "Funding": "Federal", "Program": "Family", "Month/Year": "Feb-51", "Units": "279", "Members": "746"}, {"Development Name": "Franklin Field", "Location": "Dorchester", "Funding": "Federal", "Program": "Family", "Month/Year": "Aug-62", "Units": "345", "Members": "973"}, {"Development Name": "Heath Street", "Location": "Jamaica Plain", "Funding": "Federal", "Program": "Family", "Month/Year": "Feb-42", "Units": "219", "Members": "672"}, {"Development Name": "Highland Park", "Location": "Roxbury", "Funding": "Federal", "Program": "Family", "Month/Year": "Mar-83", "Units": "26", "Members": "64"}, {"Development Name": "Lenox Street", "Location": "South End", "Funding": "Federal", "Program": "Family", "Month/Year": "Dec-40", "Units": "284", "Members": "524"}, {"Development Name": "Mary Ellen McCormack", "Location": "South Boston", "Funding": "Federal", "Program": "Family", "Month/Year": "May-38", "Units": "1,011", "Members": "1,992"}, {"Development Name": "Old Colony", "Location": "South Boston", "Funding": "Federal", "Program": "Family", "Month/Year": "May-40", "Units": "455", "Members": "1,087"}, {"Development Name": "Rutland/East Springfield Stre", "Location": "South End", "Funding": "Federal", "Program": "Family", "Month/Year": "May-82", "Units": "14", "Members": "23"}, {"Development Name": "West Newton Street.", "Location": "South End", "Funding": "Federal", "Program": "Family", "Month/Year": "Dec-73", "Units": "127", "Members": "204"}, {"Development Name": "Whittier Street", "Location": "Roxbury", "Funding": "Federal", "Program": "Family", "Month/Year": "May-53", "Units": "199", "Members": "485"}, {"Development Name": "Amory Street", "Location": "Jamaica Plain", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Apr-73", "Units": "183", "Members": "217"}, {"Development Name": "Annapolis Street", "Location": "Dorchester", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Aug-62", "Units": "55", "Members": "68"}, {"Development Name": "Ashmont Street", "Location": "Dorchester", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Nov-62", "Units": "53", "Members": "61"}, {"Development Name": "Ausonia Homes", "Location": "North End", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Jan-77", "Units": "99", "Members": "118"}, {"Development Name": "Bellflower Street", "Location": "Dorchester", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Sep-81", "Units": "113", "Members": "127"}, {"Development Name": "Bromley Park Elderly", "Location": "Jamaica Plain", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Aug-54", "Units": "49", "Members": "65"}, {"Development Name": "Codman Apartments", "Location": "Dorchester", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Aug-72", "Units": "99", "Members": "115"}, {"Development Name": "Commonwealth Elderly", "Location": "Brighton", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Feb-51", "Units": "115", "Members": "138"}, {"Development Name": "Davison", "Location": "Hyde Park", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Sep-72", "Units": "46", "Members": "50"}, {"Development Name": "Eva White", "Location": "South End", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Mar-68", "Units": "102", "Members": "132"}, {"Development Name": "Foley Apartments", "Location": "South Boston", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Aug-63", "Units": "95", "Members": "106"}, {"Development Name": "Frederick Douglass", "Location": "South End", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Sep-73", "Units": "76", "Members": "83"}, {"Development Name": "General Warren", "Location": "Charlestown", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Oct-72", "Units": "94", "Members": "102"}, {"Development Name": "Groveland", "Location": "Mattapan", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Nov-72", "Units": "46", "Members": "46"}, {"Development Name": "Hampton House", "Location": "South End", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Sep-73", "Units": "76", "Members": "92"}, {"Development Name": "Hassan Apartments", "Location": "Hyde Park", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "May-74", "Units": "99", "Members": "113"}, {"Development Name": "Holgate Apartments", "Location": "Roxbury", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "May-62", "Units": "80", "Members": "90"}, {"Development Name": "J.J. Carroll Apartments", "Location": "Brighton", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Dec-66", "Units": "63", "Members": "77"}, {"Development Name": "Joseph C. Malone Apartment", "Location": "Hyde park", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Jun-81", "Units": "100", "Members": "113"}, {"Development Name": "Lower Mills", "Location": "Dorchester", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Jan-72", "Units": "18", "Members": "19"}, {"Development Name": "Meade Apartments", "Location": "Dorchester", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Mar-69", "Units": "39", "Members": "45"}, {"Development Name": "Pasciucco Apartments", "Location": "Dorchester", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "May-73", "Units": "90", "Members": "100"}, {"Development Name": "Patricia White", "Location": "Brighton", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Jan-78", "Units": "223", "Members": "264"}, {"Development Name": "Peabody Square", "Location": "Dorchester", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Jul-82", "Units": "101", "Members": "115"}, {"Development Name": "Pond Street", "Location": "Jamaica Plain", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Aug-62", "Units": "43", "Members": "48"}, {"Development Name": "Rev. M.L.K Jr. Towers", "Location": "Roxbury", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Jul-69", "Units": "102", "Members": "108"}, {"Development Name": "Rockland Towers", "Location": "West Roxbury", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Nov-72", "Units": "67", "Members": "73"}, {"Development Name": "Roslyn Apartments", "Location": "Roslindale", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "May-77", "Units": "118", "Members": "134"}, {"Development Name": "Spring Street", "Location": "West Roxbury", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Jul-77", "Units": "103", "Members": "118"}, {"Development Name": "St. Botolph Apartments", "Location": "Back Bay", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Jun-73", "Units": "130", "Members": "148"}, {"Development Name": "Torre Unidad", "Location": "South End", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Sep-74", "Units": "193", "Members": "218"}, {"Development Name": "Walnut Park", "Location": "Roxbury", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Jul-70", "Units": "161", "Members": "174"}, {"Development Name": "Washington Manor", "Location": "South End", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Sep-73", "Units": "74", "Members": "85"}, {"Development Name": "Washington Street", "Location": "Brighton", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Feb-63", "Units": "81", "Members": "107"}, {"Development Name": "West Ninth Street", "Location": "South Boston", "Funding": "Federal", "Program": "Elderly/Disabled", "Month/Year": "Nov-68", "Units": "83", "Members": "95"}, {"Development Name": "Heritage Apartments", "Location": "East Boston", "Funding": "Federal", "Program": "both", "Month/Year": "Apr-75", "Units": "29", "Members": "35"}, {"Development Name": "Archdale", "Location": "Roslindale", "Funding": "State", "Program": "Family", "Month/Year": "Feb-51", "Units": "282", "Members": "768"}, {"Development Name": "Basilica", "Location": "Charlestown", "Funding": "State", "Program": "Family", "Month/Year": "Jun-90", "Units": "5", "Members": "6"}, {"Development Name": "Camden Street", "Location": "South End", "Funding": "State", "Program": "Family", "Month/Year": "Oct-49", "Units": "70", "Members": "139"}, {"Development Name": "Condominiums", "Location": "City-wide", "Funding": "State", "Program": "Family", "Month/Year": "Sep-88", "Units": "139", "Members": "391"}, {"Development Name": "Fairmount", "Location": "Hyde Park", "Funding": "State", "Program": "Family", "Month/Year": "May-51", "Units": "199", "Members": "529"}, {"Development Name": "Fanueil", "Location": "Brighton", "Funding": "State", "Program": "Family", "Month/Year": "Jul-50", "Units": "256", "Members": "678"}, {"Development Name": "Franklin Field Family", "Location": "Dorchester", "Funding": "State", "Program": "Family", "Month/Year": "Aug-62", "Units": "40", "Members": "74"}, {"Development Name": "Gallivan Boulevard", "Location": "Mattapan", "Funding": "State", "Program": "Family", "Month/Year": "Nov-53", "Units": "247", "Members": "682"}, {"Development Name": "Orient Heights", "Location": "East Boston", "Funding": "State", "Program": "Family", "Month/Year": "Dec-52", "Units": "327", "Members": "929"}, {"Development Name": "South Street", "Location": "Jamaica Plain", "Funding": "State", "Program": "Family", "Month/Year": "Aug-53", "Units": "130", "Members": "314"}, {"Development Name": "West Broadway", "Location": "South Boston", "Funding": "State", "Program": "Family", "Month/Year": "Aug-49", "Units": "482", "Members": "1,265"}, {"Development Name": "Franklin Field Elderly", "Location": "Dorchester", "Funding": "State", "Program": "Elderly/Disabled", "Month/Year": "Aug-62", "Units": "61", "Members": "77"}, {"Development Name": "Monsignor Powers", "Location": "South Boston", "Funding": "State", "Program": "Elderly/Disabled", "Month/Year": "Aug-78", "Units": "67", "Members": "75"}, {"Development Name": "Franklin Hill **", "Location": "Dorchester", "Funding": "Federal", "Program": "Family", "Month/Year": "Dec-52  /  2008", "Units": "157", "Members": "346"}, {"Development Name": "Maverick Gardens *", "Location": "East Boston", "Funding": "Federal", "Program": "Family", "Month/Year": "Jul-42  /  Nov-06", "Units": "305", "Members": "774"}, {"Development Name": "Mission Main *", "Location": "Roxbury", "Funding": "Federal", "Program": "Family", "Month/Year": "Mar-40  /  Dec-00", "Units": "445", "Members": "936"}, {"Development Name": "Old Colony **", "Location": "South Boston", "Funding": "Federal", "Program": "Family", "Month/Year": "May-40 / 2014", "Units": "150", "Members": "139"}, {"Development Name": "Orchard Gardens  *", "Location": "Roxbury", "Funding": "Federal", "Program": "Family", "Month/Year": "Nov-42  /  Jul-00", "Units": "382", "Members": "818"}, {"Development Name": "Washington/Beech", "Location": "Roslindale", "Funding": "Federal", "Program": "Family", "Month/Year": "Dec-52 / 2011", "Units": "127", "Members": "273"}, {"Development Name": "West Broadway Homes **", "Location": "South Boston", "Funding": "State", "Program": "Family", "Month/Year": "Aug-49  /  Aug-05", "Units": "133", "Members": "362"}]
+[
+  {
+    "Development Name": "Alice Heyward Taylor",
+    "Location": "Roxbury",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Aug-52",
+    "Units": "359",
+    "Members": "854"
+  },
+  {
+    "Development Name": "Bromley Park",
+    "Location": "Jamaica Plain",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Aug-54",
+    "Units": "497",
+    "Members": "1,240"
+  },
+  {
+    "Development Name": "Cathedral",
+    "Location": "South End",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Mar-51",
+    "Units": "413",
+    "Members": "984"
+  },
+  {
+    "Development Name": "Charlestown",
+    "Location": "Charlestown",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Nov-40",
+    "Units": "1,093",
+    "Members": "2,625"
+  },
+  {
+    "Development Name": "Commonwealth",
+    "Location": "Brighton",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Feb-51",
+    "Units": "279",
+    "Members": "746"
+  },
+  {
+    "Development Name": "Franklin Field",
+    "Location": "Dorchester",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Aug-62",
+    "Units": "345",
+    "Members": "973"
+  },
+  {
+    "Development Name": "Heath Street",
+    "Location": "Jamaica Plain",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Feb-42",
+    "Units": "219",
+    "Members": "672"
+  },
+  {
+    "Development Name": "Highland Park",
+    "Location": "Roxbury",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Mar-83",
+    "Units": "26",
+    "Members": "64"
+  },
+  {
+    "Development Name": "Lenox Street",
+    "Location": "South End",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Dec-40",
+    "Units": "284",
+    "Members": "524"
+  },
+  {
+    "Development Name": "Mary Ellen McCormack",
+    "Location": "South Boston",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "May-38",
+    "Units": "1,011",
+    "Members": "1,992"
+  },
+  {
+    "Development Name": "Old Colony",
+    "Location": "South Boston",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "May-40",
+    "Units": "455",
+    "Members": "1,087"
+  },
+  {
+    "Development Name": "Rutland/East Springfield Stre",
+    "Location": "South End",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "May-82",
+    "Units": "14",
+    "Members": "23"
+  },
+  {
+    "Development Name": "West Newton Street.",
+    "Location": "South End",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Dec-73",
+    "Units": "127",
+    "Members": "204"
+  },
+  {
+    "Development Name": "Whittier Street",
+    "Location": "Roxbury",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "May-53",
+    "Units": "199",
+    "Members": "485"
+  },
+  {
+    "Development Name": "Amory Street",
+    "Location": "Jamaica Plain",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Apr-73",
+    "Units": "183",
+    "Members": "217"
+  },
+  {
+    "Development Name": "Annapolis Street",
+    "Location": "Dorchester",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Aug-62",
+    "Units": "55",
+    "Members": "68"
+  },
+  {
+    "Development Name": "Ashmont Street",
+    "Location": "Dorchester",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Nov-62",
+    "Units": "53",
+    "Members": "61"
+  },
+  {
+    "Development Name": "Ausonia Homes",
+    "Location": "North End",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Jan-77",
+    "Units": "99",
+    "Members": "118"
+  },
+  {
+    "Development Name": "Bellflower Street",
+    "Location": "Dorchester",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Sep-81",
+    "Units": "113",
+    "Members": "127"
+  },
+  {
+    "Development Name": "Bromley Park Elderly",
+    "Location": "Jamaica Plain",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Aug-54",
+    "Units": "49",
+    "Members": "65"
+  },
+  {
+    "Development Name": "Codman Apartments",
+    "Location": "Dorchester",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Aug-72",
+    "Units": "99",
+    "Members": "115"
+  },
+  {
+    "Development Name": "Commonwealth Elderly",
+    "Location": "Brighton",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Feb-51",
+    "Units": "115",
+    "Members": "138"
+  },
+  {
+    "Development Name": "Davison",
+    "Location": "Hyde Park",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Sep-72",
+    "Units": "46",
+    "Members": "50"
+  },
+  {
+    "Development Name": "Eva White",
+    "Location": "South End",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Mar-68",
+    "Units": "102",
+    "Members": "132"
+  },
+  {
+    "Development Name": "Foley Apartments",
+    "Location": "South Boston",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Aug-63",
+    "Units": "95",
+    "Members": "106"
+  },
+  {
+    "Development Name": "Frederick Douglass",
+    "Location": "South End",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Sep-73",
+    "Units": "76",
+    "Members": "83"
+  },
+  {
+    "Development Name": "General Warren",
+    "Location": "Charlestown",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Oct-72",
+    "Units": "94",
+    "Members": "102"
+  },
+  {
+    "Development Name": "Groveland",
+    "Location": "Mattapan",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Nov-72",
+    "Units": "46",
+    "Members": "46"
+  },
+  {
+    "Development Name": "Hampton House",
+    "Location": "South End",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Sep-73",
+    "Units": "76",
+    "Members": "92"
+  },
+  {
+    "Development Name": "Hassan Apartments",
+    "Location": "Hyde Park",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "May-74",
+    "Units": "99",
+    "Members": "113"
+  },
+  {
+    "Development Name": "Holgate Apartments",
+    "Location": "Roxbury",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "May-62",
+    "Units": "80",
+    "Members": "90"
+  },
+  {
+    "Development Name": "J.J. Carroll Apartments",
+    "Location": "Brighton",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Dec-66",
+    "Units": "63",
+    "Members": "77"
+  },
+  {
+    "Development Name": "Joseph C. Malone Apartment",
+    "Location": "Hyde park",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Jun-81",
+    "Units": "100",
+    "Members": "113"
+  },
+  {
+    "Development Name": "Lower Mills",
+    "Location": "Dorchester",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Jan-72",
+    "Units": "18",
+    "Members": "19"
+  },
+  {
+    "Development Name": "Meade Apartments",
+    "Location": "Dorchester",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Mar-69",
+    "Units": "39",
+    "Members": "45"
+  },
+  {
+    "Development Name": "Pasciucco Apartments",
+    "Location": "Dorchester",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "May-73",
+    "Units": "90",
+    "Members": "100"
+  },
+  {
+    "Development Name": "Patricia White",
+    "Location": "Brighton",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Jan-78",
+    "Units": "223",
+    "Members": "264"
+  },
+  {
+    "Development Name": "Peabody Square",
+    "Location": "Dorchester",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Jul-82",
+    "Units": "101",
+    "Members": "115"
+  },
+  {
+    "Development Name": "Pond Street",
+    "Location": "Jamaica Plain",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Aug-62",
+    "Units": "43",
+    "Members": "48"
+  },
+  {
+    "Development Name": "Rev. M.L.K Jr. Towers",
+    "Location": "Roxbury",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Jul-69",
+    "Units": "102",
+    "Members": "108"
+  },
+  {
+    "Development Name": "Rockland Towers",
+    "Location": "West Roxbury",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Nov-72",
+    "Units": "67",
+    "Members": "73"
+  },
+  {
+    "Development Name": "Roslyn Apartments",
+    "Location": "Roslindale",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "May-77",
+    "Units": "118",
+    "Members": "134"
+  },
+  {
+    "Development Name": "Spring Street",
+    "Location": "West Roxbury",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Jul-77",
+    "Units": "103",
+    "Members": "118"
+  },
+  {
+    "Development Name": "St. Botolph Apartments",
+    "Location": "Back Bay",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Jun-73",
+    "Units": "130",
+    "Members": "148"
+  },
+  {
+    "Development Name": "Torre Unidad",
+    "Location": "South End",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Sep-74",
+    "Units": "193",
+    "Members": "218"
+  },
+  {
+    "Development Name": "Walnut Park",
+    "Location": "Roxbury",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Jul-70",
+    "Units": "161",
+    "Members": "174"
+  },
+  {
+    "Development Name": "Washington Manor",
+    "Location": "South End",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Sep-73",
+    "Units": "74",
+    "Members": "85"
+  },
+  {
+    "Development Name": "Washington Street",
+    "Location": "Brighton",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Feb-63",
+    "Units": "81",
+    "Members": "107"
+  },
+  {
+    "Development Name": "West Ninth Street",
+    "Location": "South Boston",
+    "Funding": "Federal",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Nov-68",
+    "Units": "83",
+    "Members": "95"
+  },
+  {
+    "Development Name": "Heritage Apartments",
+    "Location": "East Boston",
+    "Funding": "Federal",
+    "Program": "both",
+    "Month/Year": "Apr-75",
+    "Units": "29",
+    "Members": "35"
+  },
+  {
+    "Development Name": "Archdale",
+    "Location": "Roslindale",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "Feb-51",
+    "Units": "282",
+    "Members": "768"
+  },
+  {
+    "Development Name": "Basilica",
+    "Location": "Charlestown",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "Jun-90",
+    "Units": "5",
+    "Members": "6"
+  },
+  {
+    "Development Name": "Camden Street",
+    "Location": "South End",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "Oct-49",
+    "Units": "70",
+    "Members": "139"
+  },
+  {
+    "Development Name": "Condominiums",
+    "Location": "City-wide",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "Sep-88",
+    "Units": "139",
+    "Members": "391"
+  },
+  {
+    "Development Name": "Fairmount",
+    "Location": "Hyde Park",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "May-51",
+    "Units": "199",
+    "Members": "529"
+  },
+  {
+    "Development Name": "Fanueil",
+    "Location": "Brighton",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "Jul-50",
+    "Units": "256",
+    "Members": "678"
+  },
+  {
+    "Development Name": "Franklin Field Family",
+    "Location": "Dorchester",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "Aug-62",
+    "Units": "40",
+    "Members": "74"
+  },
+  {
+    "Development Name": "Gallivan Boulevard",
+    "Location": "Mattapan",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "Nov-53",
+    "Units": "247",
+    "Members": "682"
+  },
+  {
+    "Development Name": "Orient Heights",
+    "Location": "East Boston",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "Dec-52",
+    "Units": "327",
+    "Members": "929"
+  },
+  {
+    "Development Name": "South Street",
+    "Location": "Jamaica Plain",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "Aug-53",
+    "Units": "130",
+    "Members": "314"
+  },
+  {
+    "Development Name": "West Broadway",
+    "Location": "South Boston",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "Aug-49",
+    "Units": "482",
+    "Members": "1,265"
+  },
+  {
+    "Development Name": "Franklin Field Elderly",
+    "Location": "Dorchester",
+    "Funding": "State",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Aug-62",
+    "Units": "61",
+    "Members": "77"
+  },
+  {
+    "Development Name": "Monsignor Powers",
+    "Location": "South Boston",
+    "Funding": "State",
+    "Program": "Elderly/Disabled",
+    "Month/Year": "Aug-78",
+    "Units": "67",
+    "Members": "75"
+  },
+  {
+    "Development Name": "Franklin Hill **",
+    "Location": "Dorchester",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Dec-52  /  2008",
+    "Units": "157",
+    "Members": "346"
+  },
+  {
+    "Development Name": "Maverick Gardens *",
+    "Location": "East Boston",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Jul-42  /  Nov-06",
+    "Units": "305",
+    "Members": "774"
+  },
+  {
+    "Development Name": "Mission Main *",
+    "Location": "Roxbury",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Mar-40  /  Dec-00",
+    "Units": "445",
+    "Members": "936"
+  },
+  {
+    "Development Name": "Old Colony **",
+    "Location": "South Boston",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "May-40 / 2014",
+    "Units": "150",
+    "Members": "139"
+  },
+  {
+    "Development Name": "Orchard Gardens  *",
+    "Location": "Roxbury",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Nov-42  /  Jul-00",
+    "Units": "382",
+    "Members": "818"
+  },
+  {
+    "Development Name": "Washington/Beech",
+    "Location": "Roslindale",
+    "Funding": "Federal",
+    "Program": "Family",
+    "Month/Year": "Dec-52 / 2011",
+    "Units": "127",
+    "Members": "273"
+  },
+  {
+    "Development Name": "West Broadway Homes **",
+    "Location": "South Boston",
+    "Funding": "State",
+    "Program": "Family",
+    "Month/Year": "Aug-49  /  Aug-05",
+    "Units": "133",
+    "Members": "362"
+  }
+]
