@@ -2,7 +2,13 @@
   text-align: center;
 }
 
-.description {
+.motivation,
+.data,
+.taskanalysis,
+.designprocess,
+.finalvis,
+.dataanalysis,
+.conclusion {
   text-align: center;
   width: 50%;
   margin: auto;
@@ -12,20 +18,11 @@
   text-align: center;
 }
 
-.ptitle {
-  margin-top: 2%;
-  text-align: center;
-}
-
-.navbar {
-
-}
-
-li {
+.navbar li {
     float: left;
 }
 
-li a {
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -33,7 +30,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.navbar li a:hover:not(.active) {
     background-color: #111;
 }
 
@@ -41,7 +38,7 @@ li a:hover:not(.active) {
     background-color: #4286f4;
 }
 
-ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
