@@ -49,8 +49,6 @@
 
     var addNodes = function(filePath, attributes) {
         d3.json(filePath, function (error, data) {
-            console.log(error);
-            console.log(data);
             if (error) throw error;
 
             var overlay = new google.maps.OverlayView();
@@ -100,7 +98,6 @@
 
             // Bind our overlay to the map…
             overlay.setMap(map);
-            console.log("end")
         });
     }
 
