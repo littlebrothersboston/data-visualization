@@ -1,0 +1,182 @@
+[
+	{
+		"Name": "Bay State College",
+		"Address": "122 Commonwealth Avenue, Boston, MA 02116",
+		"Phone": "(617) 217-9000"
+	},
+	{
+		"Name": "Benjamin Franklin Institute of Technology",
+		"Address": "41 Berkeley St, Boston, MA 02116",
+		"Phone": "(617) 588-1368"
+	},
+	{
+		"Name": "Berklee College of Music",
+		"Address": "136 Massachusetts Ave, Boston, MA 02115",
+		"Phone": "(617) 266-1400"
+	},
+	{
+		"Name": "Boston Architectural College",
+		"Address": "320 Newbury St, Boston, MA 02115",
+		"Phone": "(617) 585-0100"
+	},
+	{
+		"Name": "Boston Graduate School of Psychoanalysis",
+		"Address": "1581 Beacon St, Brookline, MA 02446",
+		"Phone": "(617) 277-3915"
+	},
+	{
+		"Name": "Bunker Hill Community College",
+		"Address": "250 Rutherford Ave, Boston, MA 02129",
+		"Phone": "(617) 228-2000"
+	},
+	{
+		"Name": "Cambridge College",
+		"Address": "500 Rutherford Ave, Boston, MA 02129",
+		"Phone": "(617) 868-1000"
+	},
+	{
+		"Name": "Emerson College",
+		"Address":	"120 Boylston St, Boston, MA 02116",
+		"Phone": "(617) 824-8500"
+	},
+	{
+		"Name": "Emmanuel College",
+		"Address":	"400 Fenway, Boston, MA 02115",
+		"Phone": "(617) 735-9715"
+	},
+	{
+		"Name": "Fisher College",
+		"Address":	"118 Beacon St, Boston, MA 02116",
+		"Phone": "(617) 236-8800"
+	},
+	{
+		"Name": "Gordon-Conwell Theological Seminary",
+		"Address":	"130 Essex St, South Hamilton, MA 01982",
+		"Phone": "(978) 468-7111"
+	},
+	{
+		"Name": "Harvard University",
+		"Address":	"1 Oxford St, Cambridge, MA 02138",
+		"Phone": "(617) 495-2627"
+	},
+	{
+		"Name": "Hellenic College and Holy Cross Greek Orthodox School of Theology",
+		"Address":	"50 Goddard Ave, Brookline, MA 02445",
+		"Phone": "(617) 731-3500"
+	},
+	{
+		"Name": "Hult International Business School",
+		"Address":	"1 Education St, Cambridge, MA 02141",
+		"Phone": "(617) 746-1990"
+	},
+	{
+		"Name": "Lesley University",
+		"Address":	"29 Everett St, Cambridge, MA 02138",
+		"Phone": "(617) 868-9600"
+	},
+	{
+		"Name": "Longy School of Music of Bard College",
+		"Address":	"27 Garden St, Cambridge, MA 02138",
+		"Phone": "(617) 876-0956"
+	},
+	{
+		"Name": "Massachusetts College of Art and Design",
+		"Address":	"621 Huntington Ave, Boston, MA 02115",
+		"Phone": "(617) 879-7000"
+	},
+	{
+		"Name": "Massachusetts College of Pharmacy and Health Sciences",
+		"Address":	"179 Longwood Ave, Boston, MA 02115",
+		"Phone": "(617) 732-2800"
+	},
+	{
+		"Name": "Massachusetts Institute of Technology",
+		"Address":	"77 Massachusetts Ave, Cambridge, MA 02139",
+		"Phone": "(617) 253-1000"
+	},
+	{
+		"Name": "MGH Institute of Health Professions",
+		"Address":	"36 1st Ave, Charlestown, MA 02129",
+		"Phone": "(617) 726-2947"
+	},
+	{
+		"Name": "New England College of Business and Finance",
+		"Address":	"10 High St #204, Boston, MA 02110",
+		"Phone": "(617) 603-6900"
+	},
+	{
+		"Name": "New England College of Optometry",
+		"Address":	"424 Beacon St, Boston, MA 02115",
+		"Phone": "(617) 266-2030"
+	},
+	{
+		"Name": "New England Conservatory",
+		"Address":	"290 Huntington Ave, Boston, MA 02115",
+		"Phone": "(617) 585-1100"
+	},
+	{
+		"Name": "New England School of Law",
+		"Address":	"154 Stuart St, Boston, MA 02116",
+		"Phone": "(617) 451-0010"
+	},
+	{
+		"Name": "New England School of Photography",
+		"Address":	"274 Moody St, Waltham, MA 02453",
+		"Phone": "(617) 437-1868"
+	},
+	{
+		"Name": "Newbury College",
+		"Address":	"5750, 129 Fisher Ave, Brookline, MA 02445",
+		"Phone": "(617) 730-7000"
+	},
+	{
+		"Name": "North Bennet Street School",
+		"Address":	"150 North St, Boston, MA 02109",
+		"Phone": "(617) 227-0155"
+	},
+	{
+		"Name": "Northeastern University",
+		"Address":	"360 Huntington Ave, Boston, MA 02115",
+		"Phone": "(617) 373-2000"
+	},
+	{
+		"Name": "Pine Manor College",
+		"Address":	"400 Heath St, Chestnut Hill, MA 02467",
+		"Phone": "(617) 731-7000"
+	},
+	{
+		"Name": "Roxbury Community College",
+		"Address":	"1234 Columbus Ave, Roxbury Crossing, MA 02120",
+		"Phone": "(617) 427-0060"
+	},
+	{
+		"Name": "Saint John's Seminary",
+		"Address":	"127 Lake St, Brighton, MA 02135",
+		"Phone": "(617) 746-5423"
+	},
+	{
+		"Name": "Simmons College",
+		"Address":	"300 The Fenway, Boston, MA 02115",
+		"Phone": "(617) 521-2000"
+	},
+	{
+		"Name": "Suffolk University",
+		"Address":	"8 Ashburton Pl, Boston, MA 02108",
+		"Phone": "(617) 573-8000"
+	},
+	{
+		"Name": "University of Massachusetts Boston",
+		"Address":	"100 Morrissey Blvd, Boston, MA 02125",
+		"Phone": "(617) 287-5000"
+	},
+	{
+		"Name": "Urban College of Boston",
+		"Address":	"2 Boylston St, Boston, MA 02116",
+		"Phone": "(617) 449-7070"
+	},
+	{
+		"Name": "Wentworth Institute of Technology",
+		"Address":	"550 Huntington Ave, Boston, MA 02115"	,
+		"Phone": "(617) 989-4590"
+	}
+]
