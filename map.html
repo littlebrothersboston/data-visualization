@@ -47,7 +47,7 @@
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map');
 
-    var addNodes = function(filePath, attributes) {
+    var addNodes = function (filePath, attributes) {
         d3.json(filePath, function (error, data) {
             if (error) throw error;
 
@@ -85,14 +85,18 @@
                         .attr("cx", padding)
                         .attr("cy", padding);
 
+                    market.on('mouseover', function (d) {
+                        var nodeSelection = d3.select(this).style({opacity: '0.8'});
+                        nodeSelection.select("text").style({opacity: '1.0'})
+                    });
+                    // marker.append("text")
+                    //     .attr("x", padding + 7)
+                    //     .attr("y", padding)
+                    //     .attr("dy", ".31em")
+                    //     .text(function (d) {
+                    //         return d.name;
+                    //     });
 
-                    marker.append("text")
-                        .attr("x", padding + 7)
-                        .attr("y", padding)
-                        .attr("dy", ".31em")
-                        .text(function (d) {
-                            return d.name;
-                        });
                 };
             };
 
