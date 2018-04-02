@@ -11,11 +11,11 @@
             padding: 0;
         }
 
-        .programs {
+        .housing {
             position: absolute;
         }
 
-        .programs svg {
+        .housing svg {
             position: absolute;
             width: 60px;
             height: 20px;
@@ -23,7 +23,7 @@
             font: 10px sans-serif;
         }
 
-        .programs circle {
+        .housing circle {
             fill: #d7191c;
             stroke: black;
             stroke-width: 1.5px;
@@ -86,7 +86,7 @@
                         .attr("cx", padding)
                         .attr("cy", padding);
 
-                    market.on('mouseover', function (d) {
+                    marker.on('mouseover', function (d) {
                         var nodeSelection = d3.select(this).style({opacity: '0.8'});
                         nodeSelection.select("text").style({opacity: '1.0'})
                     });
@@ -106,6 +106,6 @@
         });
     }
 
-    addNodes("data/bha_housing_map.json", "programs");
+    addNodes("data/bha_housing_map.json", "housing");
 </script>
 </html>
