@@ -302,60 +302,63 @@
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map');
 
+    var addNodes = function(filePath, attributes) {
+        d3.json(filePath, function (error, data) {
+            console.log(error);
+            console.log(data);
+            if (error) throw error;
 
-    d3.json("data/bha_housing_map.json", function (error, data) {
-        console.log(error);
-        console.log(data);
-        if (error) throw error;
+            var overlay = new google.maps.OverlayView();
+            // Add the container when the overlay is added to the map.
+            overlay.onAdd = function () {
+                var layer = d3.select(overlay.getPanes().overlayLayer)
+                    .append("div")
+                    .attr("class", attributes);
 
-        var overlay = new google.maps.OverlayView();
-        // Add the container when the overlay is added to the map.
-        overlay.onAdd = function () {
-            var layer = d3.select(overlay.getPanes().overlayLayer)
-                .append("div")
-                .attr("class", "programs");
+                // Draw each marker as a separate SVG element.
+                // We could use a single SVG, but what size would it have?
+                overlay.draw = function () {
+                    var projection = overlay.getProjection();
+                    var padding = 10;
 
-            // Draw each marker as a separate SVG element.
-            // We could use a single SVG, but what size would it have?
-            overlay.draw = function () {
-                var projection = overlay.getProjection();
-                var padding = 10;
+                    function transform(d) {
+                        d = new google.maps.LatLng(d.lat, d.long);
+                        d = projection.fromLatLngToDivPixel(d);
+                        return d3.select(this)
+                            .style("left", (d.x - padding) + "px")
+                            .style("top", (d.y - padding) + "px");
+                    }
 
-                function transform(d) {
-                    d = new google.maps.LatLng(d.lat, d.long);
-                    d = projection.fromLatLngToDivPixel(d);
-                    return d3.select(this)
-                        .style("left", (d.x - padding) + "px")
-                        .style("top", (d.y - padding) + "px");
-                }
+                    var marker = layer.selectAll("svg")
+                        .data(data)
+                        .each(transform) // update existing markers
+                        .enter().append("svg")
+                        .each(transform)
+                        .attr("class", "marker");
 
-                var marker = layer.selectAll("svg")
-                    .data(data)
-                    .each(transform) // update existing markers
-                    .enter().append("svg")
-                    .each(transform)
-                    .attr("class", "marker");
-
-                // Add a circle.
-                marker.append("circle")
-                    .attr("r", 4.5)
-                    .attr("cx", padding)
-                    .attr("cy", padding);
+                    // Add a circle.
+                    marker.append("circle")
+                        .attr("r", 4.5)
+                        .attr("cx", padding)
+                        .attr("cy", padding);
 
 
-                marker.append("text")
-                    .attr("x", padding + 7)
-                    .attr("y", padding)
-                    .attr("dy", ".31em")
-                    .text(function (d) {
-                        return d.name;
-                    });
+                    marker.append("text")
+                        .attr("x", padding + 7)
+                        .attr("y", padding)
+                        .attr("dy", ".31em")
+                        .text(function (d) {
+                            return d.name;
+                        });
+                };
             };
-        };
 
-        // Bind our overlay to the map…
-        overlay.setMap(map);
-        console.log("end")
-    });
+            // Bind our overlay to the map…
+            overlay.setMap(map);
+            console.log("end")
+        });
+    }
+
+    addNodes("data/bha_housing_map.json", "programs");
 </script>
 </html>
