@@ -97,7 +97,7 @@ const styledMapType = new google.maps.StyledMapType(
             "elementType": "geometry",
             "stylers": [
                 {
-                    "color": "#e5e5e5"
+                    "color": "#fdbcf9"
                 }
             ]
         },
@@ -115,7 +115,7 @@ const styledMapType = new google.maps.StyledMapType(
             "elementType": "geometry",
             "stylers": [
                 {
-                    "color": "#ffffff"
+                    "color": "#a7fdff"
                 }
             ]
         },
@@ -151,7 +151,7 @@ const styledMapType = new google.maps.StyledMapType(
             "elementType": "labels.text.fill",
             "stylers": [
                 {
-                    "color": "#757575"
+                    "color": "#2e6d75"
                 }
             ]
         },
@@ -160,7 +160,7 @@ const styledMapType = new google.maps.StyledMapType(
             "elementType": "geometry",
             "stylers": [
                 {
-                    "color": "#dadada"
+                    "color": "#adda86"
                 }
             ]
         },
