@@ -11,7 +11,11 @@
             padding: 0;
         }
 
-        .housing {
+        .housing, #map {
+            height: 92%
+        }
+
+        .housing, .search {
             position: absolute;
         }
 
@@ -28,16 +32,41 @@
             stroke: black;
             stroke-width: 1.5px;
         }
+
+        /*Just to ensure the select2 box is "glued" to the top*/
+        .search {
+            width: 100%;
+            height: 8%
+        }
     </style>
+
 </head>
 <body>
 
+<div id="search"></div>
 <div id="map"></div>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.css"/>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.js"></script>
 <script src="//maps.google.com/maps/api/js?key=AIzaSyC5OdRTk0wkjI93UcS2XrZBPg4JEzBKI7w"></script>
 <script src="//d3js.org/d3.v4.min.js"></script>
 </body>
 <script src="js/map-style.js"></script>
+
 <script type="text/javascript">
+    //attach search box listener
+    $("#search").on("select2-selecting", function (event) {
+        const previousSelection = $("#search").select2("data");
+        const currentSelection = event.object;
+        const toHighlight = previousSelection.concat([currentSelection]).map(s => s.name);
+        console.log(toHighlight)
+
+        const nodes = d3.selectAll("svg")
+            .attr("opacity", .2)
+            .filter(n => toHighlight.indexOf(n.name) >= 0)
+            .attr("opacity", 1);
+    });
 
 
     var map = new google.maps.Map(d3.select("#map").node(), {
@@ -45,12 +74,29 @@
         center: new google.maps.LatLng(42.3590151, -71.0794085),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
+
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map');
+
 
     var addNodes = function (filePath, attributes) {
         d3.json(filePath, function (error, data) {
             if (error) throw error;
+
+
+            // set up the data for select2
+            var select2data = data;
+            // create unique id's
+            var i = 0;
+            select2data.forEach(d => d.id = i++);
+            // render each option as a name
+            select2data.forEach(d => d.text = d.name);
+            $("#search").select2({
+                data: select2data,
+                multiple: "multiple",
+                containerCssClass: "search"
+            });
+
 
             var overlay = new google.maps.OverlayView();
             // Add the container when the overlay is added to the map.
@@ -80,7 +126,6 @@
                         .each(transform)
                         .attr("class", "marker");
 
-                    // Add a circle.
                     marker.append("circle")
                         .attr("r", 4.5)
                         .attr("cx", padding)
@@ -90,6 +135,7 @@
                         var nodeSelection = d3.select(this).style({opacity: '0.8'});
                         nodeSelection.select("text").style({opacity: '1.0'})
                     });
+
                     // marker.append("text")
                     //     .attr("x", padding + 7)
                     //     .attr("y", padding)
@@ -104,7 +150,7 @@
             // Bind our overlay to the map…
             overlay.setMap(map);
         });
-    }
+    };
 
     addNodes("data/bha_housing_map.json", "housing");
 </script>
