@@ -15,28 +15,34 @@
 
 <body>
     <div class="navbar">
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="map.html">Map</a></li>
-    </ul>
+      <a class="active" href="index.html">Home</a>
+      <a href="map.html">Map</a>
   </div>
-    <h1>DS4200: Little Brothers - Friends of the Elderly</h1><br>
+    <div class="title">
+      <h1>DS4200: Little Brothers - Friends of the Elderly</h1><br>
+    </div>
     <div class="motivation">
       <h3>Motivation</h3>
         <p>The motivation for this project is to create visualizations for the use of Little Brothers - Friends of the Elderly (LB).
         LB is a nonprofit organization that pairs students with elderly people that suffer from loneliness, and loss of self-sufficiency.
-        The goal of LB chapters is to create genuine relationships and create companionship. We were drawn to the idea of this, 
+        The goal of LB chapters is to create genuine relationships and create companionship. We were drawn to the idea of this,
         and wanted to aid in their funding efforts by creating this visualization.</p>
   </div>
+
+  <hr>
+
     <div class="data">
       <h3>Data</h3>
         <p>Data  for our visualizations comes from public Boston Housing Authority records. Some of the data is categorical, like the
-        name of the BHA development, and the location of it. There is also a lot of qualitative data about the metrics of each 
+        name of the BHA development, and the location of it. There is also a lot of qualitative data about the metrics of each
         development. For example, there are metrics on ethnicities, annual incomes, and overall population of the developments.</p>
   </div>
+
+  <hr>
+
     <div class="taskanalysis">
       <h3>Task Analysis</h3>
-        <p>We conducted an interview with Cynthia Wilkerson, our main point of contact for this project. From this we found the main 
+        <p>We conducted an interview with Cynthia Wilkerson, our main point of contact for this project. From this we found the main
         goal of our visualization, and what tasks Cynthia hopes to be able to perform when using our visualization. Those tasks are:</p>
         <ol>
             <li>Finding locations for LB program sites.</li>
@@ -44,28 +50,126 @@
             <li>Show coverage of LB programs by region.</li>
         </ol>
   </div>
+
+  <hr>
+
     <div class="designprocess">
       <h3>Design Process</h3>
-        <p>(Insert sketches)</p>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="img/jvis.png" style="width:100%">
+          <div class="text">Julian's Visualizations</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="img/tvis1.png" style="width:100%">
+          <div class="text">One of Tom's visualizations</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="img/tvis2.png" style="width:100%">
+          <div class="text">One of Tom's visualizations</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="img/tvis3.png" style="width:100%">
+          <div class="text">One of Tom's visualizations</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="img/bvis12.jpg" style="width:100%">
+          <div class="text">Ben's first two visualizations</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img src="img/bvis3.jpg" style="width:100%">
+          <div class="text">Ben's third visualization</div>
+        </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
   </div>
+
+  <hr>
+
     <div class="finalvis">
         <h3>Final Visualization</h3>
-        <div class="buttons">
-        <input type="submit" onclick="location.href='map.html'"value="Map">
+        <div class="button">
+          <a href="map.html"><button class="button">Map</button></a>
         </div>
     </div>
+
+    <hr>
+
     <div class="dataanalysis">
       <h3>Data Analysis</h3>
-        <p>In our preliminary run-through of the data, there were a few things to note. Some of the BHA housing developments are much 
-        larger than others. This allows us to see which developments have a higher demand for LB sites based on their populations. 
+        <p>In our preliminary run-through of the data, there were a few things to note. Some of the BHA housing developments are much
+        larger than others. This allows us to see which developments have a higher demand for LB sites based on their populations.
         The majority of the people who live in these developments have an annual income of about $5k - $15k. The most common ethnicities
          are black, hispanic, and white. The data also records the most common ages for their tenants. This allows us to better narrow
          down BHA developments to find the best targets for Little Brothers.</p>
   </div>
+
+  <hr>
+
     <div class="conclusion">
       <h3>Conclusion</h3>
-        <p>Our visualization is an interactive map that shows the loactions of BHA developments, high schools and colleges, and 
-        Little Brothers program sites. It is capable of placing prospective LB program sites to show which schools and BHA 
+        <p>Our visualization is an interactive map that shows the loactions of BHA developments, high schools and colleges, and
+        Little Brothers program sites. It is capable of placing prospective LB program sites to show which schools and BHA
         developments it might be able to reach, with a slider for the radius. It does a bunch of other cool stuff too.</p>
   </div>
+
+<div class="footer">DS 4200 Little Brothers - Friends of the Elderly</div>
+
 </body>
