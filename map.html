@@ -29,6 +29,22 @@
 
         .housing circle {
             fill: #d7191c;
+            fill-opacity:.5;
+            stroke: black;
+            stroke-width: 1.5px;
+        }
+
+        .city-sites svg {
+            position: absolute;
+            width: 60px;
+            height: 20px;
+            padding-right: 100px;
+            font: 10px sans-serif;
+        }
+
+        .city-sites circle {
+            fill: #2c7bb6;
+            fill-opacity:.5;
             stroke: black;
             stroke-width: 1.5px;
         }
@@ -153,5 +169,6 @@
     };
 
     addNodes("data/bha_housing_map.json", "housing");
+    addNodes("data/city_sites_clean.json", "city-sites");
 </script>
 </html>

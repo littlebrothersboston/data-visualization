@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Lower Mills",
+    "address": "2262 Dorchester Avenue, Dorchester, 02124",
+    "lat": 42.2731413,
+    "long": -71.0672139
+  },
+  {
+    "name": "BCYF Grove Hall Senior Center",
+    "address": "51 Geneva Avenue Dorchester, MA 02121",
+    "lat": 42.3076654,
+    "long": -71.0807635
+  },
+  {
+    "name": "Stearns Building ",
+    "address": "10 Temple Place, Boston MA 02111",
+    "lat": 42.355532,
+    "long": -71.062417
+  },
+  {
+    "name": "Englewood Peabody",
+    "address": "1875 Dorchester Avenue, Dorchester, MA 02124",
+    "lat": 42.2868346,
+    "long": -71.0643087
+  },
+  {
+    "name": "Peterborough Senior Center",
+    "address": "42 Peterborough Street, Boston, MA 02215",
+    "lat": 42.3435944,
+    "long": -71.09673339999999
+  },
+  {
+    "name": "Patricia White Apartments ",
+    "address": "20 Washington Street, Brighton 02135",
+    "lat": 42.34226839999999,
+    "long": -71.1413888
+  },
+  {
+    "name": "Rogerson House Adult Day Program ",
+    "address": "434 Jamaicaway, Jamaica Plain 02130",
+    "lat": 42.3176229,
+    "long": -71.1158418
+  },
+  {
+    "name": "Symphony Plaza East",
+    "address": "334 Massachusetts Avenue, Boston 02115",
+    "lat": 42.342516,
+    "long": -71.0840861
+  },
+  {
+    "name": "St. Botolph ",
+    "address": "70 St. Botolph, Boston, 02116",
+    "lat": 42.345617,
+    "long": -71.0796293
+  },
+  {
+    "name": "Mason Place",
+    "address": "80 Mason Place, Boston 02111",
+    "lat": 42.3535795,
+    "long": -71.0634266
+  },
+  {
+    "name": "Covenant House ",
+    "address": "30 Washington Street, Brighton 02135",
+    "lat": 42.3427039,
+    "long": -71.1420595
+  },
+  {
+    "name": "Ausonia House",
+    "address": "185 Fulton Street, Boston, MA 02109",
+    "lat": 42.3631633,
+    "long": -71.05209169999999
+  },
+  {
+    "name": "40 Berkeley Street",
+    "address": "40 Berkeley Street, Boston 02116",
+    "lat": 42.3459092,
+    "long": -71.0709013
+  }
+]
