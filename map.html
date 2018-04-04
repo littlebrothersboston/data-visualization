@@ -84,7 +84,7 @@
             .attr("opacity", 1);
     });
 
-
+    var select2data = [];
     var map = new google.maps.Map(d3.select("#map").node(), {
         zoom: 12,
         center: new google.maps.LatLng(42.3590151, -71.0794085),
@@ -101,12 +101,13 @@
 
 
             // set up the data for select2
-            var select2data = data;
+            var newSelect2Data = data;
             // create unique id's
             var i = 0;
-            select2data.forEach(d => d.id = i++);
+            newSelect2Data.forEach(d => d.id = i++);
             // render each option as a name
-            select2data.forEach(d => d.text = d.name);
+            newSelect2Data.forEach(d => d.text = d.name);
+            newSelect2Data.forEach(d => select2data.push(d));
             $("#search").select2({
                 data: select2data,
                 multiple: "multiple",
