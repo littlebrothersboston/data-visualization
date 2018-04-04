@@ -90,6 +90,38 @@
         center: new google.maps.LatLng(42.3590151, -71.0794085),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
+    
+    // Start of boundary-limit code
+    var strictBounds = new google.maps.LatLngBounds(
+         new google.maps.LatLng(42.226019, -71.151599),
+         new google.maps.LatLng(42.421625, -71.023096)
+       );
+
+       // Listen for the dragend event
+       google.maps.event.addListener(map, 'dragend', function() {
+         if (strictBounds.contains(map.getCenter())) return;
+
+         // We're out of bounds - Move the map back within the bounds
+
+         var c = map.getCenter(),
+             x = c.lng(),
+             y = c.lat(),
+             maxX = strictBounds.getNorthEast().lng(),
+             maxY = strictBounds.getNorthEast().lat(),
+             minX = strictBounds.getSouthWest().lng(),
+             minY = strictBounds.getSouthWest().lat();
+
+         if (x < minX) x = minX;
+         if (x > maxX) x = maxX;
+         if (y < minY) y = minY;
+         if (y > maxY) y = maxY;
+
+         map.setCenter(new google.maps.LatLng(y, x));
+       });
+
+       // Zoom limits
+       map.setOptions({ minZoom: 11, maxZoom: 18 });
+       // End of boundary-limit code
 
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map');
