@@ -11,6 +11,10 @@ hr {
   padding: 0;
 }
 
+img {
+  border-radius: 8px;
+}
+
 .motivation,
 .data,
 .taskanalysis,
@@ -125,17 +129,14 @@ body {
 
 /* Caption text */
 .text {
-  color: #000000;
-  text-shadow:
-		-1px -1px 0 #fff,
-		1px -1px 0 #fff,
-		-1px 1px 0 #fff,
-		1px 1px 0 #fff;
+  color: #fff;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
+  background-color: #000000;
+  opacity: 0.6;
   text-align: center;
 }
 
