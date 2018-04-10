@@ -53,6 +53,7 @@
         .search {
             width: 100%;
             height: 8%;
+            padding: 0;
             z-index: 120000;
         }
     </style>
@@ -100,13 +101,16 @@
         const previousSelection = $("#search").select2("data");
 
         const toHighlight = previousSelection.map(s => s.name);
+        const nodes = d3.selectAll("svg");
+        const texts = nodes.selectAll("text");
+
         if (toHighlight.length === 0) {
             // selection is empty, so reset all
-            const nodes = d3.selectAll("svg");
             setOpacity(nodes, .8);
-            setOpacity(nodes.selectAll("text"), 0)
+            setOpacity(texts, 0)
         } else {
-            highlight(d3.selectAll("svg"), toHighlight, n => n.name, .2, 1)
+            highlight(nodes, toHighlight, n => n.name, .2, 1);
+            highlight(texts, toHighlight, n => n.text, 0, 1);
         }
 
         $("#search").selected(previousSelection).trigger('change');
@@ -169,6 +173,7 @@
             // render each option as a name
             newSelect2Data.forEach(d => d.text = d.name);
             newSelect2Data.forEach(d => select2data.push(d));
+            select2data.sort((a, b) => a.text > b.text);
             $("#search").select2({
                 placeholder: 'Search for BHA Developments or program sites...',
                 data: select2data,
