@@ -21,9 +21,9 @@
 
         .housing svg {
             position: absolute;
-            width: 60px;
-            height: 20px;
-            padding-right: 100px;
+            width: 150px;
+            height: 30px;
+            /*padding-right: 100px;*/
             font: 10px sans-serif;
         }
 
@@ -36,8 +36,8 @@
 
         .city-sites svg {
             position: absolute;
-            width: 60px;
-            height: 20px;
+            width: 100px;
+            height: 30px;
             padding-right: 100px;
             font: 10px sans-serif;
         }
@@ -79,7 +79,7 @@
     // highlights nodes
     function highlight(all, toHighlight, extractor, unselectedOpacity, selectedOpacity) {
         all.transition().attr("opacity", unselectedOpacity)
-            // choose selected ones
+        // choose selected ones
             .filter(n => toHighlight.indexOf(extractor(n)) >= 0)
             // update their opacity
             .attr("opacity", selectedOpacity)
@@ -99,22 +99,25 @@
         highlight(d3.selectAll("svg").selectAll("text"), toHighlight, n => n.text, 0, 1)
 
     }).on("select2:unselect", function (event) {
-        const previousSelection = $("#search").select2("data");
+        const search = $("#search");
+        const previousSelection = search.select2("data");
 
-        const toHighlight = previousSelection.map(s => s.name);
+        const selected = previousSelection.map(s => s.name);
         const nodes = d3.selectAll("svg");
         const texts = nodes.selectAll("text");
 
-        if (toHighlight.length === 0) {
+        if (selected.length === 0) {
             // selection is empty, so reset all
             setOpacity(nodes, .8);
-            setOpacity(texts, 0)
+            setOpacity(texts, 0);
         } else {
-            highlight(nodes, toHighlight, n => n.name, .2, 1);
-            highlight(texts, toHighlight, n => n.text, 0, 1);
+            // highlight the nodes and text that are selected
+            highlight(nodes, selected, n => n.name, .2, 1);
+            highlight(texts, selected, n => n.text, 0, 1);
         }
 
-        $("#search").selected(previousSelection).trigger('change');
+        // works, but throws error
+        // search.selected(previousSelection).trigger('change');
     });
 
     var select2data = [];
@@ -174,7 +177,9 @@
             // render each option as a name
             newSelect2Data.forEach(d => d.text = d.name);
             newSelect2Data.forEach(d => select2data.push(d));
-            select2data.sort((a, b) => a.text > b.text);
+            select2data.sort((a, b) => {
+                if (a.text > b.text) return 1; else return 0
+            });
             $("#search").select2({
                 placeholder: 'Search for BHA Developments or program sites...',
                 data: select2data,
@@ -194,7 +199,7 @@
                 // We could use a single SVG, but what size would it have?
                 overlay.draw = function () {
                     var projection = overlay.getProjection();
-                    var padding = 10;
+                    var padding = 15;
 
                     function transform(d) {
                         d = new google.maps.LatLng(d.lat, d.long);
@@ -211,25 +216,30 @@
                         .each(transform)
                         .attr("class", "marker");
 
+                    function membersOrDefault(d) {
+                        return Math.sqrt(d.members) / 5 || 4.5
+                    }
+
                     marker.append("circle")
-                        .attr("r", d => {
-                            if (d.members) { return Math.sqrt(d.members) / 5 } else { return 4.5 }
-                        })
+                        .attr("r", membersOrDefault)
                         .attr("cx", padding)
-                        .attr("cy", padding);
+                        .attr("cy", padding)
+                        .append("svg:title")
+                        .text(d => d.description || "City Site Program");
 
                     marker.append("text")
-                        .attr("x", padding + 7)
+                        .attr("x", d => padding + 3 + membersOrDefault(d))
                         .attr("y", padding)
-                        .attr("opacity", 0.0)
+                        .attr("opacity", 0)
                         .attr("dy", ".31em")
+                        .attr("width", "100px")
                         .text(function (d) {
                             return d.name;
                         });
 
 
                     marker.on('mouseover', function (d) {
-                        console.log("hi'");
+                        console.log("hi");
                         var nodeSelection = d3.select(this).style({opacity: '0.8'});
                         nodeSelection.select("text").style({opacity: '1.0'})
                     });
