@@ -77,10 +77,11 @@
     // the opacity of the ones in the field, and the others,
     // highlights nodes
     function highlight(all, toHighlight, extractor, unselectedOpacity, selectedOpacity) {
-        all
-            .attr("opacity", unselectedOpacity)
+        all.transition().attr("opacity", unselectedOpacity)
+            // choose selected ones
             .filter(n => toHighlight.indexOf(extractor(n)) >= 0)
-            .attr("opacity", selectedOpacity);
+            // update their opacity
+            .attr("opacity", selectedOpacity)
     }
 
     function setOpacity(chosen, opacity) {
@@ -92,22 +93,23 @@
         const selection = $("#search").select2("data");
         const toHighlight = selection.map(s => s.name);
 
-        highlight(d3.selectAll("svg"),
-            toHighlight, n => n.name, .2, 1);
-        highlight(d3.selectAll("svg").selectAll("text"),
-            toHighlight, n => n.text, 0, 1)
+        highlight(d3.selectAll("svg"), toHighlight, n => n.name, .2, 1);
+        highlight(d3.selectAll("svg").selectAll("text"), toHighlight, n => n.text, 0, 1)
 
     }).on("select2:unselect", function (event) {
         const previousSelection = $("#search").select2("data");
 
         const toHighlight = previousSelection.map(s => s.name);
         if (toHighlight.length === 0) {
+            // selection is empty, so reset all
             const nodes = d3.selectAll("svg");
-            setOpacity(nodes, 1);
+            setOpacity(nodes, .8);
             setOpacity(nodes.selectAll("text"), 0)
         } else {
             highlight(d3.selectAll("svg"), toHighlight, n => n.name, .2, 1)
         }
+
+        $("#search").selected(previousSelection).trigger('change');
     });
 
     var select2data = [];
@@ -168,6 +170,7 @@
             newSelect2Data.forEach(d => d.text = d.name);
             newSelect2Data.forEach(d => select2data.push(d));
             $("#search").select2({
+                placeholder: 'Search for BHA Developments or program sites...',
                 data: select2data,
                 multiple: "multiple",
                 containerCssClass: "search"
