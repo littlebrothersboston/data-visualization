@@ -244,12 +244,15 @@
         const nodes = d3.selectAll("div")
             .filter("." + it)
             .selectAll("svg")
-            .filter(x => x)
             .selectAll("circle");
+
+        const legend = d3.selectAll("svg").filter("." + it);
         if (toggles[it]) {
-            nodes.attr("opacity", .2)
+            nodes.attr("opacity", .2);
+            legend.attr("opacity", .2);
         } else {
-            nodes.attr("opacity", 1)
+            nodes.attr("opacity", 1);
+            legend.attr("opacity", 1);
         }
         toggles[it] = !toggles[it]
     }
