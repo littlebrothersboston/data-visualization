@@ -14,18 +14,18 @@
     <div id="search"></div>
     <div id="map"></div>
     <div id="addLocationButton">
-        <input type="button" name="addLocationButton" value="Add Location" onclick="addLocation()" />
+        <input type="button" name="addLocationButton" value="Add Location" onclick="addLocation()"/>
     </div>
     <div id="legend">
         <svg color>
             <rect x="1px" width="168px" height="50px" fill="rgb(255,255,255)" stroke-width="3" stroke="rgb(50,50,50)">
 
             </rect>
-            <svg class="housing" onclick="toggleHousing()">
+            <svg class="housing" onclick="toggle('housing')">
                 <circle r="5.542562584220407" cx="15" cy="15"></circle>
                 <text x="30" y="20">BHA Developments</text>
             </svg>
-            <svg class="city-sites" onclick="toggleCitySites()">
+            <svg class="city-sites" onclick="toggle('city-sites')">
                 <circle r="5.542562584220407" cx="15" cy="35"></circle>
                 <text x="30" y="40">City Sites</text>
             </svg>
@@ -64,7 +64,6 @@
     function addLocation() {
         console.log('button clicked')
     }
-
 
     //attach search box listener
     $("#search").on("select2:select", function (event) {
@@ -146,6 +145,8 @@
         d3.json(filePath, function (error, data) {
             if (error) throw error;
 
+            data.forEach(d => d["type"] = attributes);
+
             // set up the data for select2
             var newSelect2Data = data;
             // create unique id's
@@ -158,7 +159,7 @@
                 if (a.text > b.text) return 1; else return 0
             });
             $("#search").select2({
-                placeholder: 'Search for BHA Developments or program sites…',
+                placeholder: 'Search for BHA Developments or program sites...',
                 data: select2data,
                 multiple: "multiple",
                 containerCssClass: "search"
@@ -187,14 +188,14 @@
                     }
 
                     var tooltip = d3.select("body")
-                    .append("div")
-    	               .attr("class", "tooltip")
-    	                .style("opacity", 0);
+                        .append("div")
+                        .attr("class", "tooltip")
+                        .style("opacity", 0);
 
                     var info = d3.select("body")
-                    .append("div")
-    	               .attr("class", "info")
-    	                .style("opacity", 0);
+                        .append("div")
+                        .attr("class", "info")
+                        .style("opacity", 0);
 
                     var marker = layer.selectAll("svg")
                         .data(data)
@@ -234,12 +235,23 @@
     addNodes("data/bha_housing_map_with_size.json", "housing");
     addNodes("data/city_sites_clean.json", "city-sites");
 
-    var housingActing;
-    function toggleHousing() {
+    const toggles = {};
 
-    }
-    function toggleCitySites() {
-        
+    function toggle(it) {
+        if (!it in toggles) {
+            toggles[it] = true
+        }
+        const nodes = d3.selectAll("div")
+            .filter("." + it)
+            .selectAll("svg")
+            .filter(x => x)
+            .selectAll("circle");
+        if (toggles[it]) {
+            nodes.attr("opacity", .2)
+        } else {
+            nodes.attr("opacity", 1)
+        }
+        toggles[it] = !toggles[it]
     }
 </script>
 </html>
