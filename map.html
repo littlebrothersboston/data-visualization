@@ -147,8 +147,6 @@
         d3.json(filePath, function (error, data) {
             if (error) throw error;
 
-            var clicked = false;
-
             // set up the data for select2
             var newSelect2Data = data;
             // create unique id's
@@ -215,39 +213,7 @@
                         .attr("cx", padding)
                         .attr("cy", padding)
                         .append("svg:title")
-                        .text(d => d.description || "City Site Program")
-                        .on("mouseover", function(d) {
-                          console.log("hover")
-                          tooltip.transition()
-                          .duration(200)
-                          .style("opacity", .9);
-                          tooltip.html(d.name + '<br>' + d.address)
-                          .style("left", (d3.event.pageX + 5) + "px")
-                          .style("top", (d3.event.pageY - 28) + "px");
-      	                 })
-     	                   .on("mouseout", function(d) {
-                           tooltip.transition()
-                           .duration(200)
-                           .style("opacity", 0);
-                         })
-                         .on("click", function(d) {
-                           console.log("click")
-                           if(clicked) {
-                             clicked = false;
-                             info.transition()
-                             .duration(200)
-                             .style("opacity", 0);
-                           } else {
-                             info.transition()
-                             clicked = true;
-                             info.transition()
-                             .duration(200)
-                             .style("opacity", .9)
-                             info.html(d.name + '<br>' + d.address + '<br>' + d.website)
-                             .style("left", (d3.event.pageX + 5) + "px")
-                             .style("top", (d3.event.pageY - 28) + "px");
-                           }
-                         })
+                        .text(d => d.description || "City Site Program");
 
                     marker.append("text")
                         .attr("x", d => padding + 3 + membersOrDefault(d))
