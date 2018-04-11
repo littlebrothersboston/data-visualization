@@ -10,28 +10,44 @@
 
 <body>
 <div id="container">
-    <!--<div id="details"></div>-->
-    <div id="search"></div>
+
+    <div id="legend">
+    <div class="container-element">
+        <svg style="float:left" height="30px" width="170px" class="housing" onclick="toggle('housing')">
+            <circle r="8.542562584220407" cx="15" cy="15"></circle>
+            <text x="30" y="20">BHA Developments</text>
+        </svg>
+        <div class="search" id="search-bha"></div>
+    </div>
+
+    <div class="container-element">
+        <svg style="float:left" height="30px" width="170px" class="city-sites" onclick="toggle('city-sites')">
+            <circle r="8.542562584220407" cx="15" cy="15"></circle>
+            <text x="30" y="20">City Sites</text>
+        </svg>
+        <div class="search" id="search-city-sites"></div>
+    </div>
+    </div>
     <div id="map"></div>
     <div id="addLocationButton">
         <input type="button" name="addLocationButton" value="Add Location" onclick="addLocation()"/>
     </div>
-    <div id="legend">
-        <svg color>
-            <rect x="1px" width="168px" height="50px" fill="rgb(255,255,255)" stroke-width="3" stroke="rgb(50,50,50)">
+    <!--<div id="legend">-->
+        <!--<svg color>-->
+            <!--<rect x="1px" width="168px" height="50px" fill="rgb(255,255,255)" stroke-width="3" stroke="rgb(50,50,50)">-->
 
-            </rect>
-            <svg class="housing" onclick="toggle('housing')">
-                <circle r="5.542562584220407" cx="15" cy="15"></circle>
-                <text x="30" y="20">BHA Developments</text>
-            </svg>
-            <svg class="city-sites" onclick="toggle('city-sites')">
-                <circle r="5.542562584220407" cx="15" cy="35"></circle>
-                <text x="30" y="40">City Sites</text>
-            </svg>
-        </svg>
+            <!--</rect>-->
+            <!--<svg class="housing" onclick="toggle('housing')">-->
+                <!--<circle r="5.542562584220407" cx="15" cy="15"></circle>-->
+                <!--<text x="30" y="20">BHA Developments</text>-->
+            <!--</svg>-->
+            <!--<svg class="city-sites" onclick="toggle('city-sites')">-->
+                <!--<circle r="5.542562584220407" cx="15" cy="35"></circle>-->
+                <!--<text x="30" y="40">City Sites</text>-->
+            <!--</svg>-->
+        <!--</svg>-->
 
-    </div>
+    <!--</div>-->
 </div>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
@@ -39,7 +55,10 @@
 <script src="//d3js.org/d3.v4.min.js"></script>
 </body>
 
+
+<!--Load the style for the map-->
 <script src="js/map-style.js"></script>
+
 <script type="text/javascript">
 
     // given all such possible elements, the list of those to highlight,
@@ -64,35 +83,6 @@
     function addLocation() {
         console.log('button clicked')
     }
-
-    //attach search box listener
-    $("#search").on("select2:select", function (event) {
-        const selection = $("#search").select2("data");
-        const toHighlight = selection.map(s => s.name);
-
-        highlight(d3.selectAll("svg"), toHighlight, n => n.name, .2, 1);
-        highlight(d3.selectAll("svg").selectAll("text"), toHighlight, n => n.text, 0, 1);
-    }).on("select2:unselect", function (event) {
-        const search = $("#search");
-        const previousSelection = search.select2("data");
-
-        const selected = previousSelection.map(s => s.name);
-        const nodes = d3.selectAll("svg");
-        const texts = nodes.selectAll("text");
-
-        if (selected.length === 0) {
-            // selection is empty, so reset all
-            setOpacity(nodes, .8);
-            setOpacity(texts, 0);
-        } else {
-            // highlight the nodes and text that are selected
-            highlight(nodes, selected, n => n.name, .2, 1);
-            highlight(texts, selected, n => n.text, 0, 1);
-        }
-
-        search.trigger('change');
-        throw "please ignore this error, it's supposed to be here";
-    });
 
     // Initiate map
     var map = new google.maps.Map(d3.select("#map").node(), {
@@ -141,11 +131,10 @@
 
 
     var select2data = [];
-    var addNodes = function (filePath, attributes) {
+
+    function addNodes(filePath, cssClassName, select2Id) {
         d3.json(filePath, function (error, data) {
             if (error) throw error;
-
-            data.forEach(d => d["type"] = attributes);
 
             // set up the data for select2
             var newSelect2Data = data;
@@ -158,11 +147,38 @@
             select2data.sort((a, b) => {
                 if (a.text > b.text) return 1; else return 0
             });
-            $("#search").select2({
-                placeholder: 'Search for BHA Developments or program sites...',
+
+            $("#" + select2Id).select2({
+                placeholder: 'Search...',
                 data: select2data,
                 multiple: "multiple",
-                containerCssClass: "search"
+                containerCssClass: select2Id
+            }).on("select2:select", function (event) {
+                const selection = $("#" + select2Id).select2("data");
+                const toHighlight = selection.map(s => s.name);
+
+                highlight(d3.selectAll("svg"), toHighlight, n => n.name, .2, 1);
+                highlight(d3.selectAll("svg").selectAll("text"), toHighlight, n => n.text, 0, 1);
+            }).on("select2:unselect", function (event) {
+                const search = $("#" + select2Id);
+                const previousSelection = search.select2("data");
+
+                const selected = previousSelection.map(s => s.name);
+                const nodes = d3.selectAll("svg");
+                const texts = nodes.selectAll("text");
+
+                if (selected.length === 0) {
+                    // selection is empty, so reset all
+                    setOpacity(nodes, .8);
+                    setOpacity(texts, 0);
+                } else {
+                    // highlight the nodes and text that are selected
+                    highlight(nodes, selected, n => n.name, .2, 1);
+                    highlight(texts, selected, n => n.text, 0, 1);
+                }
+
+                search.trigger('change');
+                throw "please ignore this error, it's supposed to be here";
             });
 
 
@@ -171,10 +187,9 @@
             overlay.onAdd = function () {
                 var layer = d3.select(overlay.getPanes().overlayMouseTarget)
                     .append("div")
-                    .attr("class", attributes);
+                    .attr("class", cssClassName);
 
                 // Draw each marker as a separate SVG element.
-                // We could use a single SVG, but what size would it have?
                 overlay.draw = function () {
                     var projection = overlay.getProjection();
                     var padding = 15;
@@ -232,9 +247,10 @@
         });
     };
 
-    addNodes("data/bha_housing_map_with_size.json", "housing");
-    addNodes("data/city_sites_clean.json", "city-sites");
+    addNodes("data/bha_housing_map_with_size.json", "housing", "search-bha");
+    addNodes("data/city_sites_clean.json", "city-sites", "search-city-sites");
 
+    // keeps track of each toggleable item and whether it's toggled
     const toggles = {};
 
     function toggle(it) {
