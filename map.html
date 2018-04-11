@@ -104,8 +104,8 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
 </head>
-<body>
 
+<body>
 <div id="container">
     <!--<div id="details"></div>-->
     <div id="search"></div>
@@ -132,8 +132,8 @@
 <script src="//maps.google.com/maps/api/js?key=AIzaSyC5OdRTk0wkjI93UcS2XrZBPg4JEzBKI7w"></script>
 <script src="//d3js.org/d3.v4.min.js"></script>
 </body>
-<script src="js/map-style.js"></script>
 
+<script src="js/map-style.js"></script>
 <script type="text/javascript">
 
     // given all such possible elements, the list of those to highlight,
@@ -150,25 +150,30 @@
             .attr("opacity", selectedOpacity)
     }
 
+    function selectAllNodes() {
+        return d3.selectAll("svg").filter(x => x != undefined);
+    }
+
     function setOpacity(chosen, opacity) {
         // sets the opacity of all given elements to the given opacity
         highlight(chosen, [], x => x, opacity, opacity)
     }
+
 
     //attach search box listener
     $("#search").on("select2:select", function (event) {
         const selection = $("#search").select2("data");
         const toHighlight = selection.map(s => s.name);
 
-        highlight(d3.selectAll("svg"), toHighlight, n => n.name, .2, 1);
-        highlight(d3.selectAll("svg").selectAll("text"), toHighlight, n => n.text, 0, 1)
+        highlight(selectAllNodes(), toHighlight, n => n.name, .2, 1);
+        highlight(selectAllNodes().selectAll("text"), toHighlight, n => n.text, 0, 1)
 
     }).on("select2:unselect", function (event) {
         const search = $("#search");
         const previousSelection = search.select2("data");
 
         const selected = previousSelection.map(s => s.name);
-        const nodes = d3.selectAll("svg");
+        const nodes = selectAllNodes();
         const texts = nodes.selectAll("text");
 
         if (selected.length === 0) {
