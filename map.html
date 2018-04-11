@@ -100,6 +100,20 @@
             position: relative;
             float: right;
         }
+
+        .tooltip, .info {
+          position: absolute;
+          line-height: .7;
+          font-weight: bold;
+          padding: 8px;
+          background: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          font-weight: bold;
+          font: 11.5px sans-serif;
+          border-radius: 2px;
+          pointer-events: none;
+        }
+
     </style>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
@@ -187,7 +201,7 @@
         }
 
         // works, but throws error
-        search.trigger('change');
+        search.selected(previousSelection).trigger('change');
     });
 
     var select2data = [];
@@ -240,6 +254,7 @@
         d3.json(filePath, function (error, data) {
             if (error) throw error;
 
+            var clicked = false;
 
             // set up the data for select2
             var newSelect2Data = data;
@@ -281,6 +296,16 @@
                             .style("top", (d.y - padding) + "px");
                     }
 
+                    var tooltip = d3.select("body")
+                    .append("div")
+    	               .attr("class", "tooltip")
+    	                .style("opacity", 0);
+
+                    var info = d3.select("body")
+                    .append("div")
+    	               .attr("class", "info")
+    	                .style("opacity", 0);
+
                     var marker = layer.selectAll("svg")
                         .data(data)
                         .each(transform) // update existing markers
@@ -297,7 +322,39 @@
                         .attr("cx", padding)
                         .attr("cy", padding)
                         .append("svg:title")
-                        .text(d => d.description || "City Site Program");
+                        .text(d => d.description || "City Site Program")
+                        .on("mouseover", function(d) {
+                          console.log("hover")
+                          tooltip.transition()
+                          .duration(200)
+                          .style("opacity", .9);
+                          tooltip.html(d.name + '<br>' + d.address)
+                          .style("left", (d3.event.pageX + 5) + "px")
+                          .style("top", (d3.event.pageY - 28) + "px");
+      	                 })
+     	                   .on("mouseout", function(d) {
+                           tooltip.transition()
+                           .duration(200)
+                           .style("opacity", 0);
+                         })
+                         .on("click", function(d) {
+                           console.log("click")
+                           if(clicked) {
+                             clicked = false;
+                             info.transition()
+                             .duration(200)
+                             .style("opacity", 0);
+                           } else {
+                             info.transition()
+                             clicked = true;
+                             info.transition()
+                             .duration(200)
+                             .style("opacity", .9)
+                             info.html(d.name + '<br>' + d.address + '<br>' + d.website)
+                             .style("left", (d3.event.pageX + 5) + "px")
+                             .style("top", (d3.event.pageY - 28) + "px");
+                           }
+                         })
 
                     marker.append("text")
                         .attr("x", d => padding + 3 + membersOrDefault(d))
@@ -308,15 +365,6 @@
                         .text(function (d) {
                             return d.name;
                         });
-
-
-                    marker.on('mouseover', function (d) {
-                        console.log("hi");
-                        var nodeSelection = d3.select(this).style({opacity: '0.8'});
-                        nodeSelection.select("text").style({opacity: '1.0'})
-                    });
-
-
                 };
             };
 
