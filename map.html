@@ -100,6 +100,10 @@
             position: relative;
             float: right;
         }
+        #addLocationButton {
+            height: 60px;
+            position: relative;
+        }
     </style>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
@@ -110,6 +114,9 @@
     <!--<div id="details"></div>-->
     <div id="search"></div>
     <div id="map"></div>
+    <div id="addLocationButton">
+        <input type="button" name="addLocationButton" value="Add Location" onclick="addLocation()" />
+    </div>
     <div id="legend">
         <svg color>
             <rect x="1px" width="168px" height="50px" fill="rgb(255,255,255)" stroke-width="3" stroke="rgb(50,50,50)">
@@ -142,7 +149,7 @@
     // highlights nodes
     function highlight(all, toHighlight, extractor, unselectedOpacity, selectedOpacity) {
         all.transition()
-            .filter(x => !!x.name)
+            .filter(x => !!x)
             .attr("opacity", unselectedOpacity)
             // choose selected ones
             .filter(n => toHighlight.indexOf(extractor(n)) >= 0)
@@ -150,13 +157,13 @@
             .attr("opacity", selectedOpacity)
     }
 
-    function selectAllNodes() {
-        return d3.selectAll("svg").filter(x => x != undefined);
-    }
-
     function setOpacity(chosen, opacity) {
         // sets the opacity of all given elements to the given opacity
         highlight(chosen, [], x => x, opacity, opacity)
+    }
+
+    function addLocation() {
+        console.log('button clicked')
     }
 
 
@@ -165,15 +172,15 @@
         const selection = $("#search").select2("data");
         const toHighlight = selection.map(s => s.name);
 
-        highlight(selectAllNodes(), toHighlight, n => n.name, .2, 1);
-        highlight(selectAllNodes().selectAll("text"), toHighlight, n => n.text, 0, 1)
+        highlight(d3.selectAll("svg"), toHighlight, n => n.name, .2, 1);
+        highlight(d3.selectAll("svg").selectAll("text"), toHighlight, n => n.text, 0, 1)
 
     }).on("select2:unselect", function (event) {
         const search = $("#search");
         const previousSelection = search.select2("data");
 
         const selected = previousSelection.map(s => s.name);
-        const nodes = selectAllNodes();
+        const nodes = d3.selectAll("svg");
         const texts = nodes.selectAll("text");
 
         if (selected.length === 0) {
@@ -186,11 +193,10 @@
             highlight(texts, selected, n => n.text, 0, 1);
         }
 
-        // works, but throws error
         search.trigger('change');
     });
 
-    var select2data = [];
+    // Initiate map
     var map = new google.maps.Map(d3.select("#map").node(), {
         zoom: 12,
         center: new google.maps.LatLng(42.318643, -71.072642),
@@ -236,6 +242,7 @@
     map.setMapTypeId('styled_map');
 
 
+    var select2data = [];
     var addNodes = function (filePath, attributes) {
         d3.json(filePath, function (error, data) {
             if (error) throw error;
