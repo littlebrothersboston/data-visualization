@@ -21,11 +21,11 @@
             <rect x="1px" width="168px" height="50px" fill="rgb(255,255,255)" stroke-width="3" stroke="rgb(50,50,50)">
 
             </rect>
-            <svg class="housing">
+            <svg class="housing" onclick="toggleHousing()">
                 <circle r="5.542562584220407" cx="15" cy="15"></circle>
                 <text x="30" y="20">BHA Developments</text>
             </svg>
-            <svg class="city-sites">
+            <svg class="city-sites" onclick="toggleCitySites()">
                 <circle r="5.542562584220407" cx="15" cy="35"></circle>
                 <text x="30" y="40">City Sites</text>
             </svg>
@@ -72,8 +72,7 @@
         const toHighlight = selection.map(s => s.name);
 
         highlight(d3.selectAll("svg"), toHighlight, n => n.name, .2, 1);
-        highlight(d3.selectAll("svg").selectAll("text"), toHighlight, n => n.text, 0, 1)
-
+        highlight(d3.selectAll("svg").selectAll("text"), toHighlight, n => n.text, 0, 1);
     }).on("select2:unselect", function (event) {
         const search = $("#search");
         const previousSelection = search.select2("data");
@@ -160,7 +159,7 @@
                 if (a.text > b.text) return 1; else return 0
             });
             $("#search").select2({
-                placeholder: 'Search for BHA Developments or program sites...',
+                placeholder: 'Search for BHA Developments or program sites…',
                 data: select2data,
                 multiple: "multiple",
                 containerCssClass: "search"
@@ -170,7 +169,7 @@
             var overlay = new google.maps.OverlayView();
             // Add the container when the overlay is added to the map.
             overlay.onAdd = function () {
-                var layer = d3.select(overlay.getPanes().overlayLayer)
+                var layer = d3.select(overlay.getPanes().overlayMouseTarget)
                     .append("div")
                     .attr("class", attributes);
 
@@ -267,5 +266,13 @@
 
     addNodes("data/bha_housing_map_with_size.json", "housing");
     addNodes("data/city_sites_clean.json", "city-sites");
+
+    var housingActing;
+    function toggleHousing() {
+
+    }
+    function toggleCitySites() {
+        
+    }
 </script>
 </html>
