@@ -42,6 +42,8 @@
 <script src="js/map-style.js"></script>
 <script type="text/javascript">
 
+    var addingLocation = false;
+
     // given all such possible elements, the list of those to highlight,
     // the function that extracts the field to compare with toHighlight,
     // the opacity of the ones in the field, and the others,
@@ -62,9 +64,30 @@
     }
 
     function addLocation() {
-        console.log('button clicked')
+        addingLocation = true;
     }
 
+    function drawPotentialLocation(coordinates) {
+      var x = coordinates[0]
+      var y = coordinates[1]
+      var potentalLocationMarker = d3.select(".potential-location");
+      potentalLocationMarker.attr({
+        "cx": x,
+        "cy": y,
+        "r": 4.5,
+      })
+    }
+
+    var unusedVariable = d3.select('body').append("svg")
+    .attr("width", 15)
+    .attr("height", 15)
+    .on('mousemove', function() {
+        var coordinates = [0, 0]
+        if (addingLocation) {
+            coordinates = d3.mouse(this)
+        }
+        drawPotentialLocation(coordinates)
+    })
 
     //attach search box listener
     $("#search").on("select2:select", function (event) {
