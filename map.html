@@ -92,7 +92,8 @@
             highlight(texts, selected, n => n.text, 0, 1);
         }
 
-        search.selected().trigger('change');
+        search.trigger('change');
+        throw "please ignore this error, it's supposed to be here";
     });
 
     // Initiate map
