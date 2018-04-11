@@ -165,7 +165,8 @@
     "Address": "160 Thirteenth Street, Charlestown, MA",
     "Program": "Federal Family",
     "Webpage": "www.bostonhousing.org/en/HousingDevelopmentDetail.aspx?hid=97",
-    "Pin": "blu_circle"
+    "Pin": "blu_circle",
+    "members":6
   },
   {
     "name": "Bromley Park",
