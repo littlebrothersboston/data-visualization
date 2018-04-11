@@ -4,19 +4,19 @@
 <head>
     <title>Google Map Integration</title>
     <style>
-        html, body {
+        html, body, #container {
             width: 100%;
             height: 100%;
             margin: 0;
             padding: 0;
         }
 
-        .housing, #map {
-            height: 92%
-        }
-
-        .housing, .search {
+        #map {
+            height: 95%;
             position: absolute;
+            top: 33px;
+            left: 0;
+            width: 100%;
         }
 
         .housing svg {
@@ -49,12 +49,56 @@
             stroke-width: 1.5px;
         }
 
+        .housing-legend svg {
+            position: absolute;
+            width: 150px;
+            height: 30px;
+            /*padding-right: 100px;*/
+            font: 10px sans-serif;
+        }
+
+        .housing-legend circle {
+            fill: #d7191c;
+            fill-opacity: .5;
+            stroke: black;
+            stroke-width: 1.5px;
+        }
+
+        .city-sites-legend svg {
+            position: absolute;
+            width: 100px;
+            height: 30px;
+            padding-right: 100px;
+            font: 10px sans-serif;
+        }
+
+        .city-sites-legend circle {
+            fill: #2c7bb6;
+            fill-opacity: .5;
+            stroke: black;
+            stroke-width: 1.5px;
+        }
+
         /*Just to ensure the select2 box is "glued" to the top*/
         .search {
             width: 100%;
-            height: 8%;
+            height: 33px;
             padding: 0;
             z-index: 120000;
+        }
+
+        #details {
+            width: 400px;
+            height: 10%;
+            z-index: 100000;
+            position: relative;
+        }
+
+        #legend {
+            height: 60px;
+            width: 170px;
+            position: relative;
+            float: right;
         }
     </style>
 
@@ -62,8 +106,27 @@
 </head>
 <body>
 
-<div id="search"></div>
-<div id="map"></div>
+<div id="container">
+    <!--<div id="details"></div>-->
+    <div id="search"></div>
+    <div id="map"></div>
+    <div id="legend">
+        <svg color>
+            <rect x="1px" width="168px" height="50px" fill="rgb(255,255,255)" stroke-width="3" stroke="rgb(50,50,50)">
+
+            </rect>
+            <svg class="housing-legend">
+                <circle r="5.542562584220407" cx="15" cy="15"></circle>
+                <text x="30" y="20">BHA Developments</text>
+            </svg>
+            <svg class="city-sites-legend">
+                <circle r="5.542562584220407" cx="15" cy="35"></circle>
+                <text x="30" y="40">City Sites</text>
+            </svg>
+        </svg>
+
+    </div>
+</div>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
 <script src="//maps.google.com/maps/api/js?key=AIzaSyC5OdRTk0wkjI93UcS2XrZBPg4JEzBKI7w"></script>
@@ -78,8 +141,10 @@
     // the opacity of the ones in the field, and the others,
     // highlights nodes
     function highlight(all, toHighlight, extractor, unselectedOpacity, selectedOpacity) {
-        all.transition().attr("opacity", unselectedOpacity)
-        // choose selected ones
+        all.transition()
+            .filter(x => !!x.name)
+            .attr("opacity", unselectedOpacity)
+            // choose selected ones
             .filter(n => toHighlight.indexOf(extractor(n)) >= 0)
             // update their opacity
             .attr("opacity", selectedOpacity)
@@ -117,7 +182,7 @@
         }
 
         // works, but throws error
-        // search.selected(previousSelection).trigger('change');
+        search.selected(previousSelection).trigger('change');
     });
 
     var select2data = [];
