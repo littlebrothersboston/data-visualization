@@ -30,8 +30,10 @@
                 <text x="30" y="40">City Sites</text>
             </svg>
         </svg>
-
     </div>
+    <svg class="potential-location">
+        <circle></circle>
+    </svg>
 </div>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
@@ -65,22 +67,21 @@
 
     function addLocation() {
         addingLocation = true;
+        console.log('place 1')
     }
 
     function drawPotentialLocation(coordinates) {
-      var x = coordinates[0]
-      var y = coordinates[1]
-      var potentalLocationMarker = d3.select(".potential-location");
-      potentalLocationMarker.attr({
-        "cx": x,
-        "cy": y,
-        "r": 4.5,
-      })
+        var potentalLocationMarker = d3.select(".potential-location");
+        // console.log(potentalLocationMarker)
+        potentalLocationMarker.attr({
+            "cx": coordinates[0],
+            "cy": coordinates[1],
+            "r": 25
+        });
     }
 
-    var unusedVariable = d3.select('body').append("svg")
-    .attr("width", 15)
-    .attr("height", 15)
+    // GET THIS TO WORK!!!
+    var unusedVariable = d3.select('body')
     .on('mousemove', function() {
         var coordinates = [0, 0]
         if (addingLocation) {
