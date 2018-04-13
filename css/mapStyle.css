@@ -18,8 +18,8 @@ html, body, #container {
 
 .housing svg {
     position: absolute;
-    width: 150px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     /*padding-right: 100px;*/
     font: 10px sans-serif;
 }
@@ -31,10 +31,15 @@ html, body, #container {
     stroke-width: 1.5px;
 }
 
+.housing text {
+    width: 150px;
+    height: 30px;
+}
+
 .city-sites svg {
     position: absolute;
-    width: 100px;
-    height: 30px;
+    width: 23px;
+    height: 23px;
     font: 10px sans-serif;
 }
 
@@ -43,6 +48,11 @@ html, body, #container {
     fill-opacity: .5;
     stroke: black;
     stroke-width: 1.5px;
+}
+
+.city-sites text {
+    width: 150px;
+    height: 30px;
 }
 
 .container-element {
