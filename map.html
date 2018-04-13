@@ -63,6 +63,7 @@
 
 <script type="text/javascript">
 
+    // Used to distinguish normal map use to new location use
     var addingLocation = false;
 
     // given all such possible elements, the list of those to highlight,
@@ -84,9 +85,18 @@
         highlight(chosen, [], x => x, opacity, opacity)
     }
 
+    // Initiate map
+    var map = new google.maps.Map(d3.select("#map").node(), {
+        zoom: 12,
+        center: new google.maps.LatLng(42.318643, -71.072642),
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: false,
+        draggableCursor: "crosshair",
+        draggingCursor: "all-scroll"
+    });
+
     function addLocation() {
         addingLocation = true;
-        console.log('place 1')
     }
 
     function drawPotentialLocation(coordinates) {
@@ -108,14 +118,16 @@
         drawPotentialLocation(coordinates)
     })
 
-    // Initiate map
-    var map = new google.maps.Map(d3.select("#map").node(), {
-        zoom: 12,
-        center: new google.maps.LatLng(42.318643, -71.072642),
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        mapTypeControl: false,
-        draggableCursor: "crosshair",
-        draggingCursor: "all-scroll"
+    map.addListener('click', function(event) {
+        if (addingLocation) {
+            console.log(event.latLng)
+            addingLocation = false;
+            var marker = new google.maps.Marker({
+                position: event.latLng,
+                map: map,
+                title: 'Potential Program Location'
+            });
+        }
     });
 
     // Start of boundary-limit code
@@ -203,7 +215,6 @@
                 search.trigger('change');
                 throw "please ignore this error, it's supposed to be here";
             });
-
 
             var overlay = new google.maps.OverlayView();
             // Add the container when the overlay is added to the map.
