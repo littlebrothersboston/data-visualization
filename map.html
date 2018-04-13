@@ -130,38 +130,37 @@
     map.setMapTypeId('styled_map');
 
 
+    var currentlySelected = [];
     function addNodes(filePath, cssClassName, select2Id) {
         d3.json(filePath, function (error, data) {
             if (error) throw error;
 
-            // set up the data for select2
-            var newSelect2Data = data;
             // create unique id's
             var i = 0;
-            newSelect2Data.forEach(d => d.id = i++);
+            data.forEach(d => d.id = i++);
             // render each option as a name
-            newSelect2Data.forEach(d => d.text = d.name);
-            newSelect2Data.forEach(d => select2data.push(d));
-            select2data.sort((a, b) => {
+            data.forEach(d => d.text = d.name);
+            data.sort((a, b) => {
                 if (a.text > b.text) return 1; else return 0
             });
 
             $("#" + select2Id).select2({
                 placeholder: 'Search...',
-                data: select2data,
+                data: data,
                 multiple: "multiple",
                 containerCssClass: select2Id
             }).on("select2:select", function (event) {
                 const selection = $("#" + select2Id).select2("data");
-                const toHighlight = selection.map(s => s.name);
 
-                highlight(d3.selectAll("svg"), toHighlight, n => n.name, .2, 1);
-                highlight(d3.selectAll("svg").selectAll("text"), toHighlight, n => n.text, 0, 1);
+                // abuse mutable state to keep tracka of all selected items
+                currentlySelected.push(event.params.data.name);
+
+                highlight(d3.selectAll("svg"), currentlySelected, n => n.name, .2, 1);
+                highlight(d3.selectAll("svg").selectAll("text"), currentlySelected, n => n.text, 0, 1);
             }).on("select2:unselect", function (event) {
                 const search = $("#" + select2Id);
-                const previousSelection = search.select2("data");
+                currentlySelected.splice(currentlySelected.indexOf(event.params.data.name), 1);
 
-                const selected = previousSelection.map(s => s.name);
                 const nodes = d3.selectAll("svg");
                 const texts = nodes.selectAll("text");
 
