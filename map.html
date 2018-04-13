@@ -129,24 +129,26 @@
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map');
 
+
     function addNodes(filePath, cssClassName, select2Id) {
         d3.json(filePath, function (error, data) {
             if (error) throw error;
 
             // set up the data for select2
-            var select2Data = data;
+            var newSelect2Data = data;
             // create unique id's
             var i = 0;
-            select2Data.forEach(d => d.id = i++);
+            newSelect2Data.forEach(d => d.id = i++);
             // render each option as a name
-            select2Data.forEach(d => d.text = d.name);
-            select2Data.sort((a, b) => {
+            newSelect2Data.forEach(d => d.text = d.name);
+            newSelect2Data.forEach(d => select2data.push(d));
+            select2data.sort((a, b) => {
                 if (a.text > b.text) return 1; else return 0
             });
 
             $("#" + select2Id).select2({
                 placeholder: 'Search...',
-                data: select2Data,
+                data: select2data,
                 multiple: "multiple",
                 containerCssClass: select2Id
             }).on("select2:select", function (event) {

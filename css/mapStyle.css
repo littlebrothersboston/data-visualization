@@ -1,3 +1,5 @@
+
+/* #d7191c #fdae61 #ffffbf #abd9e9 #2c7bb6 */
 html, body, #container {
     width: 100%;
     height: 100%;
@@ -16,8 +18,8 @@ html, body, #container {
 
 .housing svg {
     position: absolute;
-    width: 150px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     /*padding-right: 100px;*/
     font: 10px sans-serif;
 }
@@ -29,10 +31,15 @@ html, body, #container {
     stroke-width: 1.5px;
 }
 
+.housing text {
+    width: 150px;
+    height: 30px;
+}
+
 .city-sites svg {
     position: absolute;
-    width: 100px;
-    height: 30px;
+    width: 23px;
+    height: 23px;
     font: 10px sans-serif;
 }
 
@@ -41,6 +48,11 @@ html, body, #container {
     fill-opacity: .5;
     stroke: black;
     stroke-width: 1.5px;
+}
+
+.city-sites text {
+    width: 150px;
+    height: 30px;
 }
 
 .container-element {
@@ -79,6 +91,19 @@ html, body, #container {
     height: 60px;
     position: relative;
     float:left;
+}
+
+.potential-location svg {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.potential-location circle {
+    fill: #fdae61;
+    fill-opacity: .5;
+    stroke: black;
+    stroke-width: 1.5px;
 }
 
 .tooltip, .info {
