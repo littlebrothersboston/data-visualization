@@ -30,6 +30,78 @@ var map = new google.maps.Map(d3.select("#map").node(), {
     draggingCursor: "all-scroll"
 });
 
+var potentialLocationData = [];
+var potentialLocationOverlay = new google.maps.OverlayView();
+// Add the container when the overlay is added to the map.
+potentialLocationOverlay.onAdd = function () {
+    var potentialLocationLayer = d3.select(potentialLocationOverlay.getPanes().overlayMouseTarget)
+        .append("div")
+        .attr("class", "potentialLocation");
+
+    // Draw each marker as a separate SVG element.
+    potentialLocationOverlay.draw = function () {
+        var projection = potentialLocationOverlay.getProjection();
+        var padding = 15;
+
+        function transform(d) {
+            d = new google.maps.LatLng(d.lat, d.long);
+            d = projection.fromLatLngToDivPixel(d);
+            return d3.select(this)
+                .style("left", (d.x - padding) + "px")
+                .style("top", (d.y - padding) + "px");
+        }
+        
+        var tooltip = d3.select("body")
+            .append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        var marker = potentialLocationLayer.selectAll("svg")
+            .data(potentialLocationData)
+            .each(transform) // update existing markers
+            .enter().append("svg:svg")
+              .each(transform)
+              .attr("class", "marker")
+              .on("mouseover", function(d) {
+                tooltip.transition()
+                  .duration(200)
+                  .style("opacity", .9)
+                tooltip.html(d.name + '<br>Address: ' + d.address
+                + '<br>Members: ' + d.members)
+                  .style("left", (d3.event.pageX + 9) + "px")
+                  .style("top", (d3.event.pageY - 28) + "px")
+                 })
+               .on("mouseout", function(d) {
+                 tooltip.transition()
+                  .duration(200)
+                  .style("opacity", 0)
+               })
+               .on("click", function(d) {
+                 // clicking functionality goes here
+               });
+
+        marker.append("circle")
+            .attr("r", 6.5)
+            .attr("cx", padding)
+            .attr("cy", padding)
+            .append("svg:title")
+            .text("Potential Program Location");
+
+        marker.append("text")
+            .attr("x", d => padding + 3 + 6.5)
+            .attr("y", padding)
+            .attr("opacity", 0)
+            .attr("dy", ".31em")
+            .attr("width", "100px")
+            .text(function (d) {
+                return d.name;
+            });
+    };
+};
+
+// Bind our overlay to the map…
+potentialLocationOverlay.setMap(map);
+
 function addLocation() {
     addingLocation = true;
 }
@@ -54,15 +126,19 @@ var unusedVariable = d3.select('body')
     drawPotentialLocation(coordinates)
 })
 
-map.addListener('click', function(event) {
+google.maps.event.addListener(map, 'click', function(event) {
     if (addingLocation) {
-        console.log(event.latLng)
         addingLocation = false;
-        var marker = new google.maps.Marker({
-            position: event.latLng,
-            map: map,
-            title: 'Potential Program Location'
-        });
+        var newLocation = {};
+        var objectId = potentialLocationData.length;
+        newLocation.id = objectId;
+        newLocation.lat = event.latLng.lat();
+        newLocation.long = event.latLng.lng();
+        newLocation.name = 'Potential Program Location';
+        newLocation.text = 'Potential Program Location';
+        potentialLocationData.push(newLocation)
+        console.log(potentialLocationData)
+        potentialLocationOverlay.draw();
     }
 });
 
@@ -106,6 +182,7 @@ var select2data = [];
 function addNodes(filePath, cssClassName, select2Id) {
     d3.json(filePath, function (error, data) {
         if (error) throw error;
+        console.log(data)
 
         // set up the data for select2
         var newSelect2Data = data;
