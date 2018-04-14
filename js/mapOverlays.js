@@ -1,5 +1,7 @@
 // Used to distinguish normal map use to new location use
 let addingLocation = true;
+// Used to keep track of selected nodes across multiple search bars
+let currentlySelectedNodes = [];
 
 // given all such possible elements, the list of those to highlight,
 // the function that extracts the field to compare with toHighlight,
@@ -178,7 +180,6 @@ map.setOptions({minZoom: 11, maxZoom: 18});
 map.mapTypes.set('styled_map', styledMapType);
 map.setMapTypeId('styled_map');
 
-const select2data = [];
 
 function addNodes(filePath, cssClassName, select2Id) {
     d3.json(filePath, function (error, data) {
@@ -201,27 +202,25 @@ function addNodes(filePath, cssClassName, select2Id) {
             multiple: "multiple",
             containerCssClass: select2Id
         }).on("select2:select", function (event) {
-            const selection = $("#" + select2Id).select2("data");
-            const toHighlight = selection.map(s => s.name);
-
-            highlight(d3.selectAll("svg"), toHighlight, n => n.name, .2, 1);
-            highlight(d3.selectAll("svg").selectAll("text"), toHighlight, n => n.text, 0, 1);
-        }).on("select2:unselect", function (event) {
-            const search = $("#" + select2Id);
-            const previousSelection = search.select2("data");
-
-            const selected = previousSelection.map(s => s.name);
+            currentlySelectedNodes.push(event.params.data.text);
             const nodes = d3.selectAll("svg");
             const texts = nodes.selectAll("text");
 
-            if (selected.length === 0) {
+            highlight(nodes, currentlySelectedNodes, n => n.name, .2, 1);
+            highlight(texts, currentlySelectedNodes, n => n.text, 0, 1);
+        }).on("select2:unselect", function (event) {
+            currentlySelectedNodes.splice(currentlySelectedNodes.indexOf(event.params.data.text), 1);
+            const nodes = d3.selectAll("svg");
+            const texts = nodes.selectAll("text");
+
+            if (currentlySelectedNodes.length === 0) {
                 // selection is empty, so reset all
                 setOpacity(nodes, .8);
                 setOpacity(texts, 0);
             } else {
                 // highlight the nodes and text that are selected
-                highlight(nodes, selected, n => n.name, .2, 1);
-                highlight(texts, selected, n => n.text, 0, 1);
+                highlight(nodes, currentlySelectedNodes, n => n.name, .2, 1);
+                highlight(texts, currentlySelectedNodes, n => n.text, 0, 1);
             }
 
             search.trigger('change');
@@ -269,9 +268,8 @@ function addNodes(filePath, cssClassName, select2Id) {
                             .style("opacity", .9);
 
                         tooltip.html(d.name
-                            + '<br>Address: '
-                            + (d.address ? '<br>Address: ' + d.address : "")
-                            + (d.members ? '<br>Members: ' + d.members : ""))
+                            + (d.address ? '<br/>Address: ' + d.address : "")
+                            + (d.members ? '<br/>Members: ' + d.members : ""))
                             .style("left", (d3.event.pageX + 9) + "px")
                             .style("top", (d3.event.pageY - 28) + "px")
                     })
@@ -287,9 +285,7 @@ function addNodes(filePath, cssClassName, select2Id) {
                 marker.append("circle")
                     .attr("r", membersOrDefault)
                     .attr("cx", padding)
-                    .attr("cy", padding)
-                    .append("svg:title")
-                    .text(d => d.description || "City Site Program");
+                    .attr("cy", padding);
 
                 marker.append("text")
                     .attr("x", d => padding + 3 + membersOrDefault(d))
@@ -324,8 +320,8 @@ function toggle(it) {
         .filter("." + it)
         .selectAll("svg")
         .selectAll("circle");
-
     const legend = d3.selectAll("svg").filter("." + it);
+
     if (toggles[it]) {
         nodes.attr("opacity", .2);
         legend.attr("opacity", .2);
