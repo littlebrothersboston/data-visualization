@@ -1,1 +1,242 @@
-[{"name": "Another Course to College", "principal": "Principal/Headmaster:\u00a0Michele Pellam", "address": "612 Metropolitan Ave Hyde Park, MA\u00a002136", "lat": 42.2653453, "long": -71.1175106, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 8:00 a.m.-2:30 p.m.", "type": "School Type: Pilot\u00a0"}, {"name": "Boston Adult Technical Academy", "principal": "Principal/Headmaster:\u00a0Benjamin Helfat", "address": "20 Church St. Boston, MA\u00a002116", "lat": 42.3487628, "long": -71.068371, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 9:00 a.m. - 3:30 p.m.", "type": "School Type: Alternative\u00a0"}, {"name": "Boston Arts Academy", "principal": "Principal/Headmaster:\u00a0Anne Clark", "address": "174 Ipswich St. Boston, MA\u00a002215", "lat": 42.346196, "long": -71.09499579999999, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 8:00 a.m.-3:55 p.m.; 8:00 a.m.-12:50 p.m. Fri.", "type": "School Type: Pilot\u00a0"}, {"name": "Boston Community Leadership Academy", "principal": "Principal/Headmaster:\u00a0Dr. Francine Locker", "address": "655 Metropolitan Ave. Hyde Park, MA\u00a002136", "lat": 42.26268570000001, "long": -71.11783559999999, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:45 a.m. - 2:30 p.m.", "type": "School Type: Pilot\u00a0"}, {"name": "Boston Day & Evening Academy", "principal": "Principal/Headmaster:\u00a0Alison Hramiec", "address": "20 Kearsarge Ave. Roxbury, MA\u00a002119", "lat": 42.3269684, "long": -71.0817649, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: Day: 9:00 a.m.-2:15 p.m. M-Th; Evening: Noon-5:45 p.m. M-Th; Friday electives 9:00 a.m.-11:25 a.m.", "type": "School Type: Horace Mann (In-District) Charter\u00a0"}, {"name": "Boston International Newcomers Academy", "principal": "Principal/Headmaster:\u00a0Tony King", "address": "100 Maxwell St. Dorchester, MA\u00a002124", "lat": 42.281226, "long": -71.0808828, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 8:00 a.m. - 3:30 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "Brighton High School", "principal": "Principal/Headmaster:\u00a0Robert Rametti", "address": "25 Warren St. Brighton, MA\u00a002135", "lat": 42.3492995, "long": -71.1455015, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:30 a.m. - 2:25 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "Burke, Jeremiah E. High School", "principal": "Principal/Headmaster:\u00a0Lindsa McIntyre", "address": "60 Washington St. Dorchester, MA\u00a002121", "lat": 42.3071524, "long": -71.08116199999999, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:25 a.m. - 2:35 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "Charlestown High School", "principal": "Principal/Headmaster:\u00a0William Thomas", "address": "240 Medford St. Charlestown, MA\u00a002129", "lat": 42.3800804, "long": -71.0610588, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:30 a.m. - 1:50 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "Community Academy", "principal": "Principal/Headmaster:\u00a0Rayna Briceno", "address": "25 Glen Rd. Ja.m.aica Plain, MA\u00a002130", "lat": 42.3089101, "long": -71.1035007, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 8:00 a.m. - 2:20 p.m.", "type": "School Type: Alternative\u00a0"}, {"name": "Community Academy of Science & Health", "principal": "Principal/Headmaster:\u00a0Robin Lee", "address": "11 Charles St. Dorchester, MA\u00a002122", "lat": 42.3010031, "long": -71.0617552, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:30 a.m. - 1:50 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "Dorchester Academy", "principal": "Principal/Headmaster:\u00a0Ferdinand Fuentes", "address": "11 Charles St. Dorchester, MA\u00a002122", "lat": 42.3010031, "long": -71.0617552, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 8:00 a.m. - 2:50 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "East Boston High School", "principal": "Principal/Headmaster:\u00a0Phillip R. Brangiforte", "address": "86 White St. East Boston, MA\u00a002128", "lat": 42.3811123, "long": -71.0351979, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:30 a.m. - 1:50 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "English High School", "principal": "Principal/Headmaster:\u00a0A. Freda Johnson", "address": "144 McBride St. Ja.m.aica Plain, MA\u00a002130", "lat": 42.3065838, "long": -71.1092285, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:20 a.m. - 2:20 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "Excel High School", "principal": "Principal/Headmaster:\u00a0Renee McCall", "address": "95 G St. South Boston, MA\u00a002127", "lat": 42.3328688, "long": -71.0449946, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:25 a.m. - 1:45 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "Fenway High School", "principal": "Principal/Headmaster:\u00a0Geoffrey Walker", "address": "67 Alleghany St. Roxbury, MA\u00a002120", "lat": 42.3306688, "long": -71.09930109999999, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 8:30 a.m. - 3:35 p.m. M-Th8:30 a.m. - 1:05 p.m. Fri", "type": "School Type: Pilot\u00a0"}, {"name": "Lyon, Mary High School", "principal": "Principal/Headmaster:\u00a0Jean-Dominique Anoh", "address": "95 Beechcroft St. Brighton, MA\u00a002135", "lat": 42.3521839, "long": -71.1607262, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 8:30 a.m. - 3:30 p.m.", "type": "School Type: Pilot\u00a0"}, {"name": "Madison Park Technical Vocational High School", "principal": "Principal/Headmaster:\u00a0Kevin McCaskill, Executive Director; Shawn Shackelford, Headmaster", "address": "75 Malcolm X Blvd. Roxbury, MA\u00a002120", "lat": 42.3319323, "long": -71.0908397, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:15 a.m. - 2:30 p.m.", "type": "School Type: \u00a0"}, {"name": "McKinley, William Preparatory High School", "principal": "Principal/Headmaster:\u00a0Joseph Brown", "address": "97 Peterborough St. Boston, MA\u00a002215", "lat": 42.3434472, "long": -71.0991275, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:20 a.m. - 1:40 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "Muniz, Margarita Academy", "principal": "Principal/Headmaster:\u00a0Dania Vazquez", "address": "20 Child St. Jamaica Plain, MA\u00a002130", "lat": 42.3071417, "long": -71.1143075, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 8:30 a.m. - 3:30 p.m. Mon.-Thurs.; 8:30 a.m. - 12:30 p.m. Fri.", "type": "School Type: Innovation\u00a0"}, {"name": "New Mission High School", "principal": "Principal/Headmaster:\u00a0Naia Wilson", "address": "655 Metropolitan Ave. Hyde Park, MA\u00a002136", "lat": 42.26268570000001, "long": -71.11783559999999, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:45 a.m. - 2:30 p.m.", "type": "School Type: Pilot\u00a0"}, {"name": "Snowden International School at Copley", "principal": "Principal/Headmaster:\u00a0Eugene Roundtree", "address": "150 Newbury St. Boston, MA\u00a002116", "lat": 42.3505294, "long": -71.077958, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:30 a.m. - 2:15 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "Urban Science Academy", "principal": "Principal/Headmaster:\u00a0Darlene Marcano", "address": "1205 VFW Pkwy. West Roxbury, MA\u00a002132", "lat": 42.282206, "long": -71.1745491, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:20 a.m. - 1:40 p.m.", "type": "School Type: Traditional\u00a0"}, {"name": "West Roxbury Academy", "principal": "Principal/Headmaster:\u00a0Rudolph Weekes", "address": "1205 VFW Pkwy. West Roxbury, MA\u00a002132", "lat": 42.282206, "long": -71.1745491, "grades": "Grades Offered:\u00a09-12", "hours": "Hours: 7:20 a.m. - 1:40 p.m.", "type": "School Type: Traditional\u00a0"}]
+[
+  {
+    "name": "Another Course to College",
+    "principal": "Principal/Headmaster:\u00a0Michele Pellam",
+    "address": "612 Metropolitan Ave Hyde Park, MA\u00a002136",
+    "lat": 42.2653453,
+    "long": -71.1175106,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 8:00 a.m.-2:30 p.m.",
+    "type": "School Type: Pilot\u00a0"
+  },
+  {
+    "name": "Boston Adult Technical Academy",
+    "principal": "Principal/Headmaster:\u00a0Benjamin Helfat",
+    "address": "20 Church St. Boston, MA\u00a002116",
+    "lat": 42.3487628,
+    "long": -71.068371,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 9:00 a.m. - 3:30 p.m.",
+    "type": "School Type: Alternative\u00a0"
+  },
+  {
+    "name": "Boston Arts Academy",
+    "principal": "Principal/Headmaster:\u00a0Anne Clark",
+    "address": "174 Ipswich St. Boston, MA\u00a002215",
+    "lat": 42.346196,
+    "long": -71.09499579999999,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 8:00 a.m.-3:55 p.m.; 8:00 a.m.-12:50 p.m. Fri.",
+    "type": "School Type: Pilot\u00a0"
+  },
+  {
+    "name": "Boston Community Leadership Academy",
+    "principal": "Principal/Headmaster:\u00a0Dr. Francine Locker",
+    "address": "655 Metropolitan Ave. Hyde Park, MA\u00a002136",
+    "lat": 42.26268570000001,
+    "long": -71.11783559999999,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:45 a.m. - 2:30 p.m.",
+    "type": "School Type: Pilot\u00a0"
+  },
+  {
+    "name": "Boston Day & Evening Academy",
+    "principal": "Principal/Headmaster:\u00a0Alison Hramiec",
+    "address": "20 Kearsarge Ave. Roxbury, MA\u00a002119",
+    "lat": 42.3269684,
+    "long": -71.0817649,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: Day: 9:00 a.m.-2:15 p.m. M-Th; Evening: Noon-5:45 p.m. M-Th; Friday electives 9:00 a.m.-11:25 a.m.",
+    "type": "School Type: Horace Mann (In-District) Charter\u00a0"
+  },
+  {
+    "name": "Boston International Newcomers Academy",
+    "principal": "Principal/Headmaster:\u00a0Tony King",
+    "address": "100 Maxwell St. Dorchester, MA\u00a002124",
+    "lat": 42.281226,
+    "long": -71.0808828,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 8:00 a.m. - 3:30 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "Brighton High School",
+    "principal": "Principal/Headmaster:\u00a0Robert Rametti",
+    "address": "25 Warren St. Brighton, MA\u00a002135",
+    "lat": 42.3492995,
+    "long": -71.1455015,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:30 a.m. - 2:25 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "Burke, Jeremiah E. High School",
+    "principal": "Principal/Headmaster:\u00a0Lindsa McIntyre",
+    "address": "60 Washington St. Dorchester, MA\u00a002121",
+    "lat": 42.3071524,
+    "long": -71.08116199999999,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:25 a.m. - 2:35 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "Charlestown High School",
+    "principal": "Principal/Headmaster:\u00a0William Thomas",
+    "address": "240 Medford St. Charlestown, MA\u00a002129",
+    "lat": 42.3800804,
+    "long": -71.0610588,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:30 a.m. - 1:50 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "Community Academy",
+    "principal": "Principal/Headmaster:\u00a0Rayna Briceno",
+    "address": "25 Glen Rd. Ja.m.aica Plain, MA\u00a002130",
+    "lat": 42.3089101,
+    "long": -71.1035007,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 8:00 a.m. - 2:20 p.m.",
+    "type": "School Type: Alternative\u00a0"
+  },
+  {
+    "name": "Community Academy of Science & Health",
+    "principal": "Principal/Headmaster:\u00a0Robin Lee",
+    "address": "11 Charles St. Dorchester, MA\u00a002122",
+    "lat": 42.3010031,
+    "long": -71.0617552,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:30 a.m. - 1:50 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "Dorchester Academy",
+    "principal": "Principal/Headmaster:\u00a0Ferdinand Fuentes",
+    "address": "11 Charles St. Dorchester, MA\u00a002122",
+    "lat": 42.3010031,
+    "long": -71.0617552,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 8:00 a.m. - 2:50 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "East Boston High School",
+    "principal": "Principal/Headmaster:\u00a0Phillip R. Brangiforte",
+    "address": "86 White St. East Boston, MA\u00a002128",
+    "lat": 42.3811123,
+    "long": -71.0351979,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:30 a.m. - 1:50 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "English High School",
+    "principal": "Principal/Headmaster:\u00a0A. Freda Johnson",
+    "address": "144 McBride St. Ja.m.aica Plain, MA\u00a002130",
+    "lat": 42.3065838,
+    "long": -71.1092285,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:20 a.m. - 2:20 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "Excel High School",
+    "principal": "Principal/Headmaster:\u00a0Renee McCall",
+    "address": "95 G St. South Boston, MA\u00a002127",
+    "lat": 42.3328688,
+    "long": -71.0449946,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:25 a.m. - 1:45 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "Fenway High School",
+    "principal": "Principal/Headmaster:\u00a0Geoffrey Walker",
+    "address": "67 Alleghany St. Roxbury, MA\u00a002120",
+    "lat": 42.3306688,
+    "long": -71.09930109999999,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 8:30 a.m. - 3:35 p.m. M-Th8:30 a.m. - 1:05 p.m. Fri",
+    "type": "School Type: Pilot\u00a0"
+  },
+  {
+    "name": "Lyon, Mary High School",
+    "principal": "Principal/Headmaster:\u00a0Jean-Dominique Anoh",
+    "address": "95 Beechcroft St. Brighton, MA\u00a002135",
+    "lat": 42.3521839,
+    "long": -71.1607262,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 8:30 a.m. - 3:30 p.m.",
+    "type": "School Type: Pilot\u00a0"
+  },
+  {
+    "name": "Madison Park Technical Vocational High School",
+    "principal": "Principal/Headmaster:\u00a0Kevin McCaskill, Executive Director; Shawn Shackelford, Headmaster",
+    "address": "75 Malcolm X Blvd. Roxbury, MA\u00a002120",
+    "lat": 42.3319323,
+    "long": -71.0908397,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:15 a.m. - 2:30 p.m.",
+    "type": "School Type: \u00a0"
+  },
+  {
+    "name": "McKinley, William Preparatory High School",
+    "principal": "Principal/Headmaster:\u00a0Joseph Brown",
+    "address": "97 Peterborough St. Boston, MA\u00a002215",
+    "lat": 42.3434472,
+    "long": -71.0991275,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:20 a.m. - 1:40 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "Muniz, Margarita Academy",
+    "principal": "Principal/Headmaster:\u00a0Dania Vazquez",
+    "address": "20 Child St. Jamaica Plain, MA\u00a002130",
+    "lat": 42.3071417,
+    "long": -71.1143075,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 8:30 a.m. - 3:30 p.m. Mon.-Thurs.; 8:30 a.m. - 12:30 p.m. Fri.",
+    "type": "School Type: Innovation\u00a0"
+  },
+  {
+    "name": "New Mission High School",
+    "principal": "Principal/Headmaster:\u00a0Naia Wilson",
+    "address": "655 Metropolitan Ave. Hyde Park, MA\u00a002136",
+    "lat": 42.26268570000001,
+    "long": -71.11783559999999,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:45 a.m. - 2:30 p.m.",
+    "type": "School Type: Pilot\u00a0"
+  },
+  {
+    "name": "Snowden International School at Copley",
+    "principal": "Principal/Headmaster:\u00a0Eugene Roundtree",
+    "address": "150 Newbury St. Boston, MA\u00a002116",
+    "lat": 42.3505294,
+    "long": -71.077958,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:30 a.m. - 2:15 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "Urban Science Academy",
+    "principal": "Principal/Headmaster:\u00a0Darlene Marcano",
+    "address": "1205 VFW Pkwy. West Roxbury, MA\u00a002132",
+    "lat": 42.282206,
+    "long": -71.1745491,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:20 a.m. - 1:40 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  },
+  {
+    "name": "West Roxbury Academy",
+    "principal": "Principal/Headmaster:\u00a0Rudolph Weekes",
+    "address": "1205 VFW Pkwy. West Roxbury, MA\u00a002132",
+    "lat": 42.282206,
+    "long": -71.1745491,
+    "grades": "Grades Offered:\u00a09-12",
+    "hours": "Hours: 7:20 a.m. - 1:40 p.m.",
+    "type": "School Type: Traditional\u00a0"
+  }
+]

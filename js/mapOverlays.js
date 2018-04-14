@@ -185,20 +185,19 @@ function addNodes(filePath, cssClassName, select2Id) {
         if (error) throw error;
 
         // set up the data for select2
-        const newSelect2Data = data;
+        let newSelect2Data = data;
         // create unique id's
         let i = 0;
         newSelect2Data.forEach(d => d.id = i++);
-        // render each option as a name
+        // requires a "text" field to render in search
         newSelect2Data.forEach(d => d.text = d.name);
-        newSelect2Data.forEach(d => select2data.push(d));
-        select2data.sort((a, b) => {
+        newSelect2Data.sort((a, b) => {
             if (a.text > b.text) return 1; else return 0
         });
 
         $("#" + select2Id).select2({
             placeholder: 'Search...',
-            data: select2data,
+            data: newSelect2Data,
             multiple: "multiple",
             containerCssClass: select2Id
         }).on("select2:select", function (event) {
