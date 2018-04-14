@@ -120,9 +120,11 @@ var unusedVariable = d3.select('body')
 .on('mousemove', function() {
     var coordinates = [0, 0]
     if (addingLocation) {
-        coordinates = d3.mouse(this)
+        map.setOptions({draggableCursor : "url(img/symbol_add.png) 64 64, pointer"});
+    } else {
+        map.setOptions({draggableCursor : "crosshair"});
     }
-    drawPotentialLocation(coordinates)
+    // drawPotentialLocation(coordinates)
 })
 
 google.maps.event.addListener(map, 'click', function(event) {
