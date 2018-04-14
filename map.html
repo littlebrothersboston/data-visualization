@@ -11,33 +11,42 @@
 <body>
 <div id="container">
     <div id="legend">
-    <div class="container-element">
-        <svg style="float:left" height="30px" width="170px" class="housing" onclick="toggle('housing')">
-            <circle r="8.542562584220407" cx="15" cy="15"></circle>
-            <text x="30" y="20">BHA Developments</text>
-        </svg>
-        <div class="search" id="search-bha"></div>
-    </div>
-
-    <div class="container-element">
-        <svg style="float:left" height="30px" width="170px" class="city-sites" onclick="toggle('city-sites')">
-            <circle r="8.542562584220407" cx="15" cy="15"></circle>
-            <text x="30" y="20">City Sites</text>
-        </svg>
-        <div class="search" id="search-city-sites"></div>
-    </div>
         <div class="container-element">
-        <svg style="float:left" height="30px" width="170px" class="high-schools" onclick="toggle('high-schools')">
-            <circle r="8.542562584220407" cx="15" cy="15"></circle>
-            <text x="30" y="20">High Schools</text>
-        </svg>
-        <div class="search" id="search-high-schools"></div>
-    </div>
+            <svg style="float:left" height="30px" width="170px" class="housing"
+                 onclick="toggle('housing')">
+                <circle r="8.542562584220407" cx="15" cy="15"></circle>
+                <text x="30" y="20">BHA Developments</text>
+            </svg>
+            <div class="search" id="search-bha"></div>
+        </div>
+
+        <div class="container-element">
+            <svg style="float:left" height="30px" width="170px" class="city-sites"
+                 onclick="toggle('city-sites')">
+                <circle r="8.542562584220407" cx="15" cy="15"></circle>
+                <text x="30" y="20">City Sites</text>
+            </svg>
+            <div class="search" id="search-city-sites"></div>
+        </div>
+        <div class="container-element">
+            <svg style="float:left" height="30px" width="170px" class="high-schools"
+                 onclick="toggle('high-schools')">
+                <circle r="8.542562584220407" cx="15" cy="15"></circle>
+                <text x="30" y="20">High Schools</text>
+            </svg>
+            <div class="search" id="search-high-schools"></div>
+        </div>
+        <div class="container-element">
+            <svg style="float:left" height="30px" width="170px" class="potential-location"
+                 onclick="toggle('potential-location')">
+                <circle r="8.542562584220407" cx="15" cy="15"></circle>
+                <text x="30" y="20">Potential Programs</text>
+            </svg>
+
+                <a id="addLocationButton" href="#" value="Add Location" onclick="addLocation()">Add Location</a>
+        </div>
     </div>
     <div id="map"></div>
-    <div id="addLocationButton">
-        <input type="button" name="addLocationButton" value="Add Location" onclick="addLocation()"/>
-    </div>
 </div>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
