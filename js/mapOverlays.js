@@ -36,16 +36,16 @@ var potentialLocationOverlay = new google.maps.OverlayView();
 potentialLocationOverlay.onAdd = function () {
     var potentialLocationLayer = d3.select(potentialLocationOverlay.getPanes().overlayMouseTarget)
         .append("div")
-        .attr("class", "potentialLocation");
+        .attr("class", "potential-location");
 
     // Draw each marker as a separate SVG element.
     potentialLocationOverlay.draw = function () {
-        var projection = potentialLocationOverlay.getProjection();
+        var potentialLocationProjection = potentialLocationOverlay.getProjection();
         var padding = 15;
 
         function transform(d) {
             d = new google.maps.LatLng(d.lat, d.long);
-            d = projection.fromLatLngToDivPixel(d);
+            d = potentialLocationProjection.fromLatLngToDivPixel(d);
             return d3.select(this)
                 .style("left", (d.x - padding) + "px")
                 .style("top", (d.y - padding) + "px");
@@ -66,8 +66,7 @@ potentialLocationOverlay.onAdd = function () {
                 tooltip.transition()
                   .duration(200)
                   .style("opacity", .9)
-                tooltip.html(d.name + '<br>Address: ' + d.address
-                + '<br>Members: ' + d.members)
+                tooltip.html(d.name + '<br>Potential Program Location')
                   .style("left", (d3.event.pageX + 9) + "px")
                   .style("top", (d3.event.pageY - 28) + "px")
                  })
@@ -109,7 +108,6 @@ function addLocation() {
 // GET this working! Want to have a nice marker to show where new location will be
 function drawPotentialLocation(coordinates) {
     var potentalLocationMarker = d3.select(".potential-location");
-    // console.log(potentalLocationMarker)
     potentalLocationMarker.attr({
         "cx": coordinates[0],
         "cy": coordinates[1],
@@ -117,6 +115,7 @@ function drawPotentialLocation(coordinates) {
     });
 }
 
+//Fix later
 var unusedVariable = d3.select('body')
 .on('mousemove', function() {
     var coordinates = [0, 0]
@@ -137,8 +136,8 @@ google.maps.event.addListener(map, 'click', function(event) {
         newLocation.name = 'Potential Program Location';
         newLocation.text = 'Potential Program Location';
         potentialLocationData.push(newLocation)
-        console.log(potentialLocationData)
         potentialLocationOverlay.draw();
+        potentialLocationOverlay.setMap(map);
     }
 });
 
@@ -182,7 +181,6 @@ var select2data = [];
 function addNodes(filePath, cssClassName, select2Id) {
     d3.json(filePath, function (error, data) {
         if (error) throw error;
-        console.log(data)
 
         // set up the data for select2
         var newSelect2Data = data;
