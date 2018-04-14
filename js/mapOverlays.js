@@ -50,7 +50,7 @@ potentialLocationOverlay.onAdd = function () {
                 .style("left", (d.x - padding) + "px")
                 .style("top", (d.y - padding) + "px");
         }
-        
+
         var tooltip = d3.select("body")
             .append("div")
             .attr("class", "tooltip")
@@ -60,24 +60,24 @@ potentialLocationOverlay.onAdd = function () {
             .data(potentialLocationData)
             .each(transform) // update existing markers
             .enter().append("svg:svg")
-              .each(transform)
-              .attr("class", "marker")
-              .on("mouseover", function(d) {
+            .each(transform)
+            .attr("class", "marker")
+            .on("mouseover", function (d) {
                 tooltip.transition()
-                  .duration(200)
-                  .style("opacity", .9)
+                    .duration(200)
+                    .style("opacity", .9)
                 tooltip.html(d.name + '<br>Potential Program Location')
-                  .style("left", (d3.event.pageX + 9) + "px")
-                  .style("top", (d3.event.pageY - 28) + "px")
-                 })
-               .on("mouseout", function(d) {
-                 tooltip.transition()
-                  .duration(200)
-                  .style("opacity", 0)
-               })
-               .on("click", function(d) {
-                 // clicking functionality goes here
-               });
+                    .style("left", (d3.event.pageX + 9) + "px")
+                    .style("top", (d3.event.pageY - 28) + "px")
+            })
+            .on("mouseout", function (d) {
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", 0)
+            })
+            .on("click", function (d) {
+                // clicking functionality goes here
+            });
 
         marker.append("circle")
             .attr("r", 6.5)
@@ -117,17 +117,17 @@ function drawPotentialLocation(coordinates) {
 
 //Fix later
 var unusedVariable = d3.select('body')
-.on('mousemove', function() {
-    var coordinates = [0, 0]
-    if (addingLocation) {
-        map.setOptions({draggableCursor : "url(img/symbol_add.png) 64 64, pointer"});
-    } else {
-        map.setOptions({draggableCursor : "crosshair"});
-    }
-    // drawPotentialLocation(coordinates)
-})
+    .on('mousemove', function () {
+        var coordinates = [0, 0]
+        if (addingLocation) {
+            map.setOptions({draggableCursor: "url(img/symbol_add.png) 64 64, pointer"});
+        } else {
+            map.setOptions({draggableCursor: "crosshair"});
+        }
+        // drawPotentialLocation(coordinates)
+    })
 
-google.maps.event.addListener(map, 'click', function(event) {
+google.maps.event.addListener(map, 'click', function (event) {
     if (addingLocation) {
         addingLocation = false;
         var newLocation = {};
@@ -248,7 +248,7 @@ function addNodes(filePath, cssClassName, select2Id) {
                         .style("left", (d.x - padding) + "px")
                         .style("top", (d.y - padding) + "px");
                 }
-                
+
                 var tooltip = d3.select("body")
                     .append("div")
                     .attr("class", "tooltip")
@@ -262,25 +262,28 @@ function addNodes(filePath, cssClassName, select2Id) {
                     .data(data)
                     .each(transform) // update existing markers
                     .enter().append("svg:svg")
-                      .each(transform)
-                      .attr("class", "marker")
-                      .on("mouseover", function(d) {
+                    .each(transform)
+                    .attr("class", "marker")
+                    .on("mouseover", function (d) {
                         tooltip.transition()
-                          .duration(200)
-                          .style("opacity", .9)
-                        tooltip.html(d.name + '<br>Address: ' + d.address
-                        + '<br>Members: ' + d.members)
-                          .style("left", (d3.event.pageX + 9) + "px")
-                          .style("top", (d3.event.pageY - 28) + "px")
-    	                 })
-   	                   .on("mouseout", function(d) {
-                         tooltip.transition()
-                          .duration(200)
-                          .style("opacity", 0)
-                       })
-                       .on("click", function(d) {
-                         // clicking functionality goes here
-                       });
+                            .duration(200)
+                            .style("opacity", .9);
+
+                        tooltip.html(d.name
+                            + '<br>Address: '
+                            + d.address
+                            + (d.members ? '<br>Members: ' + d.members : ""))
+                            .style("left", (d3.event.pageX + 9) + "px")
+                            .style("top", (d3.event.pageY - 28) + "px")
+                    })
+                    .on("mouseout", function (d) {
+                        tooltip.transition()
+                            .duration(200)
+                            .style("opacity", 0)
+                    })
+                    .on("click", function (d) {
+                        // clicking functionality goes here
+                    });
 
                 marker.append("circle")
                     .attr("r", membersOrDefault)
@@ -309,6 +312,7 @@ function addNodes(filePath, cssClassName, select2Id) {
 addNodes("data/bha_housing_map_with_size.json", "housing", "search-bha");
 addNodes("data/city_sites_clean.json", "city-sites", "search-city-sites");
 addNodes("data/boston_high_schools.json", "high-schools", "search-high-schools");
+
 
 // keeps track of each toggleable item and whether it's toggled
 const toggles = {};
