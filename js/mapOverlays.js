@@ -271,7 +271,7 @@ function addNodes(filePath, cssClassName, select2Id) {
 
                         tooltip.html(d.name
                             + '<br>Address: '
-                            + d.address
+                            + (d.address ? '<br>Address: ' + d.address : "")
                             + (d.members ? '<br>Members: ' + d.members : ""))
                             .style("left", (d3.event.pageX + 9) + "px")
                             .style("top", (d3.event.pageY - 28) + "px")
