@@ -55,6 +55,26 @@ html, body, #container {
     height: 30px;
 }
 
+.potential-location svg {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    /*padding-right: 100px;*/
+    font: 10px sans-serif;
+}
+
+.potential-location circle {
+    fill: #ffffbf;
+    fill-opacity: .5;
+    stroke: black;
+    stroke-width: 1.5px;
+}
+
+.potential-location text {
+    width: 150px;
+    height: 30px;
+}
+
 .container-element {
     height: 60px;
     width: 100%;
