@@ -1,5 +1,5 @@
 // Used to distinguish normal map use to new location use
-var addingLocation = false;
+let addingLocation = true;
 
 // given all such possible elements, the list of those to highlight,
 // the function that extracts the field to compare with toHighlight,
@@ -21,7 +21,7 @@ function setOpacity(chosen, opacity) {
 }
 
 // Initiate map
-var map = new google.maps.Map(d3.select("#map").node(), {
+const map = new google.maps.Map(d3.select("#map").node(), {
     zoom: 12,
     center: new google.maps.LatLng(42.318643, -71.072642),
     mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -30,18 +30,18 @@ var map = new google.maps.Map(d3.select("#map").node(), {
     draggingCursor: "all-scroll"
 });
 
-var potentialLocationData = [];
-var potentialLocationOverlay = new google.maps.OverlayView();
+const potentialLocationData = [];
+const potentialLocationOverlay = new google.maps.OverlayView();
 // Add the container when the overlay is added to the map.
 potentialLocationOverlay.onAdd = function () {
-    var potentialLocationLayer = d3.select(potentialLocationOverlay.getPanes().overlayMouseTarget)
+    const potentialLocationLayer = d3.select(potentialLocationOverlay.getPanes().overlayMouseTarget)
         .append("div")
         .attr("class", "potential-location");
 
     // Draw each marker as a separate SVG element.
     potentialLocationOverlay.draw = function () {
-        var potentialLocationProjection = potentialLocationOverlay.getProjection();
-        var padding = 15;
+        const potentialLocationProjection = potentialLocationOverlay.getProjection();
+        const padding = 15;
 
         function transform(d) {
             d = new google.maps.LatLng(d.lat, d.long);
@@ -51,12 +51,12 @@ potentialLocationOverlay.onAdd = function () {
                 .style("top", (d.y - padding) + "px");
         }
 
-        var tooltip = d3.select("body")
+        const tooltip = d3.select("body")
             .append("div")
             .attr("class", "tooltip")
             .style("opacity", 0);
 
-        var marker = potentialLocationLayer.selectAll("svg")
+        const marker = potentialLocationLayer.selectAll("svg")
             .data(potentialLocationData)
             .each(transform) // update existing markers
             .enter().append("svg:svg")
@@ -107,7 +107,7 @@ function addLocation() {
 
 // GET this working! Want to have a nice marker to show where new location will be
 function drawPotentialLocation(coordinates) {
-    var potentalLocationMarker = d3.select(".potential-location");
+    const potentalLocationMarker = d3.select(".potential-location");
     potentalLocationMarker.attr({
         "cx": coordinates[0],
         "cy": coordinates[1],
@@ -116,9 +116,9 @@ function drawPotentialLocation(coordinates) {
 }
 
 //Fix later
-var unusedVariable = d3.select('body')
+const unusedconstiable = d3.select('body')
     .on('mousemove', function () {
-        var coordinates = [0, 0]
+        const coordinates = [0, 0]
         if (addingLocation) {
             map.setOptions({draggableCursor: "url(img/symbol_add.png) 64 64, pointer"});
         } else {
@@ -130,8 +130,8 @@ var unusedVariable = d3.select('body')
 google.maps.event.addListener(map, 'click', function (event) {
     if (addingLocation) {
         addingLocation = false;
-        var newLocation = {};
-        var objectId = potentialLocationData.length;
+        const newLocation = {};
+        const objectId = potentialLocationData.length;
         newLocation.id = objectId;
         newLocation.lat = event.latLng.lat();
         newLocation.long = event.latLng.lng();
@@ -144,7 +144,7 @@ google.maps.event.addListener(map, 'click', function (event) {
 });
 
 // Start of boundary-limit code
-var strictBounds = new google.maps.LatLngBounds(
+const strictBounds = new google.maps.LatLngBounds(
     new google.maps.LatLng(42.226019, -71.151599),
     new google.maps.LatLng(42.421625, -71.023096)
 );
@@ -155,13 +155,13 @@ google.maps.event.addListener(map, 'dragend', function () {
 
     // We're out of bounds - Move the map back within the bounds
 
-    var c = map.getCenter(),
-        x = c.lng(),
-        y = c.lat(),
-        maxX = strictBounds.getNorthEast().lng(),
-        maxY = strictBounds.getNorthEast().lat(),
-        minX = strictBounds.getSouthWest().lng(),
-        minY = strictBounds.getSouthWest().lat();
+    const c = map.getCenter();
+    let x = c.lng();
+    let y = c.lat();
+    let maxX = strictBounds.getNorthEast().lng();
+    let maxY = strictBounds.getNorthEast().lat();
+    let minX = strictBounds.getSouthWest().lng();
+    let minY = strictBounds.getSouthWest().lat();
 
     if (x < minX) x = minX;
     if (x > maxX) x = maxX;
@@ -178,16 +178,16 @@ map.setOptions({minZoom: 11, maxZoom: 18});
 map.mapTypes.set('styled_map', styledMapType);
 map.setMapTypeId('styled_map');
 
-var select2data = [];
+const select2data = [];
 
 function addNodes(filePath, cssClassName, select2Id) {
     d3.json(filePath, function (error, data) {
         if (error) throw error;
 
         // set up the data for select2
-        var newSelect2Data = data;
+        const newSelect2Data = data;
         // create unique id's
-        var i = 0;
+        let i = 0;
         newSelect2Data.forEach(d => d.id = i++);
         // render each option as a name
         newSelect2Data.forEach(d => d.text = d.name);
@@ -229,17 +229,17 @@ function addNodes(filePath, cssClassName, select2Id) {
             throw "please ignore this error, it's supposed to be here";
         });
 
-        var overlay = new google.maps.OverlayView();
+        const overlay = new google.maps.OverlayView();
         // Add the container when the overlay is added to the map.
         overlay.onAdd = function () {
-            var layer = d3.select(overlay.getPanes().overlayMouseTarget)
+            const layer = d3.select(overlay.getPanes().overlayMouseTarget)
                 .append("div")
                 .attr("class", cssClassName);
 
             // Draw each marker as a separate SVG element.
             overlay.draw = function () {
-                var projection = overlay.getProjection();
-                var padding = 15;
+                const projection = overlay.getProjection();
+                const padding = 15;
 
                 function transform(d) {
                     d = new google.maps.LatLng(d.lat, d.long);
@@ -249,7 +249,7 @@ function addNodes(filePath, cssClassName, select2Id) {
                         .style("top", (d.y - padding) + "px");
                 }
 
-                var tooltip = d3.select("body")
+                const tooltip = d3.select("body")
                     .append("div")
                     .attr("class", "tooltip")
                     .style("opacity", 0);
@@ -258,7 +258,7 @@ function addNodes(filePath, cssClassName, select2Id) {
                     return (Math.sqrt(d.members) / 5 || 4.5) + 2
                 }
 
-                var marker = layer.selectAll("svg")
+                const marker = layer.selectAll("svg")
                     .data(data)
                     .each(transform) // update existing markers
                     .enter().append("svg:svg")
@@ -318,7 +318,7 @@ addNodes("data/boston_high_schools.json", "high-schools", "search-high-schools")
 const toggles = {};
 
 function toggle(it) {
-    if (!it in toggles) {
+    if (!(it in toggles)) {
         toggles[it] = true
     }
     const nodes = d3.selectAll("div")
@@ -336,3 +336,10 @@ function toggle(it) {
     }
     toggles[it] = !toggles[it]
 }
+
+
+
+
+
+
+
