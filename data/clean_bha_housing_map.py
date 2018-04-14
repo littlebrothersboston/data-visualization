@@ -1,8 +1,7 @@
 from fastkml import kml
 
-import requests
+from data.geocode import geocode
 import json
-import time
 
 input_file_name = "BHA Public Housing Community Map.kml"
 output_file_name = "bha_housing_map.json"
@@ -22,18 +21,6 @@ placemarks = list(folder.features())
 
 # Define the geocoding function using google's API
 
-def geocode(address):
-    # Ensure API throttled to correct rate
-    time.sleep(1 / 50)
-
-    api_key = "AIzaSyBhaVj4lWoj_nK1Tuu4KFaoZ5pjOTGou7Q"
-
-    response = requests.get("https://maps.googleapis.com/maps/api/geocode/json?address=%s&key=%s"
-                            % (address.replace(" ", "+"), api_key))
-    response_json = json.loads(response.content)
-    location = response_json["results"][0]["geometry"]["location"]
-    print(address, location)
-    return location['lat'], location['lng']
 
 
 def placemark_to_json(placemark):

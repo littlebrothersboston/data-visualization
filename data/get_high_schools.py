@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+from data.geocode import geocode
 
 url = "https://www.bostonpublicschools.org//site/UserControls/Minibase" + \
       "/MinibaseListWrapper.aspx?ModuleInstanceID=1824&PageModuleInstanceID=1849" + \
@@ -12,10 +13,15 @@ school_divs = [x.find_all("div") for x in high_schools]
 out = []
 for school in school_divs:
     values = [row.get_text() for row in school]
+    address = values[2] + " " + values[3]
+    lat, long = geocode(address)
+
     out.append({
         "name": values[0],
         "principal": values[1],
-        "address": values[2] + " " + values[3],
+        "address": address,
+        "lat": lat,
+        "long": long,
         "grades": values[4],
         "hours": values[5],
         "type": values[6]

@@ -304,10 +304,11 @@ function addNodes(filePath, cssClassName, select2Id) {
         // Bind our overlay to the map…
         overlay.setMap(map);
     });
-};
+}
 
 addNodes("data/bha_housing_map_with_size.json", "housing", "search-bha");
 addNodes("data/city_sites_clean.json", "city-sites", "search-city-sites");
+addNodes("data/boston_high_schools.json", "high-schools", "search-high-schools");
 
 // keeps track of each toggleable item and whether it's toggled
 const toggles = {};

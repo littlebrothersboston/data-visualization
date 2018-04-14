@@ -16,7 +16,7 @@ html, body, #container {
     width: 100%;
 }
 
-.housing svg {
+.housing svg, .high-schools svg {
     position: absolute;
     width: 28px;
     height: 28px;
@@ -24,14 +24,14 @@ html, body, #container {
     font: 10px sans-serif;
 }
 
-.housing circle {
+.housing circle, .high-schools circle {
     fill: #d7191c;
     fill-opacity: .5;
     stroke: black;
     stroke-width: 1.5px;
 }
 
-.housing text {
+.housing text, .high-schools text {
     width: 150px;
     height: 30px;
 }
