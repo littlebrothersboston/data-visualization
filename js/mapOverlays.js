@@ -1,5 +1,5 @@
 // Used to distinguish normal map use to new location use
-let addingLocation = true;
+let addingLocation = false;
 // Used to keep track of selected nodes across multiple search bars
 let currentlySelectedNodes = [];
 
@@ -84,19 +84,7 @@ potentialLocationOverlay.onAdd = function () {
         marker.append("circle")
             .attr("r", 6.5)
             .attr("cx", padding)
-            .attr("cy", padding)
-            .append("svg:title");
-            // .text("Potential Program Location");
-
-        marker.append("text")
-            .attr("x", d => padding + 3 + 6.5)
-            .attr("y", padding)
-            .attr("opacity", 0)
-            .attr("dy", ".31em")
-            .attr("width", "100px");
-            // .text(function (d) {
-            //     return d.name;
-            // });
+            .attr("cy", padding);
     };
 };
 
@@ -193,7 +181,7 @@ function addNodes(filePath, cssClassName, select2Id) {
         // requires a "text" field to render in search
         newSelect2Data.forEach(d => d.text = d.name);
         newSelect2Data.sort((a, b) => {
-            if (a.text > b.text) return 1; else return 0
+            if (a.text > b.text) return 1; else return -1
         });
 
         $("#" + select2Id).select2({
@@ -271,6 +259,8 @@ function addNodes(filePath, cssClassName, select2Id) {
                             + (d.address ? '<br/>Address: ' + d.address : "")
                             + (d.members ? '<br/>Members: ' + d.members : "")
                             + (d.Program ? '<br/>Program: ' + d.Program : "")
+                            // 6 indicates a city site, 4 from the json + the select2 id and text
+                            + (Object.keys(d).length === 6 ? '<br/>Program Type: City Sites' : "")
                             + (d.type ? '<br/>' + d.type : ""))
                             .style("left", (d3.event.pageX + 9) + "px")
                             .style("top", (d3.event.pageY - 28) + "px")
@@ -288,16 +278,6 @@ function addNodes(filePath, cssClassName, select2Id) {
                     .attr("r", membersOrDefault)
                     .attr("cx", padding)
                     .attr("cy", padding);
-
-                // marker.append("text")
-                //     .attr("x", d => padding + 3 + membersOrDefault(d))
-                //     .attr("y", padding)
-                //     .attr("opacity", 0)
-                //     .attr("dy", ".31em")
-                //     .attr("width", "100px")
-                //     .text(function (d) {
-                //         return d.name;
-                //     });
             };
         };
 
