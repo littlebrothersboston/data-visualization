@@ -260,7 +260,7 @@ function addNodes(filePath, cssClassName, select2Id) {
                             + (d.members ? '<br/>Members: ' + d.members : "")
                             + (d.Program ? '<br/>Program: ' + d.Program : "")
                             // 6 indicates a city site, 4 from the json + the select2 id and text
-                            + (Object.keys(d).length === 6 ? '<br/>Program Type: City Sites' : "")
+                            + (Object.keys(d).length === 6 ? '<br/>Program Type: City Site' : "")
                             + (d.type ? '<br/>' + d.type : ""))
                             .style("left", (d3.event.pageX + 9) + "px")
                             .style("top", (d3.event.pageY - 28) + "px")
@@ -294,24 +294,31 @@ addNodes("data/boston_high_schools.json", "high-schools", "search-high-schools")
 // keeps track of each toggleable item and whether it's toggled
 const toggles = {};
 
-function toggle(it) {
-    if (!(it in toggles)) {
-        toggles[it] = true
+function toggle(cssClass) {
+    if (!(cssClass in toggles)) {
+        toggles[cssClass] = false
     }
+
     const nodes = d3.selectAll("div")
-        .filter("." + it)
+        .filter("." + cssClass)
         .selectAll("svg")
         .selectAll("circle");
-    const legend = d3.selectAll("svg").filter("." + it);
+    const legend = d3.selectAll("svg").filter("." + cssClass);
 
-    if (toggles[it]) {
-        nodes.attr("opacity", .2);
-        legend.attr("opacity", .2);
-    } else {
-        nodes.attr("opacity", 1);
-        legend.attr("opacity", 1);
+    function setOpacity(items, opacity) {
+        items.transition()
+            .duration(300)
+            .style("opacity", opacity)
     }
-    toggles[it] = !toggles[it]
+
+    if (toggles[cssClass]) {
+        setOpacity(nodes, 1);
+        setOpacity(legend, 1);
+    } else {
+        setOpacity(nodes, .2);
+        setOpacity(legend, .2);
+    }
+    toggles[cssClass] = !toggles[cssClass]
 }
 
 
