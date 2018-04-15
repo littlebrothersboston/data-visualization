@@ -85,18 +85,18 @@ potentialLocationOverlay.onAdd = function () {
             .attr("r", 6.5)
             .attr("cx", padding)
             .attr("cy", padding)
-            .append("svg:title")
-            .text("Potential Program Location");
+            .append("svg:title");
+            // .text("Potential Program Location");
 
         marker.append("text")
             .attr("x", d => padding + 3 + 6.5)
             .attr("y", padding)
             .attr("opacity", 0)
             .attr("dy", ".31em")
-            .attr("width", "100px")
-            .text(function (d) {
-                return d.name;
-            });
+            .attr("width", "100px");
+            // .text(function (d) {
+            //     return d.name;
+            // });
     };
 };
 
@@ -269,7 +269,9 @@ function addNodes(filePath, cssClassName, select2Id) {
 
                         tooltip.html(d.name
                             + (d.address ? '<br/>Address: ' + d.address : "")
-                            + (d.members ? '<br/>Members: ' + d.members : ""))
+                            + (d.members ? '<br/>Members: ' + d.members : "")
+                            + (d.Program ? '<br/>Program: ' + d.Program : "")
+                            + (d.type ? '<br/>' + d.type : ""))
                             .style("left", (d3.event.pageX + 9) + "px")
                             .style("top", (d3.event.pageY - 28) + "px")
                     })
@@ -287,15 +289,15 @@ function addNodes(filePath, cssClassName, select2Id) {
                     .attr("cx", padding)
                     .attr("cy", padding);
 
-                marker.append("text")
-                    .attr("x", d => padding + 3 + membersOrDefault(d))
-                    .attr("y", padding)
-                    .attr("opacity", 0)
-                    .attr("dy", ".31em")
-                    .attr("width", "100px")
-                    .text(function (d) {
-                        return d.name;
-                    });
+                // marker.append("text")
+                //     .attr("x", d => padding + 3 + membersOrDefault(d))
+                //     .attr("y", padding)
+                //     .attr("opacity", 0)
+                //     .attr("dy", ".31em")
+                //     .attr("width", "100px")
+                //     .text(function (d) {
+                //         return d.name;
+                //     });
             };
         };
 
