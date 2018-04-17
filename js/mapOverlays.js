@@ -279,9 +279,6 @@ function addNodes(filePath, cssClassName, select2Id) {
                             .style("opacity", 0)
                     })
                     .on("click", function (d) {
-                        console.log(d)
-                        console.log(currentlySelectedNodes)
-                        console.log(d.text)
                         var specificIndex = currentlySelectedNodes.indexOf(d.text)
                         if (specificIndex === -1) {
                             $("#" + select2Id).trigger({
