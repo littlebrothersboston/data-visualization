@@ -262,6 +262,7 @@ function addNodes(filePath, cssClassName, select2Id) {
                     .each(transform)
                     .attr("class", "marker")
                     .on("mouseover", function (d) {
+
                         tooltip.transition()
                             .duration(200)
                             .style("opacity", .9);
@@ -278,7 +279,29 @@ function addNodes(filePath, cssClassName, select2Id) {
                             .style("opacity", 0)
                     })
                     .on("click", function (d) {
-                        // clicking functionality goes here
+                        console.log(d)
+                        console.log(currentlySelectedNodes)
+                        console.log(d.text)
+                        var specificIndex = currentlySelectedNodes.indexOf(d.text)
+                        if (specificIndex === -1) {
+                            $("#" + select2Id).trigger({
+                                type: 'select2:select',
+                                params: {
+                                    data: {
+                                        text: d.text
+                                    }
+                                }
+                            });
+                        } else {
+                            $("#" + select2Id).trigger({
+                                type: 'select2:unselect',
+                                params: {
+                                    data: {
+                                        text: d.text
+                                    }
+                                }
+                            });
+                        }
                     });
 
                 marker.append("circle")
