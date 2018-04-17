@@ -1,5 +1,5 @@
 // Used to distinguish normal map use to new location use
-let addingLocation = true;
+let addingLocation = false;
 // Used to keep track of selected nodes across multiple search bars
 let currentlySelectedNodes = [];
 
@@ -122,7 +122,7 @@ const unusedconstiable = d3.select('body')
     .on('mousemove', function () {
         const coordinates = [0, 0]
         if (addingLocation) {
-            map.setOptions({draggableCursor: "url(img/symbol_add.png) 64 64, pointer"});
+            map.setOptions({draggableCursor: "url(img/symbol_add.png) 10 10, pointer"});
         } else {
             map.setOptions({draggableCursor: "crosshair"});
         }
@@ -223,7 +223,6 @@ function addNodes(filePath, cssClassName, select2Id) {
                 highlight(texts, currentlySelectedNodes, n => n.text, 0, 1);
             }
 
-            search.trigger('change');
             throw "please ignore this error, it's supposed to be here";
         });
 
