@@ -488,7 +488,7 @@ function brushended() {
         }
     });
 
-    highlight(nodes, selectedNodes, n=>n.name, 1, .2)
+    highlight(nodes, selectedNodes, n=>n.name, .2, 1)
 }
 
 
