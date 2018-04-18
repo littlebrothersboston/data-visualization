@@ -169,6 +169,10 @@ map.mapTypes.set('styled_map', styledMapType);
 map.setMapTypeId('styled_map');
 
 
+function membersOrDefault(d) {
+    return (Math.sqrt(d.members) / 5 || 4.5) + 2
+}
+
 function addNodes(filePath, cssClassName, select2Id) {
     d3.json(filePath, function (error, data) {
         if (error) throw error;
@@ -240,13 +244,6 @@ function addNodes(filePath, cssClassName, select2Id) {
                 }
 
 
-                function membersOrDefault(d) {
-                    return (Math.sqrt(d.members) / 5 || 4.5) + 2
-                }
-
-                const tooltipClicked = {};
-                const tooltips = {};
-
                 const marker = layer.selectAll("svg")
                     .data(data)
                     .each(transform) // update existing markers
@@ -255,10 +252,12 @@ function addNodes(filePath, cssClassName, select2Id) {
                     .attr("class", "marker")
 
                 marker.append("div")
-
                     .attr("class", "tooltip")
                     .style("opacity", 0);
 
+
+                const tooltipClicked = {};
+                const tooltips = {};
 
                 function createTooltip(d) {
                     var tooltip = d3.select("body").append("div")
@@ -275,7 +274,7 @@ function addNodes(filePath, cssClassName, select2Id) {
                         + (Object.keys(d).length === 6 ? '<br/>Program Type: City Site' : "")
                         + (d.type ? '<br/>' + d.type : ""))
                         .style("left", (d3.event.pageX + 9) + "px")
-                        .style("top", (d3.event.pageY - 28) + "px");
+                        .style("top", (d3.event.pageY - 28) + "px")
 
                     tooltip.transition()
                         .duration(200)
@@ -285,7 +284,7 @@ function addNodes(filePath, cssClassName, select2Id) {
                 function tooltipOn(d) {
                     tooltips[d.text].transition()
                         .duration(200)
-                        .style("opacity",  .9);
+                        .style("opacity", .9);
                 }
 
                 function tooltipOff(d) {
@@ -353,6 +352,143 @@ function toggle(cssClass) {
         setOpacity(legend, .2);
     }
     toggles[cssClass] = !toggles[cssClass]
+}
+
+// SCATTER PLOT CODE
+
+let scatterItem = d3.select("#scatter")
+scatterItem.append("svg")
+
+let scatter = scatterItem.select("svg")
+    .attr("width", 800)
+    .attr("height", 600)
+
+var scale = d3.scaleLinear().domain([0, 1]).range([570, 0]);
+scatter.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate(30, 10)")
+    .call(d3.axisLeft(scale));
+
+var botScale = d3.scaleLinear().domain([0, 3000]).range([0, 750]);
+scatter.append("g")
+    .attr("class", "y axis")
+    .attr("transform", "translate(30, 580)")
+    .call(d3.axisBottom(botScale));
+
+
+var nodeLookup = {}
+d3.json("data/bha_housing_map_with_size.json", function (housingData) {
+    d3.json("data/city_sites_clean.json", function (citySites) {
+        function nearestCitySiteDistance(d) {
+
+            // no need to worry about curvature of earth
+            var distances = citySites.map(c => {
+                const latDist = c.lat - d.lat;
+                const longDist = c.long - d.long;
+                // calculated using https://andrew.hedges.name/experiments/haversine/
+                return Math.sqrt(latDist * latDist * 69 + longDist * longDist * 51)
+            })
+
+
+            let lowestDist = 1000;
+            for (let distance of distances) {
+                lowestDist = Math.min(lowestDist, distance)
+            }
+
+            nodeLookup[d.name] = lowestDist;
+            return lowestDist
+        }
+
+        scatter.append("g").selectAll("scatter-dot")
+            .data(housingData)
+            .enter()
+            .append("circle")
+            .attr("class", "scatter-dot")
+            .attr("r", 4)
+            .attr("cx", d => 35 + +d.members / 4)
+            .attr("cy", d => 570 - 570 * (nearestCitySiteDistance(d) * 4))
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended));
+    })
+});
+
+
+var brush = d3.brush().on("end", brushended);
+var brushing = false;
+
+function toggleBrush() {
+    if (!brushing) {
+        brushing = true;
+        scatter.append("g")
+            .attr("class", "brush")
+            .call(brush);
+    } else {
+        scatter.select('g.brush').remove();
+    }
+    brushing = !brushing;
+}
+
+
+function dragstarted(d) {
+    // if (!d3.event.active) scatter.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+}
+
+function dragged(d) {
+    d.fx = d3.event.x;
+    d.fy = d3.event.y;
+}
+
+function dragended(d) {
+    // if (!d3.event.active) scatter.alphaTarget(0);
+    d.fx = null;
+    d.fy = null;
+}
+
+function brushended() {
+    var s = d3.event.selection;
+    console.log(s)
+
+    if (!s) {
+        return;
+    }
+    var x = [s[0][0], s[1][0]];
+    var y = [s[0][1], s[1][1]];
+    x.sort(function (a, b) {
+        return a - b;
+    });
+    y.sort(function (a, b) {
+        return a - b;
+    });
+
+    minMembers = x[0] * 4 - 35;
+    maxMembers = x[1] * 4 - 35;
+    minDist = (570 - y[0]) / 570;
+    maxDist = (570 - y[1]) / 570;
+
+
+    const nodes = d3.selectAll("div")
+        .filter(".housing")
+        .selectAll("svg")
+        .selectAll("circle");
+
+    const selectedNodes = [];
+    nodes.each(function (node) {
+        const distance = nodeLookup[node.name]
+        if (node.members >= minMembers
+            && node.members <= maxMembers
+            // && distance >= minDist
+            // && distance <= maxDist
+           ) {
+
+            selectedNodes.push(node.name);
+        }
+    });
+
+    highlight(nodes, selectedNodes, n=>n.name, 1, .2)
 }
 
 
