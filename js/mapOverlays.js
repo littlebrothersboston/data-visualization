@@ -356,24 +356,40 @@ function toggle(cssClass) {
 
 // SCATTER PLOT CODE
 
+var leftMargin = 50;
 let scatterItem = d3.select("#scatter")
 scatterItem.append("svg")
 
 let scatter = scatterItem.select("svg")
-    .attr("width", 800)
-    .attr("height", 600)
+    .attr("width", 800 + leftMargin)
+    .attr("height", 680)
 
+// y axis
 var scale = d3.scaleLinear().domain([0, 1]).range([570, 0]);
 scatter.append("g")
     .attr("class", "y axis")
-    .attr("transform", "translate(30, 10)")
+    .attr("transform", "translate(" + leftMargin + ", 10)")
     .call(d3.axisLeft(scale));
 
+scatter.append("text")
+.attr("transform", "rotate(-90)")
+.attr("x", -300)
+.attr("dy", "1em")
+.style("text-anchor", "middle")
+.text("Miles to City Site");
+
+// x axis
 var botScale = d3.scaleLinear().domain([0, 3000]).range([0, 750]);
 scatter.append("g")
     .attr("class", "y axis")
-    .attr("transform", "translate(30, 580)")
+    .attr("transform", "translate(" + (leftMargin + 1) + ", 580)")
     .call(d3.axisBottom(botScale));
+
+scatter.append("text")
+.attr("x", 400)
+.attr("y", 640)
+.style("text-anchor", "middle")
+.text("Members");
 
 
 var nodeLookup = {}
@@ -405,7 +421,7 @@ d3.json("data/bha_housing_map_with_size.json", function (housingData) {
             .append("circle")
             .attr("class", "scatter-dot")
             .attr("r", 4)
-            .attr("cx", d => 35 + +d.members / 4)
+            .attr("cx", d => (35 + +d.members / 4) + leftMargin )
             .attr("cy", d => 570 - 570 * (nearestCitySiteDistance(d) * 4))
             .call(d3.drag()
                 .on("start", dragstarted)
