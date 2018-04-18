@@ -216,7 +216,7 @@ function addNodes(filePath, cssClassName, select2Id) {
                 highlight(texts, currentlySelectedNodes, n => n.text, 0, 1);
             }
 
-            // throw "please ignore this error, it's supposed to be here";
+            throw "please ignore this error, it's supposed to be here";
         });
 
         const overlay = new google.maps.OverlayView();
