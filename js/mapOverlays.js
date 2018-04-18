@@ -110,7 +110,7 @@ const unusedconstiable = d3.select('body')
     .on('mousemove', function () {
         const coordinates = [0, 0]
         if (addingLocation) {
-            map.setOptions({draggableCursor: "url(img/symbol_add.png) 64 64, pointer"});
+            map.setOptions({draggableCursor: "url(img/symbol_add.png) 10 10, pointer"});
         } else {
             map.setOptions({draggableCursor: "crosshair"});
         }
@@ -211,7 +211,6 @@ function addNodes(filePath, cssClassName, select2Id) {
                 highlight(texts, currentlySelectedNodes, n => n.text, 0, 1);
             }
 
-            search.trigger('change');
             throw "please ignore this error, it's supposed to be here";
         });
 
@@ -251,6 +250,7 @@ function addNodes(filePath, cssClassName, select2Id) {
                     .each(transform)
                     .attr("class", "marker")
                     .on("mouseover", function (d) {
+
                         tooltip.transition()
                             .duration(200)
                             .style("opacity", .9);
@@ -271,7 +271,26 @@ function addNodes(filePath, cssClassName, select2Id) {
                             .style("opacity", 0)
                     })
                     .on("click", function (d) {
-                        // clicking functionality goes here
+                        var specificIndex = currentlySelectedNodes.indexOf(d.text)
+                        if (specificIndex === -1) {
+                            $("#" + select2Id).trigger({
+                                type: 'select2:select',
+                                params: {
+                                    data: {
+                                        text: d.text
+                                    }
+                                }
+                            });
+                        } else {
+                            $("#" + select2Id).trigger({
+                                type: 'select2:unselect',
+                                params: {
+                                    data: {
+                                        text: d.text
+                                    }
+                                }
+                            });
+                        }
                     });
 
                 marker.append("circle")
