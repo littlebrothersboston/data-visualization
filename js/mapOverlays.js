@@ -173,6 +173,9 @@ function addNodes(filePath, cssClassName, select2Id) {
     d3.json(filePath, function (error, data) {
         if (error) throw error;
 
+        // currently selected in this searchbar
+        let select2Data = [];
+
         // set up the data for select2
         let newSelect2Data = data;
         // create unique id's
@@ -191,6 +194,7 @@ function addNodes(filePath, cssClassName, select2Id) {
             containerCssClass: select2Id
         }).on("select2:select", function (event) {
             currentlySelectedNodes.push(event.params.data.text);
+            select2Data.push(event.params.data.text);
             const nodes = d3.selectAll("svg");
             const texts = nodes.selectAll("text");
 
@@ -198,12 +202,13 @@ function addNodes(filePath, cssClassName, select2Id) {
             highlight(texts, currentlySelectedNodes, n => n.text, 0, 1);
         }).on("select2:unselect", function (event) {
             currentlySelectedNodes.splice(currentlySelectedNodes.indexOf(event.params.data.text), 1);
+            select2Data.splice(select2Data.indexOf(event.params.data.text), 1);
             const nodes = d3.selectAll("svg");
             const texts = nodes.selectAll("text");
 
             if (currentlySelectedNodes.length === 0) {
                 // selection is empty, so reset all
-                setOpacity(nodes, .8);
+                setOpacity(nodes, 1);
                 setOpacity(texts, 0);
             } else {
                 // highlight the nodes and text that are selected
@@ -211,7 +216,7 @@ function addNodes(filePath, cssClassName, select2Id) {
                 highlight(texts, currentlySelectedNodes, n => n.text, 0, 1);
             }
 
-            throw "please ignore this error, it's supposed to be here";
+            // throw "please ignore this error, it's supposed to be here";
         });
 
         const overlay = new google.maps.OverlayView();
@@ -234,14 +239,13 @@ function addNodes(filePath, cssClassName, select2Id) {
                         .style("top", (d.y - padding) + "px");
                 }
 
-                const tooltip = d3.select("body")
-                    .append("div")
-                    .attr("class", "tooltip")
-                    .style("opacity", 0);
 
                 function membersOrDefault(d) {
                     return (Math.sqrt(d.members) / 5 || 4.5) + 2
                 }
+
+                const tooltipClicked = {};
+                const tooltips = {};
 
                 const marker = layer.selectAll("svg")
                     .data(data)
@@ -249,49 +253,60 @@ function addNodes(filePath, cssClassName, select2Id) {
                     .enter().append("svg:svg")
                     .each(transform)
                     .attr("class", "marker")
-                    .on("mouseover", function (d) {
 
-                        tooltip.transition()
-                            .duration(200)
-                            .style("opacity", .9);
+                marker.append("div")
 
-                        tooltip.html(d.name
-                            + (d.address ? '<br/>Address: ' + d.address : "")
-                            + (d.members ? '<br/>Members: ' + d.members : "")
-                            + (d.Program ? '<br/>Program: ' + d.Program : "")
-                            // 6 indicates a city site, 4 from the json + the select2 id and text
-                            + (Object.keys(d).length === 6 ? '<br/>Program Type: City Site' : "")
-                            + (d.type ? '<br/>' + d.type : ""))
-                            .style("left", (d3.event.pageX + 9) + "px")
-                            .style("top", (d3.event.pageY - 28) + "px")
-                    })
-                    .on("mouseout", function (d) {
-                        tooltip.transition()
+                    .attr("class", "tooltip")
+                    .style("opacity", 0);
+
+
+                function createTooltip(d) {
+                    var tooltip = d3.select("body").append("div")
+                        .attr("class", "tooltip")
+                        .style("opacity", 0);
+
+                    tooltips[d.text] = tooltip;
+
+                    tooltip.html(d.name
+                        + (d.address ? '<br/>Address: ' + d.address : "")
+                        + (d.members ? '<br/>Members: ' + d.members : "")
+                        + (d.Program ? '<br/>Program: ' + d.Program : "")
+                        // 6 indicates a city site, 4 from the json + the select2 id and text
+                        + (Object.keys(d).length === 6 ? '<br/>Program Type: City Site' : "")
+                        + (d.type ? '<br/>' + d.type : ""))
+                        .style("left", (d3.event.pageX + 9) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+
+                    tooltip.transition()
+                        .duration(200)
+                        .style("opacity", .9)
+                }
+
+                function tooltipOn(d) {
+                    tooltips[d.text].transition()
+                        .duration(200)
+                        .style("opacity",  .9);
+                }
+
+                function tooltipOff(d) {
+                    if (!tooltipClicked[d.text]) {
+                        tooltips[d.text].transition()
                             .duration(200)
-                            .style("opacity", 0)
-                    })
-                    .on("click", function (d) {
-                        var specificIndex = currentlySelectedNodes.indexOf(d.text)
-                        if (specificIndex === -1) {
-                            $("#" + select2Id).trigger({
-                                type: 'select2:select',
-                                params: {
-                                    data: {
-                                        text: d.text
-                                    }
-                                }
-                            });
-                        } else {
-                            $("#" + select2Id).trigger({
-                                type: 'select2:unselect',
-                                params: {
-                                    data: {
-                                        text: d.text
-                                    }
-                                }
-                            });
-                        }
-                    });
+                            .style("opacity", 0);
+                    }
+                }
+
+                marker.on("mouseover", function (d) {
+                    if (tooltips[d.text]) {
+                        tooltipOn(d)
+                    } else {
+                        createTooltip(d)
+                    }
+                }).on("mouseout", function (d) {
+                    tooltipOff(d)
+                }).on("click", function (d) {
+                    tooltipClicked[d.text] = !tooltipClicked[d.text];
+                });
 
                 marker.append("circle")
                     .attr("r", membersOrDefault)
